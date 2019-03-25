@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.example.cmmn.service.impl.CmmnMapper">
+
+	
+	<select id="selectMenuList"  resultType="egovmap">
+/**[CommonSQL.xml][egovframework.example.cmmn.service.impl.CmmnMapper][상품정보][yeji] */
+			SELECT GD_CD
+				  ,GD_NM
+				  ,SALE_PRC
+				  ,PERSON_MAX
+				  ,VIEW
+				  ,BED_NUM
+				  ,ROOM_SIZE
+				  ,REGR
+				  ,REG_DT
+			FROM t_gd
+			
+	</select>
+
+
+<select id="selectRoomImgServiceList"  resultType="egovmap">
+/**[CommonSQL.xml][egovframework.example.cmmn.service.impl.CmmnMapper][상품이미지정보][yeji] */
+			SELECT GD_IMG_MNG_NO
+					,GD_CD
+					,GD_IMG_ATT_FILE
+					,BSC_IMG_YN
+			  FROM T_GD_IMG
+			 WHERE USE_YN = 'Y'
+</select>
+	
+<select id="selectPageNameServceList"  resultType="egovmap">
+	/**[CommonSQL.xml][egovframework.example.cmmn.service.impl.CmmnMapper][페이지이름][yeji] */
+			SELECT CMM_CD
+				   ,CMM_CD_NM
+				   ,USE_YN
+			  FROM T_CMM_CD
+			 WHERE (USE_YN = 'Y'
+			 	AND CMM_GRP_CD ='NM100')
+			 	OR (USE_YN = 'Y'
+			 		AND CMM_GRP_CD ='LIG01') 
+</select> 
+</mapper>

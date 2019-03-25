@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- The jQuery library is a prerequisite for all jqSuite products -->
+    <script type="text/ecmascript" src="../../../js/jquery.min.js"></script> 
+    <!-- This is the Javascript file of jqGrid -->   
+    <script type="text/ecmascript" src="../../../js/trirand/jquery.jqGrid.min.js"></script>
+    <!-- This is the localization file of the grid controlling messages, labels, etc.
+    <!-- We support more than 40 localizations -->
+    <script type="text/ecmascript" src="../../../js/trirand/i18n/grid.locale-en.js"></script>
+	<!-- Load pdfmake lib files -->
+	<script type="text/javascript" language="javascript" src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.26/build/pdfmake.min.js">	</script>
+	<script type="text/javascript" language="javascript" src="//cdn.rawgit.com/bpampuch/pdfmake/0.1.26/build/vfs_fonts.js"></script>
+	
+    <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+    <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> 
+    <!-- The link to the CSS that the grid needs -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../css/trirand/ui.jqgrid-bootstrap.css" />
+	<script>
+		$.jgrid.defaults.width = 780;
+		$.jgrid.defaults.responsive = true;
+		$.jgrid.defaults.styleUI = 'Bootstrap';
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <title>jqGrid Loading Data - Million Rows from a REST service</title>
+</head>
+<body>
+
+<div style="margin-left:20px">
+    <table id="jqGrid"></table>
+    <div id="jqGridPager" style="align:left;"></div>
+	<div id="editor">
+	
+	<button  id="export" type="button" >exportPDF</button>
+	</div>
+	
+</div>
+<style type="text/css" media="screen">
+    th.ui-th-column div{
+        white-space:normal !important;
+        height:auto !important;
+        padding:2px;
+    }
+</style>
+
+    <script type="text/javascript"> 
+	  var mydata = [ {
+			VN : 1,
+			DateRcvd : "2007-10-01",
+			invdate : "2007-10-01",
+			VName : "test",
+			InvNo : "501",
+			amount : "200.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 2,
+			DateRcvd : "2007-10-02",
+			invdate : "2007-10-01",
+			VName : "test2",
+			InvNo : "502",
+			amount : "300.00",
+			Currency : "USD",
+			DocType : "Non-PO Invoice"
+		}, {
+			VN : 3,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "503",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 4,
+			DateRcvd : "2007-10-04",
+			invdate : "2007-10-01",
+			VName : "test",
+			InvNo : "504",
+			amount : "200.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 5,
+			DateRcvd : "2007-10-05",
+			invdate : "2007-10-01",
+			VName : "test2",
+			InvNo : "505",
+			amount : "300.00",
+			Currency : "USD",
+			DocType : "Non-PO Invoice"
+		}, {
+			VN : 6,
+			DateRcvd : "2007-09-06",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "506",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 7,
+			DateRcvd : "2007-10-04",
+			invdate : "2007-10-01",
+			VName : "test",
+			InvNo : "507",
+			amount : "200.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 8,
+			DateRcvd : "2007-10-03",
+			invdate : "2007-10-01",
+			VName : "test2",
+			InvNo : "508",
+			amount : "300.00",
+			Currency : "USD",
+			DocType : "Non-PO Invoice"
+		}, {
+			VN : 9,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 10,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 11,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 12,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 13,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 14,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 15,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 16,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 17,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 18,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 19,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 20,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 21,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 22,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 23,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 24,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 25,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 26,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : 0,
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 27,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 28,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 29,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 30,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 31,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 32,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 33,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 34,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 35,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 36,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 37,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 38,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 39,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 40,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 41,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 42,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 43,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 44,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 45,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 46,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 47,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 48,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 49,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}, {
+			VN : 50,
+			DateRcvd : "2007-09-01",
+			invdate : "2007-10-01",
+			VName : "test3",
+			InvNo : "509",
+			amount : "400.00",
+			Currency : "USD",
+			DocType : "PO Invoice"
+		}
+		];
+       var gridConfiguration  = [ 
+	   {
+				   primaryKey:"1",
+				   userName:"abc",
+				   teamDocumentGL:"0",
+				   teamDocumentReview:"10",
+				   teamDocumentException:"10",
+				   teamDocumentReject:"10",
+				   escalationDocumentLevel1:"10",
+				   escalationDocumentLevel2:"10",
+				   escalationDocumentLevel3:"50",
+				   escalationDocumentTotal:"$123.00",
+				   teamInquiriesClosed:"50",
+				   teamInquiriesAssigned:"50",
+				   teamInquiriesResponse:"50",
+				   escalationInquiriesLevel1:"10",
+				   escalationInquiriesLevel2:"50",
+				   escalationInquiriesLevel3:"10",
+				   escalationInquiriesLevel4:"10",
+				   escalationInquiriesLevel5:"50",
+				   escalationInquiriesLevel6:"10",
+				   escalationInquiriesLevel7:"10",
+				   escalationInquiriesLevel8:"50",
+				   escalationInquiriesLevel9:"10",
+				   
+				   escalationInquiriesLevel10:"10",
+				   escalationInquiriesLevel11:"50",
+				   escalationInquiriesLevel12:"10",
+				   escalationInquiriesLevel13:"10",
+				   escalationInquiriesLevel14:"50",
+				   escalationInquiriesLevel15:"10",
+				   escalationInquiriesLevel16:"10",
+				   escalationInquiriesLevel17:"50",
+				   escalationInquiriesLevel18:"10",
+			
+				  
+				   
+	   }
+	   ];
+      
+			
+             $("#jqGrid").jqGrid({
+    			editurl : 'clientArray',
+				data:gridConfiguration,
+				styleUI : 'Bootstrap',
+		        datatype: "local",
+		        colModel: [
+		       
+					{ label: 'primaryKey', name: 'primaryId',index:"primaryId", width: 12,key:true,hidden:true },
+					{ label: 'Users', name: 'userName',index:"userName",width: 150 ,align:'left',sortype:'string',formatter: "dynamicLink"},   
+		            { label:  'teamDocumentGL', name: 'teamDocumentGL',index:"teamDocumentGL", width: 120,align:'right',sortype:'integer',formatter: "dynamicLink"},  
+					{ label:  'teamDocumentGL', name: 'teamDocumentReview',index:"teamDocumentReview", width: 120,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamDocumentGL', name: 'teamDocumentException', index:"teamDocumentException",width: 120,align:'right',sortype:'integer',formatter: 'dynamicLink' },						
+		            { label: 'teamDocumentGL', name: 'teamDocumentReject', index:"teamDocumentReject",width: 120,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+		            { label: 'teamDocumentGL', name: 'escalationDocumentLevel1',index:"escalationDocumentLevel1",width: 120 ,align:'right',sortype:'integer',classes:'bg-grey',formatter: 'dynamicLink' },	
+		            { label: 'teamDocumentGL', name: 'escalationDocumentLevel2',index:"escalationDocumentLevel2",width: 120,align:'right',sortype:'integer',classes:'bg-grey',formatter: 'dynamicLink' },	
+		            { label: 'teamDocumentGL', name: 'escalationDocumentLevel3',index:"escalationDocumentLevel3",width: 120,align:'right',sortype:'integer',classes:'bg-grey',formatter: 'dynamicLink' },	
+		            { label: 'teamDocumentGL', name: 'escalationDocumentTotal',index:"escalationDocumentTotal",width: 120,align:'right', sortype:'currency',classes:'bg-grey',formatter: 'dynamicLink'  },	
+					{ label: 'Closed', name: 'teamInquiriesClosed', index:"teamInquiriesClosed",width: 120,align:'right',sortype:'integer',formatter: 'dynamicLink' },		
+					{ label: 'teamInquiriesAssigned', name: 'teamInquiriesAssigned',index:"teamInquiriesAssigned",width: 120,align:'right',sortype:'integer',formatter: 'dynamicLink' },					
+		            { label: 'teamInquiriesAssigned', name: 'teamInquiriesResponse',index:"teamInquiriesResponse",width: 120,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+		            { label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel1',index:"escalationInquiriesLevel1",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+		            { label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel2', index:"escalationInquiriesLevel2",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+		            { label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel3', index:"escalationInquiriesLevel3",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel4', index:"escalationInquiriesLevel4",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel5', index:"escalationInquiriesLevel5",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel6', index:"escalationInquiriesLevel6",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel7', index:"escalationInquiriesLevel7",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'Level3', name: 'escalationInquiriesLevel8', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel9', index:"escalationInquiriesLevel9",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel10', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel11', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel12', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel13', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel14', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel15', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel16', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel17', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+					{ label: 'teamInquiriesAssigned', name: 'escalationInquiriesLevel18', index:"escalationInquiriesLevel8",width: 120 ,align:'right',sortype:'integer',formatter: 'dynamicLink' },	
+		        ],
+				autowidth : true,
+				autoheight : true,
+				page : 1,
+				rowNum : 900,
+				sortable:true,
+				shrinkToFit : false,
+				gridview : true,
+				loadonce : true,
+				scrollLeftOffset : "83%",
+				scrollOffset : 0,
+				viewrecords : true,
+				scroll : 1,
+				emptyrecords : '',
+				cmTemplate: { title: false },
+    	
+        pager: "#jqGridPager"
+    });
+	 var doc = {  
+  styles: {
+    tableHeader: {
+      bold: true,
+      fontSize: 11,
+      color: '#2e6e9e',
+      fillColor: '#dfeffc',
+      alignment: 'center'
+    },
+    tableBody: {
+      fontSize: 10
+    },
+    tableFooter: {
+      bold: true,
+      fontSize: 11,
+      color: '#2e6e9e',
+      fillColor: '#dfeffc'
+    },
+    title: {
+      alignment: 'center',
+      fontSize: 15
+    },
+    description: {}
+  },
+  defaultStyle: {
+    fontSize: 10
+  }
+};
+	
+	$("#export").on("click", function(){
+				$("#jqGrid").jqGrid("exportToPdf",{
+					    onBeforeExport : function( doc ) {
+					  doc.styles.description = {
+					bold: true,
+					fontSize: 20,
+					color: 'red',
+					fillColor: '#dfeffc',
+					alignment: 'center'
+					  }
+					},
+
+					orientation: 'portrait',
+					pageSize: 'a0',
+					description:'My description',
+					download: 'download',
+					includeLabels : true,
+					includeGroupHeader : true,
+					includeFooter: true,
+					fileName : "jqGridExport.pdf"
+				})
+			})
+       
+				
+   </script>  
+  
+</body>
+</html>

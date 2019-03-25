@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.example.payment.service.impl.PayMapper">
+
+	
+	<insert  id="inserPayServiceList" parameterType="Hashmap">
+/**[paySQL.xml][egovframework.example.payment.service.impl.PayMapper][결제내역][yeji] */
+
+insert into t_revt ( REV_NO
+					,GD_CD
+					,REV_NAME
+					,EXP_M_NUM
+					,EXP_D_NUM
+					,CARD_NUM
+					,CVC
+					,PAY_CND
+					,ADULT_CON
+					,TOTAL_PRC
+					,CHK_IN
+					,CHK_OUT
+					,REGR
+					,UPDR
+					,REGR_DT
+					,UPD_DT)
+			values( 
+					 #{REV_NO}
+					,#{gdCd}
+					,#{REV_NAME}
+					,#{EXP_M_NUM}
+					,#{EXP_D_NUM}
+					,#{CARD_NUM}
+					,#{CVC}
+					,'N'
+					,#{perCnt}
+					,#{tnt_prc}
+					,#{checkin_date}
+					,#{checkout_date}
+					,'YEJI'
+					,'YEJI'
+					,NOW()
+					,NOW()	
+					)
+	</insert >
+</mapper>

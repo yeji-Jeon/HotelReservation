@@ -1,0 +1,968 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>Column menu - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#column-menu" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                Column menu
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Column menu
+      </label>
+    
+    <a href="./" title="Column menu" class="md-nav__link md-nav__link--active">
+      Column menu
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actions" title="Actions" class="md-nav__link">
+    Actions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sorting" title="Sorting" class="md-nav__link">
+    Sorting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columns" title="Columns" class="md-nav__link">
+    Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering" title="Filtering" class="md-nav__link">
+    Filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping" title="Grouping" class="md-nav__link">
+    Grouping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freeze" title="Freeze" class="md-nav__link">
+    Freeze
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#actions" title="Actions" class="md-nav__link">
+    Actions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sorting" title="Sorting" class="md-nav__link">
+    Sorting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#columns" title="Columns" class="md-nav__link">
+    Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering" title="Filtering" class="md-nav__link">
+    Filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping" title="Grouping" class="md-nav__link">
+    Grouping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#freeze" title="Freeze" class="md-nav__link">
+    Freeze
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="column-menu"><div style='text-align:center'>Column Menu</div><a class="headerlink" href="#column-menu" title="Permanent link">&para;</a></h1>
+<hr />
+<p>When you interact with grid columns, you may want to be able to trigger column operations via a dedicated menu for this purpose.</p>
+<p>The Guriddo jqGrid has built-in support for such a feature, which can be enabled via a single configuration setting, i.e. colMenu=true in grid options. Thus an option to display a column menu will be rendered in the grid column headers, which when activated allows  you to sort, filter, freeze, group or change the visibility of the column.</p>
+<p>Furthermore, this menu takes into account whether a certain column operation is disabled via the column definition, and excludes the corresponding UI from its rendering.</p>
+<p>When activeted the UI can look like this:</p>
+<p><img alt="Screenshot" src="../../img/colmenu.png" /></p>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<p>To setup the column menu it is needed to set to true the <em>colMenu</em> grid option.</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="p">...</span>
+  <span class="nx">colMenu</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>When this is set we have a grid like the picture above.</p>
+<p>The column menu uses the following properties from language file:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">regional</span><span class="p">[</span><span class="s2">&quot;en&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="p">...</span>
+  <span class="nx">colmenu</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">sortasc</span> <span class="o">:</span> <span class="s2">&quot;Sort Ascending&quot;</span><span class="p">,</span>
+    <span class="nx">sortdesc</span> <span class="o">:</span> <span class="s2">&quot;Sort Descending&quot;</span><span class="p">,</span>
+    <span class="nx">columns</span> <span class="o">:</span> <span class="s2">&quot;Columns&quot;</span><span class="p">,</span>
+    <span class="nx">filter</span> <span class="o">:</span> <span class="s2">&quot;Filter&quot;</span><span class="p">,</span>
+    <span class="nx">grouping</span> <span class="o">:</span> <span class="s2">&quot;Group By&quot;</span><span class="p">,</span>
+    <span class="nx">ungrouping</span> <span class="o">:</span> <span class="s2">&quot;Ungroup&quot;</span><span class="p">,</span>
+    <span class="nx">searchTitle</span> <span class="o">:</span> <span class="s2">&quot;Get items with value that:&quot;</span><span class="p">,</span>
+    <span class="nx">freeze</span> <span class="o">:</span> <span class="s2">&quot;Freeze&quot;</span><span class="p">,</span>
+    <span class="nx">unfreeze</span> <span class="o">:</span> <span class="s2">&quot;Unfreeze&quot;</span><span class="p">,</span>
+    <span class="nx">reorder</span> <span class="o">:</span> <span class="s2">&quot;Move to reorder&quot;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<p>These properties correspond to the menu names when the user activates it. The text in the menu can not be changed dynamically. To change the text you can either change the language file or set a property before calling the grid setup. By example to change the 'Filter' text to 'Search' you can (in case a English language is used):</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">regional</span><span class="p">[</span><span class="s2">&quot;en&quot;</span><span class="p">].</span><span class="nx">colmenu</span><span class="p">.</span><span class="nx">filter</span> <span class="o">=</span> <span class="s2">&quot;Search&quot;</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jqgrid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({...});</span>
+</pre></div>
+
+
+<p>It is possible to control the appearance of the menu of every column. This is done with the help of the following colModel options:</p>
+<ul>
+<li>boolean colmenu - when set to false the column menu is not enabled for that column</li>
+<li>object coloptions - object setting which action of the menu is enabled for that columns. The object have the following properties<ul>
+<li>sorting boolean - enables/disable sorting actions - default true</li>
+<li>columns boolean - enables/disables columns reorder and moving action - default true</li>
+<li>filtering boolean - enables disables filtering action - default true</li>
+<li>grouping boolean  - enables disables grouping action - default true</li>
+<li>freeze boolean - enables disables freeze action - default true</li>
+</ul>
+</li>
+</ul>
+<p>The example below disables the column menu for OrderID column and the filter action for OrderDate column.</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="p">...</span>
+  <span class="nx">colMenu</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;OrderID&#39;</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">colmenu</span><span class="o">:</span> <span class="kc">false</span><span class="p">,...},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;CustomerID&#39;</span><span class="p">,...},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;OrderDate&#39;</span><span class="p">,...,</span> <span class="nx">coloptions</span><span class="o">:</span> <span class="p">{</span> <span class="nx">filtering</span><span class="o">:</span> <span class="kc">false</span><span class="p">},...}</span>
+    <span class="p">...</span>
+  <span class="p">],</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>Currently it is not possible to disable dynamically column menu globally and appearance of certain menu and items in it when they already set.</p>
+<h2 id="actions">Actions<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h2>
+<h3 id="sorting">Sorting<a class="headerlink" href="#sorting" title="Permanent link">&para;</a></h3>
+<p>The appearance of sorting action is controlled with <em>sortiong</em> property in <em>coloptions</em> object in <em>colModel</em>. When this option is enabled two actions appear - one for sorting Ascending and one for sorting Descending. When clicked the grid sorts on selected direction and the menu is closed.<br />
+When this option is set to false both actions does not appear for that column.</p>
+<h3 id="columns">Columns<a class="headerlink" href="#columns" title="Permanent link">&para;</a></h3>
+<p>The appeariance of columns action is controlled with <em>columns</em> property in <em>coloptions</em> object in <em>colModel</em>. When this action is enabled, when hover with the mouse over the column item additional menu appear like in the menu below:</p>
+<p><img alt="Screenshot" src="../../img/colmenucol.png" /></p>
+<p>This menu contain of three columns - the first one has indicator for moving, the second one has a checkbox for show/hide the column and the third one is the label of the column.</p>
+<p>To move the column to a certain position click with the mouse on the mark indicator of the desired column, hold the button and move the column to new position and release the mouse button. Moving is enabled only vertically.</p>
+<p>To show/hide a column click on the checkbox of the desired column. If the state is checked the column is shown and if unchecked the column is hidden immediately.</p>
+<p>Hidden columns does not appear in the list.<br />
+It is possible to control which columns can be show/hide using the colModel option <em>hidedlg</em>. If this option is set to true the columns does not appear in the list for moving and showing.</p>
+<p>To disable appearance of OrderDate coulmn in column list (using the above example) do:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="p">...</span>
+  <span class="nx">colMenu</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;OrderID&#39;</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">colmenu</span><span class="o">:</span> <span class="kc">false</span><span class="p">,...},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;CustomerID&#39;</span><span class="p">,...},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;OrderDate&#39;</span><span class="p">,...,</span> <span class="nx">hidedlg</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">coloptions</span><span class="o">:</span> <span class="p">{</span> <span class="nx">filtering</span><span class="o">:</span> <span class="kc">false</span><span class="p">},...}</span>
+    <span class="p">...</span>
+  <span class="p">],</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>A event <a href="../basic-grid/#events">colMenuColumnDone</a> can be executed (if defined) after the columns are reordered or the check-box is selected.</p>
+<p>The service columns for multiselect, row numbers and subgrid does not appear in this list</p>
+<h3 id="filtering">Filtering<a class="headerlink" href="#filtering" title="Permanent link">&para;</a></h3>
+<p>The appearance of filtering action is controlled with <em>filtering</em> property in <em>coloptions</em> object in <em>colModel</em>. When this action is enabled, when hover with the mouse over the column item additional menu appear like in the menu below:</p>
+<p><img alt="Screenshot" src="../../img/colmenufilter.png" /></p>
+<p>With this action is possible to search on the column using two possible values. It is possible to use only one value for searching. To change the search operations use <a href="../searching/#colmodel-search-options">searchoptions sopt array</a>. If the search operations are not changes, we use the following default operations</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s1">&#39;eq&#39;</span><span class="p">,</span> <span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="s1">&#39;bw&#39;</span><span class="p">,</span> <span class="s1">&#39;bn&#39;</span><span class="p">,</span> <span class="s1">&#39;ew&#39;</span><span class="p">,</span> <span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="s1">&#39;cn&#39;</span><span class="p">,</span> <span class="s1">&#39;nc&#39;</span><span class="p">,</span> <span class="s1">&#39;nu&#39;</span><span class="p">,</span> <span class="s1">&#39;nn&#39;</span><span class="p">,</span> <span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="s1">&#39;ni&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>if the field is defined as text and</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span><span class="s1">&#39;eq&#39;</span><span class="p">,</span><span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="s1">&#39;lt&#39;</span><span class="p">,</span> <span class="s1">&#39;le&#39;</span><span class="p">,</span> <span class="s1">&#39;gt&#39;</span><span class="p">,</span> <span class="s1">&#39;ge&#39;</span><span class="p">,</span> <span class="s1">&#39;nu&#39;</span><span class="p">,</span> <span class="s1">&#39;nn&#39;</span><span class="p">,</span> <span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="s1">&#39;ni&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>if the field is defined numeric.</p>
+<p>The OR or AND operand option between the two fields can be configured with the <em><strong>searchoptions</strong></em>  <strong>groupOps</strong> option. This option is taken from language file and is exception in settings which is valid only for the colMenu. To set only one operand AND use :</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="p">...</span>
+  <span class="nx">colMenu</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;OrderID&#39;</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">colmenu</span><span class="o">:</span> <span class="kc">false</span><span class="p">,...},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;CustomerID&#39;</span><span class="p">,...},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;OrderDate&#39;</span><span class="p">,...,</span> <span class="nx">searchoptions</span><span class="o">:</span> <span class="p">{</span> <span class="nx">groupOps</span><span class="o">:</span><span class="p">[{</span><span class="nx">op</span><span class="o">:</span><span class="s1">&#39;AND&#39;</span><span class="p">,</span> <span class="nx">text</span><span class="o">:</span><span class="s1">&#39;AND&#39;</span><span class="p">}],...}}</span>
+    <span class="p">...</span>
+  <span class="p">],</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>The first element in array is the default when two elements are used.</p>
+<p>It is possible to set default operations and values for the field if it is activated. This is done with the grid option <em>colFilters</em>. This is a grid option object where the property correspond to the name in colModel. This property is another object with the following properties:</p>
+<div class="codehilite"><pre><span></span><span class="nx">colFilters</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="nx">colModel_name1</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">oper1</span> <span class="o">:</span> <span class="s2">&quot;oper1 value&quot;</span><span class="p">,</span>
+    <span class="nx">value1</span><span class="o">:</span> <span class="s2">&quot;value1 value&quot;</span><span class="p">,</span>
+    <span class="nx">rule</span><span class="o">:</span> <span class="s2">&quot;rule value&quot;</span><span class="p">,</span>
+    <span class="nx">oper2</span> <span class="o">:</span> <span class="s2">&quot;oper2 value&quot;</span><span class="p">,</span>
+    <span class="nx">value2</span><span class="o">:</span> <span class="s2">&quot;value2 value&quot;</span><span class="p">,</span>
+  <span class="p">},</span>
+  <span class="nx">colModel_name2</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="p">...</span>
+  <span class="p">},</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>oper1 is the initial operation for the field</li>
+<li>value1 is the value corresponding to the initial operation</li>
+<li>rule is the operand - can be OR or AND</li>
+<li>oper2 is the second operation for the field</li>
+<li>value2 is the value corresponding to the second operation</li>
+</ul>
+<p><strong>Example</strong></p>
+<p>To set up a initial value to the OrderDate where:</p>
+<div class="codehilite"><pre><span></span>OrderDate &gt;= 7/10/1996 AND OrderDate &lt;= 7/10/1996
+</pre></div>
+
+
+<p>do:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="p">...</span>
+  <span class="nx">colMenu</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;OrderDate&#39;</span><span class="p">,</span><span class="nx">colmenu</span><span class="o">:</span> <span class="kc">true</span><span class="p">,...,</span> <span class="p">}</span>
+    <span class="p">...</span>
+  <span class="p">],</span>
+  <span class="nx">colFilters</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">OrderDate</span> <span class="o">:</span> <span class="p">{</span>
+      <span class="nx">oper1</span> <span class="o">:</span> <span class="s2">&quot;ge&quot;</span><span class="p">,</span>
+      <span class="nx">value1</span><span class="o">:</span> <span class="s2">&quot;7/10/1996&quot;</span><span class="p">,</span>
+      <span class="nx">rule</span><span class="o">:</span> <span class="s2">&quot;AND&quot;</span><span class="p">,</span>
+      <span class="nx">oper2</span> <span class="o">:</span> <span class="s2">&quot;le&quot;</span><span class="p">,</span>
+      <span class="nx">value2</span><span class="o">:</span> <span class="s2">&quot;7/11/1996&quot;</span><span class="p">,</span>      
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>When the Find button is pressed the data is posted to the server is as <a href="../searching/#string-field">String field</a>.</p>
+<h3 id="grouping">Grouping<a class="headerlink" href="#grouping" title="Permanent link">&para;</a></h3>
+<p>The appearance of grouping action is controlled with <em>grouping</em> property in <em>coloptions</em> object in <em>colModel</em>.</p>
+<p>When this option is enabled and the user click on it, a quick grouping by the selected column is performed. The action call the jqGrid method <a href="../grouping/#group-methods">groupingGroupBy</a>.</p>
+<p>Currently no other actions and events are possible when perform this action.</p>
+<p>To remove the grouping of this column select the column Menu on this column again and select the action <em>Ungroup</em>. The action Ungoup appear only if the column is already grouped.</p>
+<h3 id="freeze">Freeze<a class="headerlink" href="#freeze" title="Permanent link">&para;</a></h3>
+<p>The appearance of freeze action is controlled with <em>freeze</em> property in <em>coloptions</em> object in <em>colModel</em>.</p>
+<p>When this option is enabled clicking on it we perform the following actions.</p>
+<ol>
+<li>We found the first column which is set to frozen.</li>
+<li>We move the selected column near to the first frozen column. If there is not yet frozen column the selected column is set as first one.</li>
+<li>We call first the methods - <a href="../frozencols/#destroy">destroyFrozenColumns</a> and then <a href="../frozencols/#setup">setFrozenColums</a></li>
+</ol>
+<p>To remove freeze to certain column click on column menu again and select <em>Unfreeze</em>. The columns are shifted so that the selected column is moved near to last frozen one.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<p>It is possible to add and delete a custom action in the column menu. This is done via the two new methods <strong>colMenuAdd</strong> to add a new column menu and <strong>colMenuDelete</strong> to delete it.<br />
+Below is a short description of the methods:</p>
+<p><strong>colMenuAdd( string colname, object options)</strong><br />
+Add a custom column menu into the list of predefined column menu. See <em>colMenu</em> option in <a href="#options">grid options</a></p>
+<p><strong><em>parameters</em></strong></p>
+<ul>
+<li>string colname - the column name as set in colModel array. If the string has a value <em>'all'</em> the item will be added to all columns</li>
+<li>object options - t with following properties and default values:</li>
+</ul>
+<div class="codehilite"><pre><span></span>options = {
+  title: &#39;Item&#39;,
+  icon : styles.icon_new_item,
+  funcname: null,
+  position : &quot;last&quot;,
+  closeOnRun : true,
+  exclude : &quot;&quot;,
+  id : null
+}
+</pre></div>
+
+
+<p><em>title</em> - the text that will appear in column menu<br />
+<em>icon</em> - the icon associated with this menu. This should correspond to the used CSS framework name<br />
+<em>funcname</em> - function to be executed when the menu is selected. To this function is passed the name of the column<br />
+<em>position</em> - the position of the item added. Can be  "last" or "first"<br />
+<em>closeOnRun</em> - closes the menu after selecting the item<br />
+<em>exclude</em> - list of columns which should be excluded. The string is a list of comma separated column names<br />
+<em>id</em> - the id of the item when inserted into the menu. If this parameter is not set jqGrid creates internally it using the jqGrid rand functin - <strong><em>$.jgrid.randId()</em></strong></p>
+<hr />
+<p><strong>colMenuDelete( string id)</strong><br />
+Delete custom column menu from the list of predefined column menu added with colMenuAdd method. See <em>colMenu</em> option in <a href="#options">grid options</a></p>
+<p><strong><em>parameters</em></strong></p>
+<p><em>id</em> the id which should be deleted</p>
+<p>Adding and deleting items in the column menu is dynamically, so it is possible to run these commands at any time. Example:</p>
+<p>Adding menu to all columns:</p>
+<div class="codehilite"><pre><span></span><span class="nx">myfunc</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">colname</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">colname</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jqGrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s2">&quot;colMenuAdd&quot;</span><span class="p">,</span> <span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">id</span> <span class="o">:</span> <span class="s2">&quot;myid&quot;</span><span class="p">,</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;My menu&#39;</span><span class="p">,</span>
+    <span class="nx">funcname</span><span class="o">:</span> <span class="nx">myfunc</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>Adding menu to all columns except of column OrderID and CustomerID:</p>
+<div class="codehilite"><pre><span></span><span class="nx">myfunc</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">colname</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">colname</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jqGrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s2">&quot;colMenuAdd&quot;</span><span class="p">,</span> <span class="s2">&quot;all&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">id</span> <span class="o">:</span> <span class="s2">&quot;myid&quot;</span><span class="p">,</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;My menu&#39;</span><span class="p">,</span>
+    <span class="nx">funcname</span><span class="o">:</span> <span class="nx">myfunc</span><span class="p">,</span>
+    <span class="nx">exclude</span> <span class="s2">&quot;OrderID, CustomerID&quot;</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>Delete menu item  with id=myid:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jqGrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s2">&quot;colMenuDelete&quot;</span><span class="p">,</span> <span class="s2">&quot;myid&quot;</span><span class="p">);</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../frozencols/" title="Frozen Columns" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Frozen Columns
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../persiststate/" title="Persist state" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Persist state
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

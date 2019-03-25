@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.example.login.service.impl.LoginMapper">
+
+<select id="selectTermsMngList" resultType="egovMap">
+   <![CDATA[
+      SELECT   TERMS_MNG_NO
+               ,TERMS_TY_CD
+               ,TERMS_VER
+               ,TERMS_HTML
+               ,ESSN_AGR_YN
+               ,TERMS_DSC
+      FROM   T_TERMS_MNG
+      WHERE DP_YN = 'Y'
+      AND   TERMS_TY_CD = #{_parameter} /*10-이용약관, 20-개인정보처리방침*/
+      AND   DP_STRT_DE   <= DATE_FORMAT(NOW(), '%Y%m%d')
+      AND   TERMS_VER   >= (SELECT MAX(TERMS_VER)
+                              FROM   T_TERMS_MNG
+                              WHERE   DP_YN = 'Y'
+                                 AND TERMS_TY_CD = #{_parameter}
+                                 AND DP_STRT_DE   <= DATE_FORMAT(NOW(), '%Y%m%d'))
+   ]]>
+   
+   </select>
+
+
+   
+   <select id="selectEmailDomainList" parameterType ="String" resultType="EgovMap">
+  
+      select CMM_CD
+      		,CMM_CD_NM
+      		,DSC,SORT_SEQ
+      from	t_cmm_cd
+	where	 USE_YN = 'Y'
+	 and 	CMM_GRP_CD=#{_parameter}
+  
+   </select>
+   
+   <select id="selectDuplicateIdChk" parameterType ="String" resultType="int">
+  
+      select count(*)
+      from		t_mbr
+		where	LOGIN_ID = #{_parameter}
+  
+   </select>
+</mapper>

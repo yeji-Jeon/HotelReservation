@@ -1,0 +1,1134 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>Integrations - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#integrations" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                Integrations
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Integrations
+      </label>
+    
+    <a href="./" title="Integrations" class="md-nav__link md-nav__link--active">
+      Integrations
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jquery-ui-integrations" title="jQuery UI integrations" class="md-nav__link">
+    jQuery UI integrations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules" title="Modules" class="md-nav__link">
+    Modules
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sortable-columns" title="Sortable Columns" class="md-nav__link">
+    Sortable Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-chooser" title="Column Chooser" class="md-nav__link">
+    Column Chooser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortable-rows" title="Sortable Rows" class="md-nav__link">
+    Sortable Rows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resizable-grid" title="Resizable Grid" class="md-nav__link">
+    Resizable Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-drop-rows" title="Drag &amp; Drop rows" class="md-nav__link">
+    Drag &amp; Drop rows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#jquery-ui-integrations" title="jQuery UI integrations" class="md-nav__link">
+    jQuery UI integrations
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modules" title="Modules" class="md-nav__link">
+    Modules
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sortable-columns" title="Sortable Columns" class="md-nav__link">
+    Sortable Columns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-chooser" title="Column Chooser" class="md-nav__link">
+    Column Chooser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortable-rows" title="Sortable Rows" class="md-nav__link">
+    Sortable Rows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resizable-grid" title="Resizable Grid" class="md-nav__link">
+    Resizable Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drag-drop-rows" title="Drag &amp; Drop rows" class="md-nav__link">
+    Drag &amp; Drop rows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="integrations"><p style='text-align:center'>Integrations </p><a class="headerlink" href="#integrations" title="Permanent link">&para;</a></h1>
+<hr />
+<p>This chapter considered a integration of external modules with Guriddo jqGrid. In this case it is needed to load additional modules in order these features to work with Guriddo jqGrid.</p>
+<h2 id="jquery-ui-integrations">jQuery UI integrations<a class="headerlink" href="#jquery-ui-integrations" title="Permanent link">&para;</a></h2>
+<p>jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.</p>
+<p>More information on jQuery UI can be <a href="http://www.jquery.com">found here</a></p>
+<p>As already described Guriddo jqGrid can use the jQurery CSS framework. Note that the jQuery CSS definitions can be used separately from the javascript code. In this chapter we will explain how we can implement some jQuery UI JavaScript features in Guriddo jqGrid.</p>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<p>To use the features that are made in jqGrid it is necessary to include the jQuery UI library in the head section of the document or any other working way. For more information how to download the jQuery UI library visit their <a href="http://learn.jquery.com/jquery-ui/getting-started/">web site</a></p>
+<p>After downloading the jQuery UI your configuration can look like this:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Grid<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/jquery-ui.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/trirand/ui.jqgrid.css&quot;</span> <span class="p">/&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/jquery.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/jquery-ui.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/i18n/grid.locale-en.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/jquery.jqGrid.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>Where jquery-ui.min.js is the jQuery UI library. In order to overcome some confusions we recommend to download the full version of the UI library.</p>
+<p>The code which integrate jQuery UI library is in module <strong>grid.jqueryui.js</strong></p>
+<h3 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h3>
+<h4 id="sortable-columns">Sortable Columns<a class="headerlink" href="#sortable-columns" title="Permanent link">&para;</a></h4>
+<p>This feature is integrated in jqGrid, and hence it is not necessary to do something special. The feature uses jQuery UI <a href="http://jqueryui.com/sortable/">sortable</a> widget. The method allow to reorder the grid columns using the mouse. The only necessary setting in this case is to set the <em>sortable</em> option in jqGrid to true. Using our example from <a href="../../#quick-start">Quick Start</a> the code is:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+   <span class="kd">var</span> <span class="nx">dataArray</span> <span class="o">=</span> <span class="p">[</span>
+     <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;232-532-6268&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Jeff&#39;</span><span class="p">,</span> <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;365-267-8325&#39;</span><span class="p">}</span>
+   <span class="p">];</span>
+
+   <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+     <span class="nx">datatype</span><span class="o">:</span> <span class="s1">&#39;local&#39;</span><span class="p">,</span>
+     <span class="nx">data</span><span class="o">:</span> <span class="nx">dataArray</span><span class="p">,</span>
+     <span class="nx">sortable</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+     <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Name&#39;</span><span class="p">},</span>
+        <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;phone&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Phone Number&#39;</span><span class="p">}</span>
+      <span class="p">],</span>
+      <span class="nx">caption</span> <span class="o">:</span> <span class="s1">&#39;Users Grid&#39;</span><span class="p">,</span>
+      <span class="nx">height</span><span class="o">:</span> <span class="s1">&#39;auto&#39;</span>
+  <span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>This option works when Bootstrap CSS is used. In this case the jQuery UI sortable widget should be loaded.</p>
+<p>The <em><strong>sortable</strong></em> option can be a object in which we can add (or overwrite) parameters that are available in the jQuery UI <a href="http://jqueryui.com/sortable/">sortable</a> widged. To do this a <em>options</em> property should be set. By example to change the jQuery UI sortable parameter <em>forcePlaceholderSize</em> do:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="p">...,</span>
+  <span class="nx">sortable</span><span class="o">:</span> <span class="p">{</span> <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">forcePlaceholderSize</span> <span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>This option can be a function. In case it is a function the update sortable event is replaced with it.</p>
+<p>To get the reordered columns use the grid parameter remapColumns:</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">columns</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;gerGridParam&#39;</span><span class="p">,</span> <span class="s1">&#39;remapColumns&#39;</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Initially the first position correspond to the first column and etc. - by example [0,1,2,3] in case we have 4 columns defined in colModel. After reordering of columns the array can look like this: [1,0,3,2]. This mean the the first column(0) is moved to the second position(1) and the third column(2) is moved to four position(3). </p>
+<p>Any parameter can be added including <a href="http://api.jqueryui.com/sortable/">options, methods and events</a></p>
+<h4 id="column-chooser">Column Chooser<a class="headerlink" href="#column-chooser" title="Permanent link">&para;</a></h4>
+<p>With this method we can reorder columns and set visible and hidden columns in the grid. This method uses  <a href="http://jqueryui.com/sortable/">sortable</a> and <a href="http://jqueryui.com/dialog/">dialog</a> widgets. Additionally to these widgets the multiselect widget is used. This widget is available in the jqGrid distribution and needs to be loaded again with its CSS.</p>
+<p>The javascript file is named ui.multiselect.js and is provided in js subdirectory and css file is named  ui.multiselect.css and is available in css directory. The code for loading is:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Grid<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/jquery-ui.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/trirand/ui.jqgrid.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/ui.multiselect.css&quot;</span> <span class="p">/&gt;</span>
+
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/jquery.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/jquery-ui.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/ui.multiselect.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/i18n/grid.locale-en.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/jquery.jqGrid.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>Calling conventions:</p>
+<p>To use the method do</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;columnChooser&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+
+<p>where options is a object with properties listed below.</p>
+<p>After calling this method a modal dialog appear where the user can reorder columns and set which of them can be visible and which of them can be hidden.</p>
+<p><img alt="Screenshot" src="../../img/columnchooser.png" /></p>
+<p>This method uses the following options from the language file - by example the English file is:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">regional</span><span class="p">[</span><span class="s2">&quot;en&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="p">...</span>
+    <span class="nx">col</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="nx">caption</span><span class="o">:</span> <span class="s2">&quot;Select columns&quot;</span><span class="p">,</span>
+        <span class="nx">bSubmit</span><span class="o">:</span> <span class="s2">&quot;Ok&quot;</span><span class="p">,</span>
+        <span class="nx">bCancel</span><span class="o">:</span> <span class="s2">&quot;Cancel&quot;</span>
+    <span class="p">},</span>
+  <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>where caption is the title of the dialog, bSubmit - button text to confirm the changes, bCancel is the text for the cancel(close) dialog action.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th align="center">Type</th>
+<th>Description</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>caption</td>
+<td align="center">string</td>
+<td>Title of the modal dialog</td>
+<td align="center">see lang file</td>
+</tr>
+<tr>
+<td>width</td>
+<td align="center">number</td>
+<td>Set the width of the dialog in pixels</td>
+<td align="center">400</td>
+</tr>
+<tr>
+<td>height</td>
+<td align="center">number</td>
+<td>Set the height of the dialog in pixels</td>
+<td align="center">240</td>
+</tr>
+<tr>
+<td>classname</td>
+<td align="center">string</td>
+<td>Class which will be added to the selector where the selects are build</td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td>done</td>
+<td align="center">function</td>
+<td>Function which will be called when the user press Ok button. In the current implementation we call remapColumns method in order to reorder the columns - see below</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>msel</td>
+<td align="center">mixed</td>
+<td>msel is either the name of a ui widget class that extends a multiselect, or a function that supports creating a multiselect object (with no argument, or when passed an object), and destroying it (when passed the string "destroy")</td>
+<td align="center">multiselect</td>
+</tr>
+<tr>
+<td>dlog</td>
+<td align="center">mixed</td>
+<td>dlog is either the name of a ui widget class that behaves in a dialog-like way, or a function, that supports creating a dialog (when passed dlog_opts) or destroying a dialog (when passed the string "destroy")</td>
+<td align="center">dialog</td>
+</tr>
+<tr>
+<td>dlog_opts</td>
+<td align="center">mixed</td>
+<td>dlog_opts is either an option object to be passed to "dlog", or (more likely) a function that creates the options object. The default produces a suitable options object for ui.dialog</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>cleanup</td>
+<td align="center">function</td>
+<td>Function to cleanup the dialog, and select. Also calls the done function with no permutation (to indicate that the columnChooser was aborted</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>Function done defined above has the following definition in the original jqGrid code:</p>
+<div class="codehilite"><pre><span></span> <span class="nx">opts</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">extend</span><span class="p">({</span>
+ <span class="p">...</span>
+ <span class="s2">&quot;done&quot;</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">perm</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="nx">perm</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nx">self</span><span class="p">.</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s2">&quot;remapColumns&quot;</span><span class="p">,</span> <span class="nx">perm</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+   <span class="p">},</span>
+ <span class="p">}</span>
+ <span class="p">...</span>
+ <span class="p">});</span>
+</pre></div>
+
+
+<p>In order to do other things after reordering you can redefine this option (function). For example let say that we want to recalculate the width of some elements on the page after the user show or hide some columns. The code can look like this:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#list&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;columnChooser&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">done</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">perm</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">perm</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// &quot;OK&quot; button are clicked</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s2">&quot;remapColumns&quot;</span><span class="p">,</span> <span class="nx">perm</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+      <span class="c1">// the grid width is probably changed co we can get new width</span>
+      <span class="c1">// and adjust the width of other elements on the page</span>
+      <span class="kd">var</span> <span class="nx">gwdth</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s2">&quot;getGridParam&quot;</span><span class="p">,</span><span class="s2">&quot;width&quot;</span><span class="p">);</span>
+      <span class="k">this</span><span class="p">.</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s2">&quot;setGridWidth&quot;</span><span class="p">,</span><span class="nx">gwdth</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="c1">// we can do some action in case of &quot;Cancel&quot; button clicked</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<h4 id="sortable-rows">Sortable Rows<a class="headerlink" href="#sortable-rows" title="Permanent link">&para;</a></h4>
+<p>This method allows reordering (sorting) grid rows in a visual manner using a mouse.<br />
+Calling convetions:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#list&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;sortableRows&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+
+<p>where options is a object with properties get from <a href="http://jqueryui.com/sortable/">sortable</a> widget.</p>
+<p>The method uses only the  jQuery UI <a href="http://jqueryui.com/sortable/">sortable</a> widget. This means that we can set any <a href="http://api.jqueryui.com/sortable/">option and event</a> available in this widget.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently the method does not work when the TreeGrid is enabled (treeGrid:true)- i.e. you can not use the method to move reorder tree rows.</p>
+</div>
+<h4 id="resizable-grid">Resizable Grid<a class="headerlink" href="#resizable-grid" title="Permanent link">&para;</a></h4>
+<p>This method allow to re size the grid width and/or height in visual manner using a mouse.</p>
+<p>Calling conventions:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#gridid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;gridResize&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+
+<p>where options is a object with properties as described from jQuery UI <a href="http://jqueryui.com/resizable/">resizable</a> widget.</p>
+<p>The method uses only jQuery UI <a href="http://jqueryui.com/resizable/">resizable</a> widget. This means that we can set any <a href="http://api.jqueryui.com/resizable/">option and event</a> available in this widget.</p>
+<p>After the method is called a marker appear in the bottom right corner of the grid indicating that it can be re-sized.</p>
+<h4 id="drag-drop-rows">Drag &amp; Drop rows<a class="headerlink" href="#drag-drop-rows" title="Permanent link">&para;</a></h4>
+<p>This method allow drag and drop rows between two or more grids using a mouse.</p>
+<p>Calling conventions:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#gridid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;gridDnD&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+
+<p>where:</p>
+<ul>
+<li>gridid  is the id of the source grid.</li>
+<li>options is a object with properties from  <a href="http://jqueryui.com/draggable/">draggable</a> and <a href="http://jqueryui.com/droppable/">droppable</a> widgets.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th align="center">Type</th>
+<th>Description</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connectWith</td>
+<td align="center">string</td>
+<td>Determines the target grid(s) to which the row should be dropped. The option is a string. In case of more than one grid the ids should be delimited with comma - i.e "#grid1, #grid2"</td>
+<td align="center">empty string</td>
+</tr>
+<tr>
+<td>onstart</td>
+<td align="center">function</td>
+<td>This event raises when we start drag a row from the source grid (i.e. to which this method is applied). Parameters passed to this event are the event handler and a prepared ui object. For more information refer to <a href="http://api.jqueryui.com/draggable/">jQuery UI draggable events</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td>onstop</td>
+<td align="center">function</td>
+<td>This event is triggered when dragging stops. Parameters passed to this even are the event handler and a prepared ui object. For more information refer to <a href="http://api.jqueryui.com/draggable/"> jQuery UI draggable events</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td>beforedrop</td>
+<td align="center">function</td>
+<td>This event raises before dropping the row to the grid specified in connectWith option. Parameters passed to this event are the event handler, prepared ui object, data which will be inserted into the grid in name value pair, source grid object and target(this) grid object.If the event return object in value name pair this object will be inserted into the target grid.</td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td>ondrop</td>
+<td align="center">function</td>
+<td>This event raises after the dropping the row to the grid specified in connectWith option. Parameters passed to this event are the event handler, prepared ui object, data which is inserted into the grid in name value pair. For more information refer to <a href="http://api.jqueryui.com/droppable/">jQuery UI droppable events</a></td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td>drop_opts</td>
+<td align="center">object</td>
+<td>Predefined options which can be applied to the droppable grid (specified with connectWith option above). Also you can set any option and event (except drop event which is replaced with ondrop event listed above). For more information refer to <a href="http://api.jqueryui.com/droppable/">jQuery UI droppable</a>. Default is:  <br/> { <br/> activeClass : "ui-state-active", <br/> hoverClass : "ui-state-hover" <br/> }</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>drag_opts</td>
+<td align="center">object</td>
+<td>Predefined options which can be applied to the draggable grid (i.e. to which this method is applied). Also you can set any option and event (except start and stop events which are replaced with onstart  and onstop events listed above). For more information refer to <a href="http://api.jqueryui.com/draggable/">jQuery UI draggable</a>. Default is: <br/> { <br/>revert: "invalid", <br/>helper: "clone", <br/> cursor: "move", <br/> appendTo : "#jqgrid_dnd", <br/> zIndex: 5000 <br/> }</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>dropbyname</td>
+<td align="center">boolean</td>
+<td>If set to true this means that only fields that have equal names will be added to the target grid. Note that we use addRowData to insert new row, which means that if some field with name "a" on source grid is hidden they can appear on the target grid. The default value of false mean that the grid data will be added to the target counted from the first column from source.</td>
+<td align="center">false</td>
+</tr>
+<tr>
+<td>droppos</td>
+<td align="center">string</td>
+<td>Determines where to add the new row. Can be first which mean as first row of the grid and last - as last row in the target grid.</td>
+<td align="center">first</td>
+</tr>
+<tr>
+<td>autoid</td>
+<td align="center">boolean</td>
+<td>This option determines how the new row id should be generated. If this option is true we generate a id which begin with string stetted with the option autoidprefix (see below) and a random number. If this option is false the id can be either the the next record count or value determined by key property in colModel. <br/> If the parameter is defined as function this function should return value which will act as id to the target grid. Parameters passed in this case is the data array which will be inserted into the target grid row</td>
+<td align="center">true</td>
+</tr>
+<tr>
+<td>autoidprefix</td>
+<td align="center">string</td>
+<td>This option have sense only if the option autoid is set to true and determines the prefix of the new genearted id.</td>
+<td align="center">dnd_</td>
+</tr>
+<tr>
+<td>dragcopy</td>
+<td align="center">boolean</td>
+<td>Copies the source row to the target rather than moving it. (GridDnD only).</td>
+<td align="center">false</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<p>In the example below we will create three grids with id grid1, grid2 and grid3. We will make so that rows from grid1 can be dragged to grid2 and grid3 and rows from grid2 can be dragged only to grid1.</p>
+<div class="codehilite"><pre><span></span><span class="c1">// Data for grid1</span>
+<span class="kd">var</span> <span class="nx">mydata1</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nx">id1</span><span class="o">:</span><span class="s2">&quot;1&quot;</span><span class="p">,</span><span class="nx">name1</span><span class="o">:</span><span class="s2">&quot;test1&quot;</span><span class="p">,</span><span class="nx">values1</span><span class="o">:</span><span class="s1">&#39;One&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">id1</span><span class="o">:</span><span class="s2">&quot;2&quot;</span><span class="p">,</span><span class="nx">name1</span><span class="o">:</span><span class="s2">&quot;test2&quot;</span><span class="p">,</span><span class="nx">values1</span><span class="o">:</span><span class="s1">&#39;Two&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">id1</span><span class="o">:</span><span class="s2">&quot;3&quot;</span><span class="p">,</span><span class="nx">name1</span><span class="o">:</span><span class="s2">&quot;test3&quot;</span><span class="p">,</span><span class="nx">values1</span><span class="o">:</span><span class="s1">&#39;Three&#39;</span><span class="p">}</span>
+<span class="p">];</span>
+<span class="c1">// Data for grid2</span>
+<span class="kd">var</span> <span class="nx">mydata2</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nx">id2</span><span class="o">:</span><span class="s2">&quot;11&quot;</span><span class="p">,</span><span class="nx">name2</span><span class="o">:</span><span class="s2">&quot;test11&quot;</span><span class="p">,</span><span class="nx">values2</span><span class="o">:</span><span class="s1">&#39;One1&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">id2</span><span class="o">:</span><span class="s2">&quot;21&quot;</span><span class="p">,</span><span class="nx">name2</span><span class="o">:</span><span class="s2">&quot;test21&quot;</span><span class="p">,</span><span class="nx">values2</span><span class="o">:</span><span class="s1">&#39;Two1&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">id2</span><span class="o">:</span><span class="s2">&quot;31&quot;</span><span class="p">,</span><span class="nx">name2</span><span class="o">:</span><span class="s2">&quot;test31&quot;</span><span class="p">,</span><span class="nx">values2</span><span class="o">:</span><span class="s1">&#39;Three1&#39;</span><span class="p">}</span>
+<span class="p">];</span>
+<span class="c1">// Data for grid3</span>
+<span class="kd">var</span> <span class="nx">mydata3</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nx">id3</span><span class="o">:</span><span class="s2">&quot;12&quot;</span><span class="p">,</span><span class="nx">name3</span><span class="o">:</span><span class="s2">&quot;test12&quot;</span><span class="p">,</span><span class="nx">values3</span><span class="o">:</span><span class="s1">&#39;One2&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">id3</span><span class="o">:</span><span class="s2">&quot;22&quot;</span><span class="p">,</span><span class="nx">name3</span><span class="o">:</span><span class="s2">&quot;test22&quot;</span><span class="p">,</span><span class="nx">values3</span><span class="o">:</span><span class="s1">&#39;Two2&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">id3</span><span class="o">:</span><span class="s2">&quot;32&quot;</span><span class="p">,</span><span class="nx">name3</span><span class="o">:</span><span class="s2">&quot;test32&quot;</span><span class="p">,</span><span class="nx">values3</span><span class="o">:</span><span class="s1">&#39;Three2&#39;</span><span class="p">}</span>
+<span class="p">];</span>
+<span class="c1">// Creating grid1</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid1&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+    <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;local&quot;</span><span class="p">,</span>
+    <span class="nx">data</span> <span class="o">:</span> <span class="nx">mydata1</span><span class="p">,</span>
+    <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="nx">colNames</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Id1&#39;</span><span class="p">,</span> <span class="s1">&#39;Name1&#39;</span><span class="p">,</span> <span class="s1">&#39;Values1&#39;</span><span class="p">],</span>
+    <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;id1&#39;</span><span class="p">,</span> <span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">},</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name1&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">},</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;values1&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;values&#39;</span><span class="p">,</span><span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="p">}</span>
+    <span class="p">],</span>
+    <span class="nx">caption</span><span class="o">:</span> <span class="s1">&#39;Grid 1&#39;</span><span class="p">,</span>
+    <span class="nx">pager</span><span class="o">:</span> <span class="s1">&#39;#pgrid1&#39;</span>
+<span class="p">});</span>
+
+<span class="c1">//Creating grid2</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid2&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+    <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;local&quot;</span><span class="p">,</span>
+    <span class="nx">data</span> <span class="o">:</span> <span class="nx">mydata2</span><span class="p">,</span>
+    <span class="nx">height</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="nx">colNames</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Id2&#39;</span><span class="p">,</span> <span class="s1">&#39;Name2&#39;</span><span class="p">,</span> <span class="s1">&#39;Values2&#39;</span><span class="p">],</span>
+    <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;id2&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">},</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name2&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">},</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;values2&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;values&#39;</span><span class="p">,</span><span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="p">}</span>
+    <span class="p">}],</span>
+    <span class="nx">caption</span><span class="o">:</span> <span class="s1">&#39;Grid 2&#39;</span><span class="p">,</span>
+    <span class="nx">pager</span><span class="o">:</span> <span class="s1">&#39;#pgrid2&#39;</span>
+<span class="p">});</span>
+<span class="c1">// Creating grid3</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid3&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+    <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;local&quot;</span><span class="p">,</span>
+    <span class="nx">data</span> <span class="o">:</span> <span class="nx">mydata3</span><span class="p">,</span>
+    <span class="nx">height</span><span class="o">:</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+    <span class="nx">colNames</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Id3&#39;</span><span class="p">,</span> <span class="s1">&#39;Name3&#39;</span><span class="p">,</span> <span class="s1">&#39;Values3&#39;</span><span class="p">],</span>
+    <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;id3&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">},</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name3&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">},</span>
+       <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;values3&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span> <span class="s1">&#39;values&#39;</span><span class="p">,</span><span class="nx">width</span><span class="o">:</span> <span class="mi">200</span><span class="p">}</span>
+    <span class="p">}],</span>
+    <span class="nx">caption</span><span class="o">:</span> <span class="s1">&#39;Grid 3&#39;</span><span class="p">,</span>
+    <span class="nx">pager</span><span class="o">:</span> <span class="s1">&#39;#pgrid3&#39;</span>
+<span class="p">});</span>
+
+<span class="c1">// connect grid1 with grid2 and grid3</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid1&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;gridDnD&#39;</span><span class="p">,{</span><span class="nx">connectWith</span><span class="o">:</span><span class="s1">&#39;#grid2,#grid3&#39;</span><span class="p">});</span>
+<span class="c1">// connect grid2 with grid1</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid2&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;gridDnD&#39;</span><span class="p">,{</span><span class="nx">connectWith</span><span class="o">:</span><span class="s1">&#39;#grid1&#39;</span><span class="p">});</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../multiselect/" title="Multiselection" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Multiselection
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../about/release-notes/" title="Release Notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Release Notes
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

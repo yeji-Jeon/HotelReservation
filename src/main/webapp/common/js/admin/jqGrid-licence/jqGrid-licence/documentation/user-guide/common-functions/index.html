@@ -1,0 +1,1224 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>Common Functions - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#common-functions-and-variables" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                Common Functions
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Common Functions
+      </label>
+    
+    <a href="./" title="Common Functions" class="md-nav__link md-nav__link--active">
+      Common Functions
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#convetions" title="Convetions" class="md-nav__link">
+    Convetions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-common-objects" title="List of common objects" class="md-nav__link">
+    List of common objects
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#convetions" title="Convetions" class="md-nav__link">
+    Convetions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-common-objects" title="List of common objects" class="md-nav__link">
+    List of common objects
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="common-functions-and-variables"><p style='text-align:center'>Common functions and variables </p><a class="headerlink" href="#common-functions-and-variables" title="Permanent link">&para;</a></h1>
+<hr />
+<p>Every serious application and component uses common functions and variables, which are available everywhere in the component scope. Guriddo jqGrid is not exception.</p>
+<p>In order to overcome duplicate functions from other libraries we have created specific $.jgrid object. In this object we store all the common functions, variables, translation texts and other objects, which we use everywhere in our code.</p>
+<p>It is very useful to overcome duplicate function names in case of using other libraries, which have their common function and variables too.</p>
+<h2 id="convetions">Convetions<a class="headerlink" href="#convetions" title="Permanent link">&para;</a></h2>
+<p>All the calls in our common functions and variables are in format</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="o">&lt;</span><span class="nx">name</span><span class="o">&gt;</span><span class="p">(...)</span>
+</pre></div>
+
+
+<p>where the <code>&lt;name&gt;</code> is the name of the function with parameters or variable</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">msie</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">msie</span><span class="p">;</span> <span class="c1">// return true if the used navigator is Microsoft Internet Explorer</span>
+<span class="kd">var</span> <span class="nx">msiever</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">msiever</span><span class="p">();</span> <span class="c1">// return the version of Microsoft Internet Explorer if available</span>
+</pre></div>
+
+
+<p>Most of the functions are stored in base grid module and common module - grid.base.js and grid.common.js.</p>
+<p>When Gurrido  jqGrid library is loaded you can use these functions everywhere in your application.</p>
+<h2 id="list-of-common-objects">List of common objects<a class="headerlink" href="#list-of-common-objects" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Parameters enclosed in [ ] are not necessary to be specified.</p>
+</div>
+<hr />
+<p><strong>version</strong><br />
+Return the current version of Guriddo jqGrid used. The format meet the GitHub conventions of the version. Example "5.2.0"</p>
+<p><em><strong>type</strong></em><br />
+variable</p>
+<p><em><strong>return</strong></em><br />
+string</p>
+<hr />
+<p><strong>ajaxOptions</strong><br />
+Common ajax options that can be used to extend every ajax request made in the grid including data obtaining, editing, searching and etc.</p>
+<p><em><strong>type</strong></em><br />
+object</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>any valid ajax settings according to <a href="http://api.jquery.com/jquery.ajax/">jQuery ajax docs</a></li>
+</ul>
+<p><em><strong>return</strong></em><br />
+none</p>
+<hr />
+<p><strong>htmlDecode( string value )</strong><br />
+The function converts some predefined HTML entities to characters.<br />
+HTML entities that will be decoded are:</p>
+<div class="codehilite"><pre><span></span>&amp;amp; becomes &amp; (ampersand)
+&amp;quot; becomes &quot; (double quote)
+&amp;lt; becomes &lt; (less than)
+&amp;gt; becomes &gt; (greater than)
+</pre></div>
+
+
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string value - string to be decoded</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+decoded string</p>
+<hr />
+<p><strong>htmlEncode( string value )</strong><br />
+The function converts some predefined characters to HTML entities.<br />
+The predefined characters are:</p>
+<div class="codehilite"><pre><span></span>&amp; (ampersand) becomes &amp;amp;
+&quot; (double quote) becomes &amp;quot;
+&lt; (less than) becomes &amp;lt;
+&gt; (greater than) becomes &amp;gt;
+</pre></div>
+
+
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string value  - string to be encoded</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+encoded string</p>
+<hr />
+<p><strong>template( string template, p1,...,pN)</strong><br />
+Simple Template engine. The function accept as first parameter a template string. The variables in this template string are enclosed in {} as numbers starting from 0. The second, third and etc parameters are the actual values which will be replaced in string, following the order.<br />
+Example:</p>
+<div class="codehilite"><pre><span></span>var my template = &quot;Page {0} of {1}&quot;;
+var result = $.jgrid.template( mytemplate, 10, 20);
+</pre></div>
+
+
+<p>Result will be: "Page 10 of 20".</p>
+<p>The template can contain named variables. In this case the second parameter should be array of objects with nm and v properties, where the nm correspond to the variable and the v is the actual value to be replaced.</p>
+<div class="codehilite"><pre><span></span><span class="nt">var</span> <span class="nt">my</span> <span class="nt">template</span> <span class="o">=</span> <span class="s2">&quot;Page {current} of {total}&quot;</span><span class="o">;</span>
+<span class="nt">var</span> <span class="nt">result</span> <span class="o">=</span> <span class="o">$</span><span class="p">.</span><span class="nc">jgrid</span><span class="p">.</span><span class="nc">template</span><span class="o">(</span> <span class="nt">mytemplate</span><span class="o">,</span> <span class="cp">[</span><span class="p">{</span><span class="nx">nm</span><span class="p">:</span><span class="s1">&#39;current&#39;</span><span class="p">,</span> <span class="nx">v</span><span class="p">:</span> <span class="mi">10</span><span class="p">},{</span><span class="nx">nm</span><span class="p">:</span><span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="nx">v</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span><span class="cp">]</span><span class="o">);</span>
+</pre></div>
+
+
+<p>will give the same result</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><strong>parameters</strong><br />
+- string template - template to be parsed<br />
+- mixed p1...pN  - string or array (see above)</p>
+<p><em><strong>return</strong></em><br />
+formated string</p>
+<hr />
+<p><strong>msie</strong><br />
+Return true if the current used browser is Microsoft Internet Explorer<br />
+<em><strong>type</strong></em><br />
+variable</p>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>msiever()</strong><br />
+String representing the version of Microsoft Internet Explorer if available</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em><br />
+none</p>
+<p><em><strong>return</strong></em><br />
+string</p>
+<hr />
+<p><strong>getCellIndex( string cellcontent)</strong><br />
+Find the closest table data or table header cell in the given cell (td) htmlcontent and return its index, starting from 0</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string cellcontent - cell content</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+integer cellindex</p>
+<hr />
+<p><strong>stripHtml( string value)</strong><br />
+Strip HTML tags from the text. It will also strip embedded JavaScript code, style information.<br />
+Example:</p>
+<div class="codehilite"><pre><span></span>$.grid.stripHtml(&quot;<span class="nt">&lt;div&gt;</span>ABC<span class="nt">&lt;/div&gt;</span>&quot;);  ===&gt; &quot;ABC&quot;
+</pre></div>
+
+
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string value value to be formated</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+striped string</p>
+<hr />
+<p><strong>stripPref( string pref, string source)</strong><br />
+Strip the given prefix from the source.<br />
+Example:</p>
+<div class="codehilite"><pre><span></span>$.grid.stripPref(&quot;mypref_&quot;,&quot;mypref_grid&quot;); ===&gt; &quot;grid&quot;
+</pre></div>
+
+
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em><br />
+- string pref - prefix to be removed<br />
+- string source - source string</p>
+<p><em><strong>return</strong></em><br />
+striped string</p>
+<hr />
+<p><strong>parse (string jsonstring)</strong><br />
+Parses a json string to object, optionally transforming the value produced by parsing. If the variable $.jgrid.useJSON is set to true a build in JSON.parse is used if available, otherwise eval is used.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em><br />
+- string jsonstring - JSON string to be parsed</p>
+<p><em><strong>return</strong></em><br />
+JSON object</p>
+<hr />
+<p><strong>useJSON</strong><br />
+Variable indicating the use of build in JSON.parse or eval() when parsing json string. Default is true.</p>
+<p><em><strong>type</strong></em><br />
+variable</p>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>parseDate(string format, string date, string neformat, [object options])</strong><br />
+Parses a date with a given format format to a new format  newformat using the options. All the available options are available in the Guriddo jqGrid language file under the property <strong>formatter.date</strong> - See <a href="../basic-grid/#language-file-structure">language file</a></p>
+<p>The format of the dates follow the <a href="http://php.net/manual/en/function.date.php">PHP conventions</a>.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em><br />
+- string format - the actual format of the date<br />
+- strind date - the date string<br />
+- string newformat - the new format to conver to<br />
+- object options - options taken from language file</p>
+<p><em><strong>return</strong></em><br />
+date string formated to new format</p>
+<hr />
+<p><strong>jqID( string id )</strong><br />
+If the id contains characters like periods or colons the function escape those characters with backslashes.<br />
+Example:</p>
+<div class="codehilite"><pre><span></span><span class="c1">// This does not work</span>
+<span class="nx">$</span><span class="p">(</span> <span class="s2">&quot;#some:id&quot;</span> <span class="p">);</span>
+
+<span class="c1">// but this works</span>
+<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#&quot;</span> <span class="o">+</span> <span class="nx">jqID</span><span class="p">(</span><span class="s2">&quot;some:id&quot;</span><span class="p">)</span> <span class="p">);</span>
+</pre></div>
+
+
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em><br />
+- string id - string to be escaped</p>
+<p><em><strong>return</strong></em><br />
+escaped string</p>
+<hr />
+<p><strong>uidPref</strong><br />
+The prefix which will be added in randId function. See below. Default value is 'jqg'</p>
+<p><em><strong>type</strong></em><br />
+variable</p>
+<p><em><strong>return</strong></em><br />
+string</p>
+<hr />
+<p><strong>randId( [string prefix] )</strong><br />
+Return a unique string using the prefix param. If the prefix parameter is not set $.jgrid.uidPref is used.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em><br />
+- string prefix - string to be escaped</p>
+<p><em><strong>return</strong></em><br />
+string</p>
+<hr />
+<p><strong>getAccessor(object obj, mixed expr)</strong><br />
+On the given JSON object <em>obj</em> and property <strong>expr</strong> return the value. In case the expr is a function we return the apply this function to the object - i.e expr(obj);</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">myobj</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;a&quot;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;some&quot;</span><span class="o">:</span> <span class="s2">&quot;val&quot;</span> <span class="p">}</span> <span class="p">}</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">getAccessor</span><span class="p">(</span> <span class="nx">myobj</span><span class="p">,</span> <span class="s2">&quot;c.some&quot;</span> <span class="p">);</span>  <span class="o">===&gt;</span> <span class="s2">&quot;val&quot;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">getAccessor</span><span class="p">(</span> <span class="nx">myobj</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span> <span class="p">);</span>  <span class="o">===&gt;</span> <span class="p">{</span> <span class="s2">&quot;some&quot;</span><span class="o">:</span> <span class="s2">&quot;val&quot;</span><span class="p">}</span>
+</pre></div>
+
+
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>object obj - JSON object</li>
+<li>mixed expr - string or function</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+mixed value - scalar or object</p>
+<hr />
+<p><strong>getXmlData(xmlobject obj, string expr, [boolean returnObj])</strong><br />
+On the given XML object obj and property expr return the XML object or string.<br />
+If the returnObj is true a xml object is returned, else the text representation.<br />
+If the expr is function we call that function with parameter obj - expr(obj)</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>xmlobject obj - XML object</li>
+<li>mixed expr - string or function</li>
+<li>boolen returnObj - boolean. default false.</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+mixed value - scalar or xml object</p>
+<hr />
+<p><strong>cellWidth()</strong><br />
+Return true if the border and margins are included in the cell width calculation. This function is historical created for some problems in old Chrome versions.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<p>none</p>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>isLocalStorage()</strong><br />
+Return true if the localStorage is supported in the browser used.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<p>none</p>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>getRegional(object inst, string param, [mixed def_val])</strong><br />
+Return the specified content from the loaded language file specified in param. The function uses the regional parameter from the grid. The first argument is inst - reference to jqGgrid, the second is the requested parameter. If the default value is specified and is valid the function return this values instead of other settings.</p>
+<p>Example:<br />
+If the language file is set to en (regional parameter in grid)- English and the grid has a reference like</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">grid</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">);</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">getRegional</span><span class="p">(</span> <span class="nx">grid</span><span class="p">,</span> <span class="s2">&quot;edit.addCaption&quot;</span><span class="p">);</span>
+</pre></div>
+
+
+<p>will return: "Add Record"</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>object inst - jqGrid instance</li>
+<li>string param - string in dot notation</li>
+<li>mixed def_val - any value to be returned</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+string</p>
+<hr />
+<p><strong>isMobile</strong><br />
+Return true if the grid is used on mobile device.</p>
+<p><em><strong>type</strong></em><br />
+variable</p>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>from( array source)</strong><br />
+A Hugo Bonacci <a href="http://jlinq.codeplex.com">jLinq</a> port to jqGrid.<br />
+Allows you to work with sets of data using query style syntax to select, order and sort records.</p>
+<p>The code is especially useful if you have medium sized sets of information that could be sorted or searched, but you don't want to have to use a server side call to resort your records.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>array source - array to apply select operations</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+array with the requested results.</p>
+<hr />
+<p><strong>getMethod(string method)</strong><br />
+Return the jqGrid method set as string in method parameter. This allow us to overcome multiple calls to a method used several time in scope.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span>var groupingPrepare = $.jgrid.getMethod(&quot;groupingPrepare&quot;);
+</pre></div>
+
+
+<p>will return .jqGrid('groupingPrepare') method</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string method - valid jqGrid method</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+method</p>
+<hr />
+<p><strong>clearBeforeUnload(string grid_id)</strong><br />
+Clear the grid data unbinding all events to it. The function is used in <em><strong>gridUnload</strong></em> and <em><strong>gridDestroy</strong></em> functions.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string grid_id - the id of the grid to apply the operation</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+no return value</p>
+<hr />
+<p><strong>gridUnload(string grid_id)</strong><br />
+Removes the entrie grid, data events and parameters saving only the grid_id and pager for in DOM for future using.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string grid_id - the id of the grid to apply the operation</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+no return value</p>
+<hr />
+<p><strong>gridDestroy(string grid_id)</strong><br />
+Removes the grid from the DOM.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string grid_id - the id of the grid to apply the operation</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+no return value</p>
+<hr />
+<p><strong>styleUI</strong><br />
+Defines the classes used in grid for the different CSS Frameworks. The first property is the name of the CSS framework, the second property is the grid module. For more information and setting refer to <a href="../basic-grid/#css-framework-guide">CSS Frameworks guide</a></p>
+<p><em><strong>type</strong></em><br />
+object</p>
+<p><em><strong>return</strong></em><br />
+object</p>
+<hr />
+<p><strong>inlineEdit</strong><br />
+Object which can be used to overwrite all <a href="../editing/#inline-editing">Inline editing</a> options.</p>
+<p><em><strong>type</strong></em><br />
+object</p>
+<p><em><strong>return</strong></em><br />
+object</p>
+<hr />
+<p><strong>findPos( string DOM element )</strong><br />
+Find the top and left position of the jQuery object. The function return array, where the first element is the left position and the second is the top position.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string DOM element - the dom element</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+array</p>
+<hr />
+<p><strong>createModal( ... )</strong><br />
+This function use jqModal plugin to create modal windows used in Guriddo jqGrid.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<p><em><strong>return</strong></em><br />
+none</p>
+<hr />
+<p><strong>hideModal( string selector, [object options])</strong><br />
+Hide a modal dialog defined with createModal function - see above.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string selector - the id of the modal created with <em><strong>createModal</strong></em></li>
+<li>object options -  various options when hide the modal</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+none</p>
+<hr />
+<p><strong>viewModal( string selector, [object options])</strong><br />
+Show a modal dialog defined with createModal function - see above.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string selector - the id of the modal created with <em><strong>createModal</strong></em></li>
+<li>object options -  various options when show the modal</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+none</p>
+<hr />
+<p><strong>info_dialog( string caption, string content, [string button], [object options])</strong><br />
+Create a modal with id = info_dialog and open it automatically.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string caption - caption of the modal</li>
+<li>string content -  content of the modal.</li>
+<li>string button - button is a string for the close dialog - if not present no button appear.</li>
+<li>object options - various options for the dialog - see below default options.</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">width</span><span class="o">:</span><span class="mi">290</span><span class="p">,</span>
+  <span class="nx">height</span><span class="o">:</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+  <span class="nx">dataheight</span><span class="o">:</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+  <span class="nx">drag</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">resize</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">left</span><span class="o">:</span><span class="mi">250</span><span class="p">,</span>
+  <span class="nx">top</span><span class="o">:</span><span class="mi">170</span><span class="p">,</span>
+  <span class="nx">zIndex</span> <span class="o">:</span> <span class="mi">1000</span><span class="p">,</span>
+  <span class="nx">modal</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">closeOnEscape</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+  <span class="nx">buttonalign</span> <span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p><em><strong>return</strong></em><br />
+none</p>
+<hr />
+<p><strong>createEl( string type, object options, [string value])</strong><br />
+Create a input element defined by <em>type</em> (text, select and etc.) and options set with <em>options</em> and default value set by <em>value</em>.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string type - input type to be created - select, text, textarea,...</li>
+<li>object options - various options for element.</li>
+<li>string value -  default value to be set when the elemt is created.</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+DOM element</p>
+<hr />
+<p><strong>checkDate( string format, string date)</strong><br />
+The function return true if the date has the format specifies in format parameter.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string format - format of the date to be checked</li>
+<li>string data -  date string value</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>isEmpty( string value)</strong><br />
+Return true if the vallue set by val is empty.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string value -  value  to be checked</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>checkTime( string value )</strong><br />
+Return true if the value is a valid time string.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string value -  value  to be checked</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>checkValues( string value, string colname, [object custom])</strong><br />
+Performs validation of the <em>value</em> in edit modules with rules defined in colModel editrules.<br />
+When a custom object with editrules object is set the colModel rules are omitted.<br />
+The function perform check for the following (set as true in the object):</p>
+<ul>
+<li>required - check if the field is empty</li>
+<li>number</li>
+<li>minValue</li>
+<li>maxValue</li>
+<li>email</li>
+<li>integer</li>
+<li>date</li>
+<li>time</li>
+<li>url</li>
+</ul>
+<p>The functions <em>checkTime</em> and <em>checkDate</em> should be present.</p>
+<p>The function return array with the following 3 items:<br />
+[ true if rule meet the condition, message in case the rule is false, item for internal use]<br />
+and need the language file, where the '...edit.msg' object is read.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string value -  value  to be chacked</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>stringify( object json )</strong><br />
+The function extend JSON.stringify with a possibility to include functions in the object parameter</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>object json - JSON object to stringify</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+string</p>
+<hr />
+<p><strong>parseFunc( string str )</strong><br />
+Parses a JSON string and return its JSON representation. The difference from JSON.parse is that this functions can parse functions in the string.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string str - JSON string to parse</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+JSON object</p>
+<hr />
+<p><strong>jsonToXML( object json, [object options])</strong><br />
+Convert JSON object to XML string</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>object json - JSON object to convert</li>
+<li>object options - various options, which default values are:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nx">xmlDecl</span> <span class="o">:</span> <span class="s1">&#39;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;\n&#39;</span><span class="p">,</span>
+  <span class="nx">attr_prefix</span> <span class="o">:</span> <span class="s1">&#39;-&#39;</span><span class="p">,</span>
+  <span class="nx">encode</span> <span class="o">:</span> <span class="kc">true</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p><em><strong>return</strong></em><br />
+XML string</p>
+<hr />
+<p><strong>xmlToJSON( string root, [object options] )</strong><br />
+Convert xml string to JSON object</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string root - XML string to be converted</li>
+<li>object options - various options, which default values are:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nx">force_array</span> <span class="o">:</span> <span class="p">[],</span> <span class="c1">//[ &quot;rdf:li&quot;, &quot;item&quot;, &quot;-xmlns&quot; ];</span>
+  <span class="nx">attr_prefix</span> <span class="o">:</span> <span class="s2">&quot;-&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p><em><strong>return</strong></em><br />
+JSON object</p>
+<hr />
+<p><strong>saveAs( mixed data, [string file], [object options])</strong><br />
+Opens a dilog to save the <em>data</em> on the local computer with file name <strong>file</strong>.</p>
+<p><em><strong>type</strong></em><br />
+function</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>mixed data - data to be saved on local computer. Can be anything.</li>
+<li>string file - file name which will be associated with this data. default jqGridFile.txt</li>
+<li>object options - the parameter contain only one property <em>type</em> which indicates the type of the filename to be saved. Use the appropriate type for the different files. Default is for text files:</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="nx">type</span> <span class="o">:</span> <span class="s1">&#39;plain/text;charset=utf-8&#39;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p><em><strong>return</strong></em><br />
+none</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../basic-grid/" title="Basic Grid" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Basic Grid
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../navigating/" title="Navigation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Navigation
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1954 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>TreeGrid - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#treegrid" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                TreeGrid
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        TreeGrid
+      </label>
+    
+    <a href="./" title="TreeGrid" class="md-nav__link md-nav__link--active">
+      TreeGrid
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#options" title="Options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" title="Events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-set-model" title="Nested Set Model" class="md-nav__link">
+    Nested Set Model
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-set-config" title="Nested set config" class="md-nav__link">
+    Nested set config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-set-example" title="Nested set example" class="md-nav__link">
+    Nested set example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjacency-model" title="Adjacency Model" class="md-nav__link">
+    Adjacency Model
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adjacency-model-config" title="Adjacency model config" class="md-nav__link">
+    Adjacency model config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjacency-model-example" title="Adjacency model example" class="md-nav__link">
+    Adjacency model example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paging" title="Paging" class="md-nav__link">
+    Paging
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-of-paging" title="Example of paging:" class="md-nav__link">
+    Example of paging:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" title="Limitations" class="md-nav__link">
+    Limitations
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#options" title="Options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#events" title="Events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-set-model" title="Nested Set Model" class="md-nav__link">
+    Nested Set Model
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nested-set-config" title="Nested set config" class="md-nav__link">
+    Nested set config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nested-set-example" title="Nested set example" class="md-nav__link">
+    Nested set example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adjacency-model" title="Adjacency Model" class="md-nav__link">
+    Adjacency Model
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adjacency-model-config" title="Adjacency model config" class="md-nav__link">
+    Adjacency model config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjacency-model-example" title="Adjacency model example" class="md-nav__link">
+    Adjacency model example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paging" title="Paging" class="md-nav__link">
+    Paging
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-of-paging" title="Example of paging:" class="md-nav__link">
+    Example of paging:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations" title="Limitations" class="md-nav__link">
+    Limitations
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="treegrid"><div style='text-align:center'>TreeGrid</div><a class="headerlink" href="#treegrid" title="Permanent link">&para;</a></h1>
+<hr />
+<p>TreeGrid is a way to represent hierarchical data in grid.<br />
+TreeGrid supports both the <em>Nested Set</em> model and the <em>Adjacency model</em>. Good articles describing the Nested Set model can be found here:</p>
+<p><a href="https://www.sitepoint.com/hierarchical-data-database/">Storing Hierarchical Data in a Database</a><br />
+<a href="http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/">Managing Hierarchical Data in MySQL</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before you begin with the tree grid, it is highly recommended to read the articles listed above or any other related to hierarchical data representation articles.</p>
+</div>
+<p>When implemented the Guriddo jqGrid TreeGrid can look like this:</p>
+<p><img alt="Screenshot" src="../../img/treegrid.png" /></p>
+<h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
+<p>The following options can be set in the grid options to configure the treeGrid</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th align="left">Type</th>
+<th>Description</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ExpandColClick</td>
+<td align="left">boolean</td>
+<td>when true, the tree is expanded and/or collapsed when we click on the text of the expanded column, not only on the image</td>
+<td align="center">true</td>
+</tr>
+<tr>
+<td>ExpandColumn</td>
+<td align="left">string</td>
+<td>indicates which column (name from colModel) should be used to expand the tree grid. If not set the first one is used. Valid only when treeGrid option is set to true.</td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td>expColInd</td>
+<td align="left">integer</td>
+<td>The index of the column in colModel which correspond to the ExpandColumn. It is set automatically from the script</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td>treedatatype</td>
+<td align="left">mixed</td>
+<td>Determines the initial datatype (see datatype option). Usually this should not be changed. During the reading process this option is equal to the datatype option.</td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td>treeGrid</td>
+<td align="left">boolean</td>
+<td>Enables (disables) the tree grid format.</td>
+<td align="center">false</td>
+</tr>
+<tr>
+<td>treeGrid_bigData</td>
+<td align="left">boolean</td>
+<td>Enables ( if set to true) the tree grid pagging with root nodes as described <a href="../treegrid/#paging">here</a></td>
+<td align="center">false</td>
+</tr>
+<tr>
+<td>treeGridModel</td>
+<td align="left">string</td>
+<td>Determines the method used for the treeGrid. Can be nested or adjacency.</td>
+<td align="center">nested</td>
+</tr>
+<tr>
+<td>treeIcons</td>
+<td align="left">object</td>
+<td>This object set the icons used in the tree. The icons are defined in styleUI object property treegrid. The default values are: <br/>{ <br/>plus: treegrid.icon_plus,<br/> minus: treegrid.icon_minus,<br/> leaf: treegrid.icon_leaf<br/> }</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>treeReader</td>
+<td align="left">object</td>
+<td>extends the colModel defined in the basic grid. The fields described here are added to end of the colModel array and are hidden. This means that the data returned from the server should have values for these fields. For a full description of all valid values see below.</td>
+<td align="center">empty</td>
+</tr>
+<tr>
+<td>tree_root_level</td>
+<td align="left">numeric</td>
+<td>Determines the level where the root element begins when treeGrid is enabled</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p>The treeReader property (which is part from grid options) adds dynamically columns to the colModel property of the basic grid when treeGrid property is set to true. Syntax:</p>
+<div class="codehilite"><pre><span></span><span class="nx">treeReader</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="nx">property1</span> <span class="o">:</span> <span class="nx">value1</span>
+  <span class="p">...</span>
+  <span class="nx">propertyN</span> <span class="o">:</span> <span class="nx">valueN</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>The treeReader property adds different columns in the colModel depending on the treeGridModel property - i.e. we have different configurations for the different models - <a href="../nested-set-model">Nested Set Model</a> and <a href="../adjacency-model">Adjacency Model</a>.</p>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<p>In the methods below, the following parameters are mostly used:</p>
+<ul>
+<li>record</li>
+<li>rowid</li>
+</ul>
+<p><strong>record</strong> means the record object from data parameter, which can be obtained via the getRowData method like this:</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">record</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;getRowData&#39;</span><span class="p">,</span> <span class="nx">rowid</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Note the second parameter in the method. If the second parameter is omitted or set to false (default) the returned value is the from the current (view-able) data set. If the row can not be found a false is returned.</p>
+<p><strong>rowid</strong> is the id of the row.</p>
+<hr />
+<p><strong>addChildNode( nodeid, parentid, data, [expandData] )</strong></p>
+<p>Add a node in the tree according the value of the parentid parameter. The nodeid is the unique values in the row. If set to empty string the method gets the next max number + 1 from the data. if parendid is null the node is added as root. If the parentid is valid id of existing row the data is added as child of the that row. Data is a data to be inserted.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>nodeid -string - a unique value of the row to be set. If not set it is calculated as max+1 length of the data</li>
+<li>parentid - string - if null the node is added as root. If set and is valid id the row is added as a child.</li>
+<li>data - object - data to be added into the grid in name:value pair. Name correspond from colModel</li>
+<li>expandData - boolean - if set to true the data row is expanded. Default is false</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+nothing</p>
+<hr />
+<p><strong>collapseNode( record )</strong><br />
+Collapse the node at specified record - set expanded field to false and and toggle the icon to collapsed. Method usually is used after collapseRow method</p>
+<p><em><strong>parametric</strong></em></p>
+<ul>
+<li>record<sup id="fnref13:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>collapseRow( record )</strong><br />
+Collapses the current row, making the children hidden. Method is usually used before collapseNode method</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref12:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>delChildren( rowid )</strong></p>
+<p>Deletes the children of the node identified by rowid. The method does not delete the children on server.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>delTreeNode( rowid )</strong></p>
+<p>Deletes the specified node identified by rowid and all child nodes of that node. Does not delete the node at server</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>expandNode( record )</strong><br />
+Expand the node at specified record - set expanded field to true and and toggle the icon to expanded. Method usually is used after expandRow method</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref11:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>expandRow( record )</strong><br />
+Expanded the current row, making the children visible. Method is usually used before expandNode method</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref10:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>getFullTreeNode(record, [expand])</strong><br />
+Returns array of all nodes of the specified record; returns empty array if none. If the parameter <em>expand</em> is true the expand property is set to true.<br />
+<em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref9:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+<li>expand - boolean</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+array</p>
+<hr />
+<p><strong>getNodeAncestors( record )</strong><br />
+Returns array of the ancestors of the specified record</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref8:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+array</p>
+<hr />
+<p><strong>getNodeChildren( record, [currentview] )</strong><br />
+Returns array of child nodes of the specified record; returns empty array if none. If the parameter <em>currentview</em> is true the data is returned formatted as displayed into the grid, if false the source (non formatted) data is returned. Default is false.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref7:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+<li>currentview - boolean</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+array</p>
+<hr />
+<p><strong>getNodeDepth( record )</strong><br />
+Return the depth of the specified record</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref6:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+integer or null</p>
+<hr />
+<p><strong>getNodeParent( record )</strong><br />
+Returns the parent node of the specified record</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref5:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+object</p>
+<hr />
+<p><strong>getRootNodes( [currentview] )</strong><br />
+Return an array of the root nodes. If the parameter <em>currentview</em> is true the data is returned formatted as displayed into the grid, if false the source (non formatted) data is returned. Default is false.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>currentview - boolean</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+array</p>
+<hr />
+<p><strong>isNodeLoaded( record )</strong><br />
+Returns true if the node is already loaded</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref4:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>isVisibleNode( record )</strong><br />
+Returns true or false if the node is visible or not</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref3:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>reloadNode(reccord, [reloadcurrent])</strong><br />
+Reload the only data of the node (and its children) specified with record. If the reloadcurrent parameter is true (default is false) the data of the record is reloaded too, if false only child nodes are reloaded.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref2:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+<li>reloadcurrent - boolean</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>setLeaf( record, state, [collapsed])</strong><br />
+Visually set node (record) to a leaf or change it status to be not a leaf. Usually the method is used when all the child nodes are deleted and the status of the parent should be set to leaf or if a child node is added to leaf node. The status is set with the state parameter, if set to false the node is marked as leaf, if true as parent. The collapsed parameter have effect only if the state is true. If this parameter is true a the plus icon is set and the node is marked as collapsed.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>record<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup> - object</li>
+<li>state - boolean</li>
+<li>collapsed - boolean</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>searchTree( recs )</strong><br />
+This method is used when a search is activated on local data. The method does not perform a search on server. Parameter passed to this method are records which contain the search result. The purpose of the method is to return all ancestors from the search results. The method is used in <strong>addLocalData</strong> when a search is activated.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>recs - array of records with search result</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+array of search result with ancestors included.</p>
+<hr />
+<p><strong>setTreeRow( rowid, data)</strong><br />
+Updates the values in the tree (using the data object) in the row with id = rowid.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string - the id of the row to be updated</li>
+<li>data - object - The syntax of data object is: {name1:value1,name2: value2…} where the name is the name of the column as described in the colModel and the value is the new value.</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolen true on success, false otherwise.</p>
+<hr />
+<p><strong>SortTree( sortname, dir, [sorttype], [datefmt])</strong><br />
+Sort dynamically the tree grid by given name <em>sortname</em> and direction <em>dir</em>. The name should be valid name from colModel and direction can be 'asc' for ascending order and 'desc' for descending order. Optionally the <em>sorttype</em> parameter (see colModel sorttype) can be set and date format <em>datefmt</em> if the field is date. The method work when multi sorting is on.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>sortname - string - a name from colModel</li>
+<li>dir - string can be asc or desc</li>
+<li>sortype - string the type of the field to be sorted - text, numeric,...</li>
+<li>datefmt - string the date format of the field in case a date is sorted</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<h2 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h2>
+<p>Below is the list of "option" and triggered events. The name of every triggered event begin with <em>jqGrid</em> and is set below the option event.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first parameter of the triggered event is always event. It should be used before any other parameter. By example if the described parameters in options event are a,b,c - i.e event(a,b,c), in triggered event we need to use triggered_event(e, a, b, c)</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>the triggered event is bind to the grid and is not passed to to any options. See <a href="../basic-grid/#triggered-events">Triggered events</a></p>
+</div>
+<p>The triggered event is below the option event in the list</p>
+<hr />
+<p><strong>beforeSetTreeNode(index, len)</strong><br />
+<strong>jqGridBeforeSetTreeNode(event, index, len)</strong><br />
+The event is called before to set new tree nodes in the grid. Note that the data is already inserted into the grid.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>index - integer - the starting grid row index from where to apply the setting for the tree node</li>
+<li>len - integer - how many rows to process</li>
+</ul>
+<p><em><strong>returns</strong></em><br />
+nothing</p>
+<hr />
+<p><strong>afterSetTreeNode(index, len)</strong><br />
+<strong>jqGridAfterSetTreeNode(event, index, len)</strong><br />
+The event is called after the new tree nodes are set in the grid.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>index - integer - the starting grid row index from where to apply the setting for the tree node</li>
+<li>len - integer - how many rows to process</li>
+</ul>
+<p><em><strong>returns</strong></em><br />
+nothing</p>
+<hr />
+<p><strong>beforeExpandTreeGridRow(rowid, record, children)</strong><br />
+<strong>jqGridBeforeExpandTreeGridRow(rowid, record, children)</strong><br />
+The event is called before to expand the tree grid row when the user click on the plus icon. Actually the event is executed in  <em>expandRow</em> method. If defined the event should return true or false. If the event return false the expanding is not performed.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string id of the row to be expanded</li>
+<li>record - object - the row data for the expanded row</li>
+<li>children - array - child nodes (if any) for the expanded row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>afterExpandTreeGridRow(rowid, record, children)</strong><br />
+<strong>jqGridAfterExpandTreeGridRow(event, rowid, record, children)</strong></p>
+<p>The event is called after the tree grid row is expanded, when the user click on the plus icon. Actually the event is executed in  <em>expandRow</em> method.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string id of the row to be expanded</li>
+<li>record - object - the row data for the expanded row</li>
+<li>children - array - child nodes (if any) for the expanded row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+nothing</p>
+<hr />
+<p><strong>beforeCollapseTreeGridRow(rowid, record, children)</strong><br />
+<strong>jqGridBeforeCollapseTreeGridRow(event, rowid, record, children)</strong><br />
+The event is called before to collapse the tree grid row when the user click on the minus(collapse) icon. Actually the event is executed in  <em>collapseRow</em> method. If defined the event should return true or false. If the event return false the collapse is not performed.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string id of the row to be collapsed</li>
+<li>record - object - the row data for the expanded row</li>
+<li>children - array - child nodes (if any) for the expanded row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>afterCollapseTreeGridRow(rowid, record, children)</strong><br />
+<strong>jqGridAfterCollapseTreeGridRow(event, rowid, record, children)</strong></p>
+<p>The event is called after the tree grid row is collapsed, when the user click on the minus (collapse) icon. Actually the event is executed in  <em>collapseRow</em> method.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string id of the row to be expanded</li>
+<li>record - object - the row data for the expanded row</li>
+<li>children - array - child nodes (if any) for the expanded row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+nothing</p>
+<hr />
+<p><strong>beforeExpandTreeGridNode( rowid, record )</strong><br />
+<strong>jqGridBeforeExpandTreeGridNode(event, rowid, record)</strong><br />
+The event is called before to expand the tree grid node when the user click on the plus icon. Actually the event is executed in  <em>expandNode</em> method. If defined the event should return true or false. If the event return false the expanding is not performed.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string id of the row to be expanded</li>
+<li>record - object - the row data for the expanded row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>afterExpandTreeGridNode(rowid, record)</strong><br />
+<strong>jqGridAfterExpandTreeGridNode(event, rowid, record)</strong></p>
+<p>The event is called after the tree grid node is expanded, when the user click on the plus icon. Actually the event is executed in  <em>expandNode</em> method.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string id of the row to be expanded</li>
+<li>record - object - the row data for the expanded row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+nothing</p>
+<hr />
+<p><strong>beforeCollapseTreeGridNode(rowid, record)</strong><br />
+<strong>jqGridBeforeCollapseTreeGridNode(event, rowid, record)</strong></p>
+<p>The event is called before collapsing the tree grid node when the user click on the minus(collapse) icon. Actually the event is executed in  <em>collapseNode</em> method. If defined the event should return true or false. If the event return false the collapse is not performed.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string id of the row to be collapsed</li>
+<li>record - object - the row data for the expanded row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+boolean</p>
+<hr />
+<p><strong>afterCollapseTreeGridNode(rowid, record )</strong><br />
+<strong>jqGridAfterCollapseTreeGridNode(event, rowid, record)</strong></p>
+<p>The event is called after the tree grid node is collapsed, when the user click on the minus (collapse) icon. Actually the event is executed in  <em>collapseNode</em> method.</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>rowid - string id of the row to be expanded</li>
+<li>record - object - the row data for the expanded row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+nothing</p>
+<hr />
+<h2 id="nested-set-model">Nested Set Model<a class="headerlink" href="#nested-set-model" title="Permanent link">&para;</a></h2>
+<p>One of the important part to use when nested set model is used is the treeReader property. Configuring this properly and understanding the basic concept of the nested set model will make your life easy.</p>
+<h3 id="nested-set-config">Nested set config<a class="headerlink" href="#nested-set-config" title="Permanent link">&para;</a></h3>
+<p>To use the nested set model we need first to set the <em>treeGridModel</em> options to 'nested', which is default:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="p">...</span>
+  <span class="nx">treeGridModel</span> <span class="o">:</span> <span class="s1">&#39;nested&#39;</span><span class="p">,</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>Second step is to configure the treeReader object. The default values are:</p>
+<div class="codehilite"><pre><span></span><span class="nx">treeReader</span> <span class="o">:</span> <span class="p">{</span>
+  <span class="nx">level_field</span><span class="o">:</span> <span class="s2">&quot;level&quot;</span><span class="p">,</span>
+  <span class="nx">left_field</span><span class="o">:</span><span class="s2">&quot;lft&quot;</span><span class="p">,</span>
+  <span class="nx">right_field</span><span class="o">:</span> <span class="s2">&quot;rgt&quot;</span><span class="p">,</span>
+  <span class="nx">leaf_field</span><span class="o">:</span> <span class="s2">&quot;isLeaf&quot;</span><span class="p">,</span>
+  <span class="nx">expanded_field</span><span class="o">:</span> <span class="s2">&quot;expanded&quot;</span><span class="p">,</span>
+  <span class="nx">loaded</span><span class="o">:</span> <span class="s2">&quot;loaded&quot;</span><span class="p">,</span>
+  <span class="nx">icon_field</span><span class="o">:</span> <span class="s2">&quot;icon&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>level_field</td>
+<td>number</td>
+<td>This field determines the level in the hierarchy of the element. Usually the root element will be at level 0.The first child of the root is at level 1 and so on. This information is needed for the grid to set the ident of every element.</td>
+</tr>
+<tr>
+<td>left_field</td>
+<td>number</td>
+<td>The rowid of the field to the left</td>
+</tr>
+<tr>
+<td>right_field</td>
+<td>number</td>
+<td>The rowid of the field to the right</td>
+</tr>
+<tr>
+<td>leaf_field</td>
+<td>boolean</td>
+<td>This field should tell the grid that the element is leaf. Possible values can be true and false. To the leaf element is attached different image and this element can not be expanded or collapsed.</td>
+</tr>
+<tr>
+<td>expanded_field</td>
+<td>boolean</td>
+<td>Tells the grid whether this element should be expanded during the loading (true or false). If the element has no value, false is set. Note that the data can be empty for this element, but this element can not be removed from data set.</td>
+</tr>
+<tr>
+<td>loaded</td>
+<td>boolean</td>
+<td>This field is optional and indicates if the node and its children are loaded</td>
+</tr>
+<tr>
+<td>icon_field</td>
+<td>string</td>
+<td>This field is optional and if set replaces icon for the leaf field. The content should be a valid icon name from the used css framework</td>
+</tr>
+</tbody>
+</table>
+<p>The third step is optional and is the configuration of <em>tree_root_level</em> grid option. By default its value is 0. This option tell which level has the root element.</p>
+<p>After configuration of the reader it is needed to know what is posted to the server in order to load the child nodes properly. In case of auto-loading tree nodes and click on the plus icon, we post the following parameters: (the postData array is extended whith these fields)</p>
+<div class="codehilite"><pre><span></span><span class="nx">postData</span> <span class="o">:</span> <span class="p">{</span>
+   <span class="p">...</span>
+   <span class="s2">&quot;nodeid&quot;</span><span class="o">:</span> <span class="nx">record</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+   <span class="s2">&quot;n_left&quot;</span><span class="o">:</span> <span class="nx">record</span><span class="p">.</span><span class="nx">lft</span><span class="p">,</span>
+   <span class="s2">&quot;n_right&quot;</span><span class="o">:</span> <span class="nx">record</span><span class="p">.</span><span class="nx">rgt</span><span class="p">,</span>
+   <span class="s2">&quot;n_level&quot;</span><span class="o">:</span> <span class="nx">record</span><span class="p">.</span><span class="nx">level</span><span class="p">,</span>
+   <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Where</p>
+<ul>
+<li>nodeid contain the id of the currently expanded record</li>
+<li>n_left contain the left value of the currently expanded row</li>
+<li>n_right contain the right value of the currently expanded row</li>
+<li>n_level contain the level value of the currently expanded row</li>
+</ul>
+<h3 id="nested-set-example">Nested set example<a class="headerlink" href="#nested-set-example" title="Permanent link">&para;</a></h3>
+<p>In order to understand the the process of configuring and using the tree grid here we provide full example: using the PHP as server and MySQL as database.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This example is for demonstration purposes and should not be used in public sites, since it is not<br />
+protected from SQL Injection attacks.</p>
+</div>
+<p><strong>Data Preparation</strong></p>
+<p>Let us suppose that we have an general account where some accounts are children of the main accounts and some accounts have no child account. In most cases account has name, number, debt, credit and optional balance fields.</p>
+<p>In order to represent the account in nested set mode we need to add additionally three fields account_id, left and right fields. In MySQl the words left and right are reserved words, so our table look like this:</p>
+<div class="codehilite"><pre><span></span>account_id, name, account_number, Debit, Credit, Balance, lft, rgt
+</pre></div>
+
+
+<p>where</p>
+<ul>
+<li>account_id is the unique id of the account (in our grid this should be the rowid)</li>
+<li>lft indicates the left_field, and</li>
+<li>rgt indicates the right_field</li>
+</ul>
+<p>Lets create this table in MySQL</p>
+<div class="codehilite"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">accounts</span> <span class="p">(</span>
+  <span class="n">account_id</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+  <span class="n">name</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">acc_num</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">debit</span> <span class="nb">decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="s1">&#39;0.00&#39;</span><span class="p">,</span>
+  <span class="n">credit</span> <span class="nb">decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="s1">&#39;0.00&#39;</span><span class="p">,</span>
+  <span class="n">balance</span> <span class="nb">decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="s1">&#39;0.00&#39;</span><span class="p">,</span>
+  <span class="n">lft</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">rgt</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="k">PRIMARY</span> <span class="k">KEY</span>  <span class="p">(</span><span class="o">`</span><span class="n">account_id</span><span class="o">`</span><span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+
+
+<p>and add some data:</p>
+<div class="codehilite"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Cash&#39;</span><span class="p">,</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="mi">400</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">250</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">150</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Cash 1&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">200</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;Sub Cash 1&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">200</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Cash 2&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">50</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">50</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Bank&#39;&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;200&#39;</span><span class="p">,</span> <span class="mi">1500</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">500</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">14</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Bank 1&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="mi">500</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">500</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;Bank 2&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;Fixed asset&#39;</span><span class="p">,</span> <span class="s1">&#39;300&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+</pre></div>
+
+
+<p>With this information we can now construct the treeGrid.</p>
+<p><strong>TreeGrid Preparation</strong></p>
+<p>Since we know the table names our grid setup is:</p>
+<p>The html definition</p>
+<div class="codehilite"><pre><span></span>...
+  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;treegrid&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;ptreegrid&quot;</span><span class="err">&lt;/</span><span class="na">div</span><span class="p">&gt;</span>
+...
+</pre></div>
+
+
+<p>Tha JavaScript definition</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#treegrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="nx">treeGrid</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">treeGridModel</span><span class="o">:</span> <span class="s1">&#39;nested&#39;</span><span class="p">,</span>
+  <span class="nx">ExpandColumn</span> <span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span>
+  <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;server.php?q=tree&#39;</span><span class="p">,</span>
+  <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+  <span class="nx">jsonReader</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">repeatitems</span> <span class="o">:</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="nx">mtype</span><span class="o">:</span> <span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+  <span class="nx">colNames</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;Account&quot;</span><span class="p">,</span><span class="s2">&quot;Acc Num&quot;</span><span class="p">,</span> <span class="s2">&quot;Debit&quot;</span><span class="p">,</span> <span class="s2">&quot;Credit&quot;</span><span class="p">,</span><span class="s2">&quot;Balance&quot;</span><span class="p">],</span>
+  <span class="nx">colModel</span><span class="o">:</span><span class="p">[</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;account_id&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;account_id&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="nx">hidden</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span><span class="nx">key</span><span class="o">:</span><span class="kc">true</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">180</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;acc_num&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;acc_num&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s2">&quot;center&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;debit&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;debit&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">},</span>      
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;credit&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;credit&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span><span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">},</span>      
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;balance&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;balance&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span><span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">}</span>      
+  <span class="p">],</span>
+  <span class="nx">height</span><span class="o">:</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+  <span class="nx">pager</span> <span class="o">:</span> <span class="s2">&quot;#ptreegrid&quot;</span><span class="p">,</span>
+  <span class="nx">caption</span><span class="o">:</span> <span class="s2">&quot;Treegrid example&quot;</span>
+<span class="p">});</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>Since jqGrid currently does not support paging, when we have a treegrid the pager elements are disabled automatically.</p>
+<p><strong>Server Code: Loading at once</strong></p>
+<p>Loading all the nodes at once is an approach used when we have relatively few elements in the data table. To do this, our single SQL is:</p>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span>
+    <span class="n">node</span><span class="p">.</span><span class="n">account_id</span><span class="p">,</span>
+    <span class="n">node</span><span class="p">.</span><span class="n">name</span><span class="p">,</span>
+    <span class="n">node</span><span class="p">.</span><span class="n">acc_num</span><span class="p">,</span>
+    <span class="n">node</span><span class="p">.</span><span class="n">debit</span><span class="p">,</span>
+    <span class="n">node</span><span class="p">.</span><span class="n">credit</span><span class="p">,</span>
+    <span class="n">node</span><span class="p">.</span><span class="n">balance</span><span class="p">,</span>
+    <span class="p">(</span><span class="k">COUNT</span><span class="p">(</span><span class="n">parent</span><span class="p">.</span><span class="n">name</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="k">AS</span> <span class="k">level</span><span class="p">,</span>
+    <span class="n">node</span><span class="p">.</span><span class="n">lft</span><span class="p">,</span>
+    <span class="n">node</span><span class="p">.</span><span class="n">rgt</span>
+<span class="k">FROM</span> <span class="n">accounts</span> <span class="k">AS</span> <span class="n">node</span><span class="p">,</span>
+<span class="n">accounts</span> <span class="k">AS</span> <span class="n">parent</span>
+<span class="k">WHERE</span> <span class="n">node</span><span class="p">.</span><span class="n">lft</span> <span class="k">BETWEEN</span> <span class="n">parent</span><span class="p">.</span><span class="n">lft</span> <span class="k">AND</span> <span class="n">parent</span><span class="p">.</span><span class="n">rgt</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">node</span><span class="p">.</span><span class="n">name</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">node</span><span class="p">.</span><span class="n">lft</span><span class="p">;</span>
+</pre></div>
+
+
+<p>In Nested Set model, determining if the node is a leaf is easy: this is just comparison of rgt = lft+1.<br />
+Note how we calculate the <em>level</em> element</p>
+<p>Now we are ready to prepare our server side code. Below are examples in PHP and MySQL using PDO mysql driver with json data.</p>
+<p>The <em><strong>server.php</strong></em> file is like this:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// connection to the server</span>
+<span class="nv">$conn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="nx">DB_DSN</span><span class="p">,</span><span class="nx">DB_USER</span><span class="p">,</span><span class="nx">DB_PASSWORD</span><span class="p">);</span>
+<span class="c1">//use utf-8</span>
+<span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s2">&quot;SET NAMES utf8&quot;</span><span class="p">);</span>
+
+<span class="c1">// number of records in the response</span>
+<span class="nv">$sth</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="s2">&quot;SELECT COUNT(*) as count FROM accounts2&quot;</span><span class="p">);</span>
+<span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+<span class="c1">// calculate the number of rows returned</span>
+<span class="nv">$result</span> <span class="o">=</span> <span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_NUM</span><span class="p">);</span>
+<span class="nv">$count</span> <span class="o">=</span> <span class="nv">$result</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+
+<span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">closeCursor</span><span class="p">();</span>
+
+<span class="nv">$SQL</span> <span class="o">=</span> <span class="s2">&quot;SELECT &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.account_id, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.name, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.acc_num, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.debit, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.credit, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.balance, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;(COUNT(parent.name) - 1) AS level, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.lft, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.rgt &quot;</span>
+<span class="o">.</span><span class="s2">&quot;FROM accounts2 AS node, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;accounts2 AS parent &quot;</span>
+<span class="o">.</span><span class="s2">&quot;WHERE node.lft BETWEEN parent.lft AND parent.rgt &quot;</span>
+<span class="o">.</span><span class="s2">&quot;GROUP BY node.name &quot;</span>
+<span class="o">.</span><span class="s2">&quot;ORDER BY node.lft&quot;</span><span class="p">;</span>
+
+<span class="c1">// execute the SQL</span>
+<span class="nv">$sth2</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="nv">$SQL</span> <span class="p">);</span>
+<span class="nv">$sth2</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+
+
+<span class="c1">// build the response</span>
+<span class="nv">$response</span> <span class="o">=</span> <span class="k">new</span> <span class="k">stdClass</span><span class="p">();</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">page</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">total</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">records</span> <span class="o">=</span> <span class="nv">$count</span><span class="p">;</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nv">$row</span> <span class="o">=</span> <span class="nv">$sth2</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">leaf</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">rgt</span> <span class="o">===</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">lft</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">leaf</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">loaded</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">expanded</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">rows</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nb">header</span><span class="p">(</span><span class="s2">&quot;Content-type: text/x-json;charset=utf-8&quot;</span><span class="p">);</span>
+<span class="c1">// output the data to json</span>
+<span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$response</span><span class="p">);</span>
+</pre></div>
+
+
+<p>In case there is a requirement to expand nodes when the data is loaded set the last value (expanded) to true</p>
+<p><strong>Server Code: Auto loading tree</strong></p>
+<p>If there is a relative large data set with a deep structure, it is better to load the data when we need it, i.e. when a parent is clicked we retrieve the child records. So first we display only the root elements; when a root element is clicked on, the grid automatically detects that there is no data and tries to load the needed information by passing the needed parameters to the server. This is where the level_field and isLeaf field are so important.</p>
+<p>In this case we can use our previous query producing only the elements at the requested level. (This query can be optimized, but this is out of scope for this explanation).</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// Connection to the server</span>
+<span class="nv">$conn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="nx">DB_DSN</span><span class="p">,</span><span class="nx">DB_USER</span><span class="p">,</span><span class="nx">DB_PASSWORD</span><span class="p">);</span>
+<span class="c1">// Tell the db that we use utf-8</span>
+<span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s2">&quot;SET NAMES utf8&quot;</span><span class="p">);</span>
+<span class="c1">//$node =  (integer)$_REQUEST[&quot;nodeid&quot;];</span>
+<span class="nv">$node</span> <span class="o">=</span> <span class="nb">filter_input</span><span class="p">(</span><span class="nx">INPUT_POST</span><span class="p">,</span> <span class="s2">&quot;nodeid&quot;</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_NUMBER_INT</span><span class="p">);</span>
+<span class="c1">// detect if here we post the data from allready loaded tree</span>
+<span class="c1">// we can make here other checks</span>
+
+<span class="c1">// var_dump($node);</span>
+<span class="nv">$ADDWHERE</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$node</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$n_lft</span> <span class="o">=</span> <span class="nb">filter_input</span><span class="p">(</span><span class="nx">INPUT_POST</span><span class="p">,</span> <span class="s2">&quot;n_left&quot;</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_NUMBER_INT</span><span class="p">);</span>
+    <span class="nv">$n_rgt</span> <span class="o">=</span> <span class="nb">filter_input</span><span class="p">(</span><span class="nx">INPUT_POST</span><span class="p">,</span> <span class="s2">&quot;n_right&quot;</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_NUMBER_INT</span><span class="p">);</span>
+    <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$n_lvl</span> <span class="o">=</span> <span class="nb">filter_input</span><span class="p">(</span><span class="nx">INPUT_POST</span><span class="p">,</span> <span class="s2">&quot;n_level&quot;</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_NUMBER_INT</span><span class="p">);</span>
+    <span class="nv">$ADDWHERE</span> <span class="o">=</span> <span class="s2">&quot; AND parent.lft &gt; &quot;</span><span class="o">.</span><span class="nv">$n_lft</span><span class="o">.</span><span class="s2">&quot; AND parent.rgt &lt; &quot;</span><span class="o">.</span><span class="nv">$n_rgt</span><span class="p">;</span>
+    <span class="nv">$lwh</span> <span class="o">=</span> <span class="nv">$n_lvl</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// initial grid</span>
+    <span class="nv">$n_lvl</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nv">$lwh</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nv">$SQL</span> <span class="o">=</span> <span class="s2">&quot;SELECT &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.account_id, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.name, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.acc_num, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.debit, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.credit, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.balance, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;(COUNT(parent.name) - 1 + &quot;</span><span class="o">.</span><span class="nv">$n_lvl</span><span class="o">.</span><span class="s2">&quot;) AS level, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.lft, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;node.rgt &quot;</span>
+<span class="o">.</span><span class="s2">&quot;FROM accounts AS node, &quot;</span>
+<span class="o">.</span><span class="s2">&quot;accounts AS parent &quot;</span>
+<span class="o">.</span><span class="s2">&quot;WHERE node.lft BETWEEN parent.lft AND parent.rgt &quot;</span> <span class="o">.</span><span class="nv">$ADDWHERE</span>
+<span class="o">.</span><span class="s2">&quot; GROUP BY node.name&quot;</span>
+<span class="o">.</span><span class="s2">&quot; ORDER BY node.lft&quot;</span><span class="p">;</span>
+
+<span class="c1">//var_dump($SQL);</span>
+<span class="c1">// execute the SQL</span>
+<span class="nv">$sth</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span> <span class="nv">$SQL</span> <span class="p">);</span>
+<span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+
+<span class="c1">// build the response</span>
+<span class="nv">$response</span> <span class="o">=</span> <span class="k">new</span> <span class="k">stdClass</span><span class="p">();</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">page</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">total</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">records</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nv">$row</span> <span class="o">=</span> <span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">)</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">leaf</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">rgt</span> <span class="o">===</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">lft</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">leaf</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">//$row-&gt;expanded = false;</span>
+    <span class="c1">//$row-&gt;loaded = false;</span>
+    <span class="k">if</span><span class="p">(</span> <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$n_lvl</span> <span class="o">==</span>  <span class="p">(</span><span class="nx">int</span><span class="p">)</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">level</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">level</span> <span class="o">=</span> <span class="nv">$lwh</span><span class="p">;</span>
+        <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">rows</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nb">header</span><span class="p">(</span><span class="s2">&quot;Content-type: text/x-json;charset=utf-8&quot;</span><span class="p">);</span>
+<span class="c1">// output the data to json</span>
+<span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$response</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="adjacency-model">Adjacency Model<a class="headerlink" href="#adjacency-model" title="Permanent link">&para;</a></h2>
+<p>One of the important part is the treeReader property. Configuring this properly and understanding the basic concept of the adjacency model will make your life easy.</p>
+<h3 id="adjacency-model-config">Adjacency model config<a class="headerlink" href="#adjacency-model-config" title="Permanent link">&para;</a></h3>
+<p>The default treeReader Configuration when we use tree grid with adjacency model is:</p>
+<div class="codehilite"><pre><span></span><span class="nx">treeReader</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">level_field</span><span class="o">:</span> <span class="s2">&quot;level&quot;</span><span class="p">,</span>
+  <span class="nx">parent_id_field</span><span class="o">:</span> <span class="s2">&quot;parent&quot;</span><span class="p">,</span>
+  <span class="nx">leaf_field</span><span class="o">:</span> <span class="s2">&quot;isLeaf&quot;</span><span class="p">,</span>
+  <span class="nx">expanded_field</span><span class="o">:</span> <span class="s2">&quot;expanded&quot;</span>
+  <span class="nx">loaded</span><span class="o">:</span> <span class="s2">&quot;loaded&quot;</span><span class="p">,</span>
+  <span class="nx">icon_field</span><span class="o">:</span> <span class="s2">&quot;icon&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>The treeReader automatically extends the colModel with these fields, added and hidden at end of the colModel. Data returned from the server or local array now needs to include information for these fields for constructing the tree grid. The treeReader can be extended so that the fields match your requirements.</p>
+<p>The only difference from nested set model is that the left_field and right_field are replaced with parent_id_field. This element indicates that the record has a parent with an id of parent_id_field. If the parent id is NULL the element is a root element.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>level_field</td>
+<td>number</td>
+<td>This field determines the level in the hierarchy of the element. Usually the root element will be at level 0.The first child of the root is at level 1 and so on. This information is needed for the grid to set the ident of every element.</td>
+</tr>
+<tr>
+<td>parent_id_field</td>
+<td>mixed</td>
+<td>indicates if the record has a parent with an id of parent_id_field. If the parent id is NULL the element is a root element</td>
+</tr>
+<tr>
+<td>leaf_field</td>
+<td>boolean</td>
+<td>This field should tell the grid that the element is leaf. Possible values can be true and false. To the leaf element is attached different image and this element can not be expanded or collapsed.</td>
+</tr>
+<tr>
+<td>expanded_field</td>
+<td>boolean</td>
+<td>Tells the grid whether this element should be expanded during the loading (true or false). If the element has no value, false is set. Note that the data can be empty for this element, but this element can not be removed from data set.</td>
+</tr>
+<tr>
+<td>loaded</td>
+<td>boolean</td>
+<td>This field is optional and indicates if the node and its children are loaded</td>
+</tr>
+<tr>
+<td>icon_field</td>
+<td>string</td>
+<td>This field is optional and if set replaces icon for the leaf field. The content should be a valid icon name from the used css framework</td>
+</tr>
+</tbody>
+</table>
+<p>After the configuration of the reader it is need to know what is post-ed to the server in order to load the child nodes properly? In case of auto lading tree nodes post-ed are the following parameters: (the postData array is extended)</p>
+<div class="codehilite"><pre><span></span><span class="nx">postData</span> <span class="o">:</span> <span class="p">{</span>
+   <span class="p">...</span>
+   <span class="nx">nodeid</span><span class="o">:</span><span class="nx">rc</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span>
+   <span class="nx">parentid</span><span class="o">:</span><span class="nx">rc</span><span class="p">.</span><span class="nx">parent_id</span><span class="p">,</span>
+   <span class="nx">n_level</span><span class="o">:</span><span class="nx">rc</span><span class="p">.</span><span class="nx">level</span>   
+   <span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>nodeid contain the id of the currently expanded record</li>
+<li>parentid is the parent_id value of the currently expanded row</li>
+<li>n_level contain the level value of the currently expanded row</li>
+</ul>
+<h3 id="adjacency-model-example">Adjacency model example<a class="headerlink" href="#adjacency-model-example" title="Permanent link">&para;</a></h3>
+<p>In order to understand the the process of configuring the tree grid here we provide full example:</p>
+<p><strong>Data Preparation</strong><br />
+Let us suppose that we have an general account where some accounts are children of the main accounts and some accounts have no child account. In most cases account has name, number, debt, credit and optional balance fields.</p>
+<p>In order to represent the table in the Adjacency model we need to add two additional fields account_id and parent_id . The table in this case is:</p>
+<p>account_id, name, account_number, Debit, Credit, Balance, parent_id</p>
+<p>where:<br />
+- account_id is the unique id of the account (in our grid this should be the rowid)<br />
+- parent_id indicates the parent_id_field in the grid</p>
+<p>In MySQL terms this table can be represented as</p>
+<div class="codehilite"><pre><span></span><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">accounts</span> <span class="p">(</span>
+  <span class="n">account_id</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+  <span class="n">name</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">acc_num</span> <span class="nb">varchar</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">debit</span> <span class="nb">decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="s1">&#39;0.00&#39;</span><span class="p">,</span>
+  <span class="n">credit</span> <span class="nb">decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="s1">&#39;0.00&#39;</span><span class="p">,</span>
+  <span class="n">balance</span> <span class="nb">decimal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="s1">&#39;0.00&#39;</span><span class="p">,</span>
+  <span class="n">parent_id</span> <span class="nb">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">DEFAULT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="k">PRIMARY</span> <span class="k">KEY</span>  <span class="p">(</span><span class="o">`</span><span class="n">account_id</span><span class="o">`</span><span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+
+
+<p>And let's add some data</p>
+<div class="codehilite"><pre><span></span><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;Cash&#39;</span><span class="p">,</span> <span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="mi">400</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">250</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">150</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="k">NULL</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;Cash 1&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">200</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;Sub Cash 1&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="mi">300</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">200</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;Cash 2&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">50</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">50</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Bank&#39;&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;200&#39;</span><span class="p">,</span> <span class="mi">1500</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">500</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span><span class="k">NULL</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;Bank 1&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="mi">500</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">500</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;Bank 2&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">accounts</span> <span class="k">VALUES</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;Fixed asset&#39;</span><span class="p">,</span> <span class="s1">&#39;300&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="o">-</span><span class="mi">1000</span><span class="p">.</span><span class="mi">00</span><span class="p">,</span> <span class="k">NULL</span><span class="p">);</span>
+</pre></div>
+
+
+<p>With this information we can now construct the jqGrid TreeGrid.</p>
+<p>The html definition</p>
+<div class="codehilite"><pre><span></span>...
+  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;treegrid&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;ptreegrid&quot;</span><span class="err">&lt;/</span><span class="na">div</span><span class="p">&gt;</span>
+...
+</pre></div>
+
+
+<p>Tha JavaScript definition</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#treegrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="nx">treeGrid</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">treeGridModel</span><span class="o">:</span> <span class="s1">&#39;adjacency&#39;</span><span class="p">,</span>
+  <span class="nx">ExpandColumn</span> <span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span>
+  <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;server_2.php?q=tree&#39;</span><span class="p">,</span>
+  <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+  <span class="nx">jsonReader</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">repeatitems</span> <span class="o">:</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="c1">// parent fields need to be configured</span>
+  <span class="nx">treeReader</span> <span class="o">:</span> <span class="p">{</span>
+   <span class="nx">parent_id_field</span><span class="o">:</span> <span class="s2">&quot;parent_id&quot;</span>
+  <span class="p">},</span>
+  <span class="nx">mtype</span><span class="o">:</span> <span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+  <span class="nx">colNames</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;Account&quot;</span><span class="p">,</span><span class="s2">&quot;Acc Num&quot;</span><span class="p">,</span> <span class="s2">&quot;Debit&quot;</span><span class="p">,</span> <span class="s2">&quot;Credit&quot;</span><span class="p">,</span><span class="s2">&quot;Balance&quot;</span><span class="p">],</span>
+  <span class="nx">colModel</span><span class="o">:</span><span class="p">[</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;account_id&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;account_id&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="nx">hidden</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span><span class="nx">key</span><span class="o">:</span><span class="kc">true</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">180</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;acc_num&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;acc_num&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s2">&quot;center&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;debit&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;debit&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">},</span>      
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;credit&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;credit&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span><span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">},</span>      
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;balance&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;balance&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span><span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">}</span>      
+  <span class="p">],</span>
+  <span class="nx">height</span><span class="o">:</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+  <span class="nx">pager</span> <span class="o">:</span> <span class="s2">&quot;#ptreegrid&quot;</span><span class="p">,</span>
+  <span class="nx">caption</span><span class="o">:</span> <span class="s2">&quot;Treegrid example&quot;</span>
+<span class="p">});</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p><strong>Server Code: Loading all the nodes at once</strong></p>
+<p>Loading all the nodes at once works well when we have relatively few elements and the tree has only a few levels.<br />
+Loading data in the Adjacency model is little difficult, since it requires recursion and, where the depth of the tree is great, this will take a lot of time. There are some techniques that overcome this problem, but in our case we will use the standard approach. Autoloading tree nodes (described in the next section below) is much simpler and does not require recursion.</p>
+<p>PHP code for loading nodes at once (tested)</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// Connection to the server</span>
+<span class="nv">$conn</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="nx">DB_DSN</span><span class="p">,</span><span class="nx">DB_USER</span><span class="p">,</span><span class="nx">DB_PASSWORD</span><span class="p">);</span>
+<span class="c1">// Tell the db that we use utf-8</span>
+<span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s2">&quot;SET NAMES utf8&quot;</span><span class="p">);</span>
+
+<span class="c1">// First we need to determine the leaf nodes</span>
+<span class="nv">$SQLL</span> <span class="o">=</span> <span class="s2">&quot;SELECT t1.account_id FROM accounts AS t1 LEFT JOIN accounts as t2 &quot;</span>
+<span class="o">.</span><span class="s2">&quot; ON t1.account_id = t2.parent_id WHERE t2.account_id IS NULL&quot;</span><span class="p">;</span>
+
+<span class="nv">$sth</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$SQLL</span><span class="p">);</span>
+<span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+<span class="c1">// calculate the number of rows returned</span>
+
+<span class="nv">$leafnodes</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nv">$rw</span> <span class="o">=</span> <span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_ASSOC</span><span class="p">))</span> <span class="p">{</span>
+   <span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$rw</span><span class="p">[</span><span class="s1">&#39;account_id&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="nv">$rw</span><span class="p">[</span><span class="s1">&#39;account_id&#39;</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// build the response</span>
+<span class="nv">$response</span> <span class="o">=</span> <span class="k">new</span> <span class="k">stdClass</span><span class="p">();</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">page</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">total</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">records</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">rows</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+<span class="c1">// Recursive function that do the job</span>
+<span class="k">function</span> <span class="nf">display_node</span><span class="p">(</span><span class="nv">$parent</span><span class="p">,</span> <span class="nv">$level</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">global</span> <span class="nv">$leafnodes</span><span class="p">,</span> <span class="nv">$response</span><span class="p">,</span> <span class="nv">$conn</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$parent</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$wh</span> <span class="o">=</span> <span class="s1">&#39;parent_id=&#39;</span><span class="o">.</span><span class="nv">$parent</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nv">$wh</span> <span class="o">=</span> <span class="s1">&#39;ISNULL(parent_id)&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$SQL</span> <span class="o">=</span> <span class="s2">&quot;SELECT account_id, name, acc_num, debit, credit, balance, parent_id FROM accounts WHERE &quot;</span><span class="o">.</span><span class="nv">$wh</span><span class="p">;</span>
+    <span class="nv">$stm</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$SQL</span><span class="p">);</span>
+    <span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+
+    <span class="k">while</span><span class="p">(</span><span class="nv">$row</span> <span class="o">=</span> <span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">level</span> <span class="o">=</span> <span class="nv">$level</span><span class="p">;</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span> <span class="o">=</span> <span class="o">!</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span> <span class="o">?</span> <span class="s1">&#39;NULL&#39;</span> <span class="o">:</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span><span class="p">;</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">isLeaf</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span> <span class="o">==</span> <span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">isLeaf</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">expanded</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">loaded</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+        <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">rows</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">;</span>
+        <span class="nx">display_node</span><span class="p">((</span><span class="nx">integer</span><span class="p">)</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span><span class="p">,</span><span class="nv">$level</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">closeCursor</span><span class="p">();</span>
+
+
+<span class="p">}</span>
+
+<span class="nx">display_node</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+
+<span class="nb">header</span><span class="p">(</span><span class="s2">&quot;Content-type: text/x-json;charset=utf-8&quot;</span><span class="p">);</span>
+<span class="c1">// output the data to json</span>
+<span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$response</span><span class="p">);</span>
+</pre></div>
+
+
+<p><strong>Server Code: Auto loading tree</strong></p>
+<p>Auto loading the tree is the recommended approach when using adjacency model in jqGrid. Here, we can make simple query without any need to provide for recursion.</p>
+<p>Below is the PHP code (tested)</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// First we need to determine the leaf nodes</span>
+<span class="nv">$SQLL</span> <span class="o">=</span> <span class="s2">&quot;SELECT t1.account_id FROM accounts AS t1 LEFT JOIN accounts as t2 &quot;</span>
+<span class="o">.</span><span class="s2">&quot; ON t1.account_id = t2.parent_id WHERE t2.account_id IS NULL&quot;</span><span class="p">;</span>
+
+<span class="nv">$sth</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$SQLL</span><span class="p">);</span>
+<span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+<span class="c1">// calculate the number of rows returned</span>
+
+<span class="nv">$leafnodes</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nv">$rw</span> <span class="o">=</span> <span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_ASSOC</span><span class="p">))</span> <span class="p">{</span>
+   <span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$rw</span><span class="p">[</span><span class="s1">&#39;account_id&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="nv">$rw</span><span class="p">[</span><span class="s1">&#39;account_id&#39;</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// build the response</span>
+<span class="nv">$response</span> <span class="o">=</span> <span class="k">new</span> <span class="k">stdClass</span><span class="p">();</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">page</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">total</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">records</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">rows</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+<span class="c1">// Get parameters from the grid</span>
+<span class="nv">$node</span> <span class="o">=</span> <span class="nb">filter_input</span><span class="p">(</span><span class="nx">INPUT_POST</span><span class="p">,</span> <span class="s2">&quot;nodeid&quot;</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_NUMBER_INT</span><span class="p">);</span>
+<span class="nv">$n_lvl</span> <span class="o">=</span> <span class="nb">filter_input</span><span class="p">(</span><span class="nx">INPUT_POST</span><span class="p">,</span> <span class="s2">&quot;n_level&quot;</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_NUMBER_INT</span><span class="p">);</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nv">$node</span> <span class="o">==</span> <span class="k">null</span> <span class="p">)</span> <span class="nv">$node</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$n_lvl</span> <span class="o">==</span> <span class="k">null</span> <span class="p">)</span> <span class="nv">$n_lvl</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">if</span><span class="p">((</span><span class="nx">int</span><span class="p">)</span><span class="nv">$node</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//check to see which node to load</span>
+   <span class="nv">$wh</span> <span class="o">=</span> <span class="s1">&#39;parent_id=&#39;</span><span class="o">.</span><span class="nv">$node</span><span class="p">;</span> <span class="c1">// parents</span>
+   <span class="nv">$n_lvl</span> <span class="o">=</span> <span class="nv">$n_lvl</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// we should ouput next level</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="nv">$wh</span> <span class="o">=</span> <span class="s1">&#39;ISNULL(parent_id)&#39;</span><span class="p">;</span> <span class="c1">// roots</span>
+<span class="p">}</span>
+
+<span class="nv">$SQL</span> <span class="o">=</span> <span class="s2">&quot;SELECT account_id, name, acc_num, debit, credit, balance, parent_id FROM accounts WHERE &quot;</span><span class="o">.</span><span class="nv">$wh</span><span class="p">;</span>
+<span class="nv">$stm</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$SQL</span><span class="p">);</span>
+<span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nv">$row</span> <span class="o">=</span> <span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">level</span> <span class="o">=</span> <span class="nv">$n_lvl</span><span class="p">;</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span> <span class="o">=</span> <span class="o">!</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span> <span class="o">?</span> <span class="s1">&#39;NULL&#39;</span> <span class="o">:</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span><span class="p">;</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">isLeaf</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span> <span class="o">==</span> <span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">isLeaf</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">expanded</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">loaded</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">rows</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">;</span>
+
+<span class="p">}</span>
+<span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">closeCursor</span><span class="p">();</span>
+<span class="nb">header</span><span class="p">(</span><span class="s2">&quot;Content-type: text/x-json;charset=utf-8&quot;</span><span class="p">);</span>
+<span class="c1">// output the data to json</span>
+<span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$response</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="paging">Paging<a class="headerlink" href="#paging" title="Permanent link">&para;</a></h2>
+<p>As of version 5.3 we support pagination in the Tree Grid. To enable this it is needed to set the grid option <strong>treeGrid_bigData : true</strong>. It important to note that <br />
+the data returned from server should contain only root nodes, while the rest of child node should be loaded<br />
+on request of  data when we click on the root node. This can be show in the example above <strong>Server Code: Auto loading tree</strong></p>
+<h3 id="example-of-paging">Example of paging:<a class="headerlink" href="#example-of-paging" title="Permanent link">&para;</a></h3>
+<p>The html definition</p>
+<div class="codehilite"><pre><span></span>...
+  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;treegrid&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id </span><span class="o">=</span> <span class="s">&quot;ptreegrid&quot;</span><span class="err">&lt;/</span><span class="na">div</span><span class="p">&gt;</span>
+...
+</pre></div>
+
+
+<p>Tha JavaScript definition</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#treegrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="nx">treeGrid</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">treeGrid_bigData</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">treeGridModel</span><span class="o">:</span> <span class="s1">&#39;adjacency&#39;</span><span class="p">,</span>
+  <span class="nx">ExpandColumn</span> <span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span>
+  <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;server_2.php?q=tree&#39;</span><span class="p">,</span>
+  <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+  <span class="nx">jsonReader</span> <span class="o">:</span> <span class="p">{</span>
+    <span class="nx">repeatitems</span> <span class="o">:</span> <span class="kc">false</span>
+  <span class="p">},</span>
+  <span class="c1">// parent fields need to be configured</span>
+  <span class="nx">treeReader</span> <span class="o">:</span> <span class="p">{</span>
+   <span class="nx">parent_id_field</span><span class="o">:</span> <span class="s2">&quot;parent_id&quot;</span>
+  <span class="p">},</span>
+  <span class="nx">mtype</span><span class="o">:</span> <span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+  <span class="nx">colNames</span><span class="o">:</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span><span class="s2">&quot;Account&quot;</span><span class="p">,</span><span class="s2">&quot;Acc Num&quot;</span><span class="p">,</span> <span class="s2">&quot;Debit&quot;</span><span class="p">,</span> <span class="s2">&quot;Credit&quot;</span><span class="p">,</span><span class="s2">&quot;Balance&quot;</span><span class="p">],</span>
+  <span class="nx">colModel</span><span class="o">:</span><span class="p">[</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;account_id&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;account_id&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="nx">hidden</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span><span class="nx">key</span><span class="o">:</span><span class="kc">true</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;name&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">180</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;acc_num&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;acc_num&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s2">&quot;center&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;debit&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;debit&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">},</span>      
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;credit&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;credit&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span><span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">},</span>      
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;balance&#39;</span><span class="p">,</span><span class="nx">index</span><span class="o">:</span><span class="s1">&#39;balance&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span><span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">}</span>      
+  <span class="p">],</span>
+  <span class="nx">height</span><span class="o">:</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+  <span class="nx">pager</span> <span class="o">:</span> <span class="s2">&quot;#ptreegrid&quot;</span><span class="p">,</span>
+  <span class="nx">caption</span><span class="o">:</span> <span class="s2">&quot;Treegrid example&quot;</span><span class="p">,</span>
+  <span class="nx">rowNum</span> <span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+  <span class="nx">rowList</span> <span class="o">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<span class="p">});</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>PHP code (tested)</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// First we need to determine the leaf nodes</span>
+<span class="nv">$SQLL</span> <span class="o">=</span> <span class="s2">&quot;SELECT t1.account_id FROM accounts AS t1 LEFT JOIN accounts as t2 &quot;</span>
+<span class="o">.</span><span class="s2">&quot; ON t1.account_id = t2.parent_id WHERE t2.account_id IS NULL&quot;</span><span class="p">;</span>
+
+<span class="nv">$sth</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$SQLL</span><span class="p">);</span>
+<span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+<span class="c1">// calculate the number of rows returned</span>
+
+<span class="nv">$leafnodes</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nv">$rw</span> <span class="o">=</span> <span class="nv">$sth</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_ASSOC</span><span class="p">))</span> <span class="p">{</span>
+   <span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$rw</span><span class="p">[</span><span class="s1">&#39;account_id&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="nv">$rw</span><span class="p">[</span><span class="s1">&#39;account_id&#39;</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// build the response</span>
+<span class="nv">$response</span> <span class="o">=</span> <span class="k">new</span> <span class="k">stdClass</span><span class="p">();</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">page</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">total</span> <span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">records</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="nv">$response</span><span class="o">-&gt;</span><span class="na">rows</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+<span class="c1">// Get parameters from the grid</span>
+<span class="nv">$node</span> <span class="o">=</span> <span class="nb">filter_input</span><span class="p">(</span><span class="nx">INPUT_POST</span><span class="p">,</span> <span class="s2">&quot;nodeid&quot;</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_NUMBER_INT</span><span class="p">);</span>
+<span class="nv">$n_lvl</span> <span class="o">=</span> <span class="nb">filter_input</span><span class="p">(</span><span class="nx">INPUT_POST</span><span class="p">,</span> <span class="s2">&quot;n_level&quot;</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_NUMBER_INT</span><span class="p">);</span>
+
+<span class="k">if</span><span class="p">(</span><span class="nv">$node</span> <span class="o">==</span> <span class="k">null</span> <span class="p">)</span> <span class="nv">$node</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nv">$n_lvl</span> <span class="o">==</span> <span class="k">null</span> <span class="p">)</span> <span class="nv">$n_lvl</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">if</span><span class="p">((</span><span class="nx">int</span><span class="p">)</span><span class="nv">$node</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//check to see which node to load</span>
+   <span class="nv">$wh</span> <span class="o">=</span> <span class="s1">&#39;parent_id=&#39;</span><span class="o">.</span><span class="nv">$node</span><span class="p">;</span> <span class="c1">// parents</span>
+   <span class="nv">$n_lvl</span> <span class="o">=</span> <span class="nv">$n_lvl</span><span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// we should ouput next level</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+   <span class="nv">$wh</span> <span class="o">=</span> <span class="s1">&#39;ISNULL(parent_id)&#39;</span><span class="p">;</span> <span class="c1">// roots</span>
+<span class="p">}</span>
+
+<span class="nv">$SQL</span> <span class="o">=</span> <span class="s2">&quot;SELECT account_id, name, acc_num, debit, credit, balance, parent_id FROM accounts WHERE &quot;</span><span class="o">.</span><span class="nv">$wh</span><span class="p">;</span>
+<span class="nv">$stm</span> <span class="o">=</span> <span class="nv">$conn</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$SQL</span><span class="p">);</span>
+<span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+
+<span class="k">while</span><span class="p">(</span><span class="nv">$row</span> <span class="o">=</span> <span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">level</span> <span class="o">=</span> <span class="nv">$n_lvl</span><span class="p">;</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span> <span class="o">=</span> <span class="o">!</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span> <span class="o">?</span> <span class="s1">&#39;NULL&#39;</span> <span class="o">:</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">parent_id</span><span class="p">;</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">isLeaf</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span> <span class="o">==</span> <span class="nv">$leafnodes</span><span class="p">[</span><span class="nv">$row</span><span class="o">-&gt;</span><span class="na">account_id</span><span class="p">]</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">isLeaf</span> <span class="o">=</span> <span class="k">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">expanded</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="nv">$row</span><span class="o">-&gt;</span><span class="na">loaded</span> <span class="o">=</span> <span class="k">false</span><span class="p">;</span>
+    <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">rows</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">;</span>
+
+<span class="p">}</span>
+<span class="nv">$stm</span><span class="o">-&gt;</span><span class="na">closeCursor</span><span class="p">();</span>
+<span class="nb">header</span><span class="p">(</span><span class="s2">&quot;Content-type: text/x-json;charset=utf-8&quot;</span><span class="p">);</span>
+<span class="c1">// output the data to json</span>
+<span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$response</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h2>
+<ul>
+<li><del><a href="../navigating/#pager">Pager</a> can be used, but its functionality currently are disabled for treeGrid</del></li>
+<li>When we initialize the grid and the data is read, the datatype is automatically set to local. This is required because treegrid supports autoloading tree nodes. This means that, for speed or efficiency, you can load the data only for the root level first and load the data for a particular child node only when the operator clicks to expand that node. The grid will determine that there is no data and try to load the node from the server, but in this case the data that is sent to the server has to have additional parameters. Setting datatype to local permits intervening before the request is made to build the request correctly. See the <a href="#nested-set-model">Nested Set Model</a> and <a href="#adjacency-model">Adjacency Model</a> on what is posted to the server</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><strong>record</strong> means the record object from data parameter, which can be obtained via the getRowData method like this:<br/><code>var record = jQuery("#grid_id").jqGrid('getRowData', rowid, true);</code><br/><br />
+Note the second parameter in the method. If the second parameter is omitted or set to false (default) the returned value is the from the current (view-able) data set. If the row can not be found a false is returned.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref5:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref6:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref7:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref8:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref9:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref10:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref11:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref12:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref13:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../subgrid/" title="SubGrid" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                SubGrid
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../pivotgrid/" title="PivotGrid" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                PivotGrid
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

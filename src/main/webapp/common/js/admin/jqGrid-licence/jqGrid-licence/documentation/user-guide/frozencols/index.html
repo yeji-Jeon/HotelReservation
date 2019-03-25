@@ -1,0 +1,730 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>Frozen Columns - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#frozen-columns" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                Frozen Columns
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Frozen Columns
+      </label>
+    
+    <a href="./" title="Frozen Columns" class="md-nav__link md-nav__link--active">
+      Frozen Columns
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#destroy" title="Destroy" class="md-nav__link">
+    Destroy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-setup" title="Dynamic setup" class="md-nav__link">
+    Dynamic setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-limitations" title="Notes, Limitations" class="md-nav__link">
+    Notes, Limitations
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" title="Setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#destroy" title="Destroy" class="md-nav__link">
+    Destroy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-setup" title="Dynamic setup" class="md-nav__link">
+    Dynamic setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes-limitations" title="Notes, Limitations" class="md-nav__link">
+    Notes, Limitations
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="frozen-columns"><div style='text-align:center'>Frozen Columns</div><a class="headerlink" href="#frozen-columns" title="Permanent link">&para;</a></h1>
+<hr />
+<p>It is quit easy for developers to make some columns frozen/locked within jqGrid. The locked columns do not scroll out of view when users moving horizontally across the grid. This is quite useful when you dealing with wide table with some fields should be visible permanently.</p>
+<h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
+<p>First you will need to setup which columns will be frozen/locked. This is done in colModel setting the property <strong>frozen:true</strong>. Below is a correct setup:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+ <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">70</span><span class="p">,</span> <span class="nx">frozen</span><span class="o">:</span><span class="kc">true</span> <span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;invdate&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">sorttype</span><span class="o">:</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span>
+    <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;date&#39;</span><span class="p">,</span>  <span class="nx">frozen</span><span class="o">:</span><span class="kc">true</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;amount&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;tax&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;closed&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;checkbox&#39;</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;ship_via&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;select&#39;</span><span class="p">,</span>
+      <span class="nx">edittype</span><span class="o">:</span> <span class="s1">&#39;select&#39;</span><span class="p">,</span> <span class="nx">editoptions</span><span class="o">:</span> <span class="p">{</span><span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;FE:FedEx;TN:TNT;IN:Intim&#39;</span><span class="p">}},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;note&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">70</span><span class="p">,</span> <span class="nx">sortable</span><span class="o">:</span> <span class="kc">false</span><span class="p">}</span>
+ <span class="p">],</span>
+ <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>After this you will need to call the method which is responsible to do this:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;setFrozenColumns&#39;</span><span class="p">);</span>
+</pre></div>
+
+
+<p>The method has no parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The frozen property should be set one after other. If there is a missing frozen property in the sequence then the last position which meet this criteria will be used.</p>
+</div>
+<p>In the example below only the first column will be locked.</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+ <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">70</span><span class="p">,</span> <span class="nx">frozen</span><span class="o">:</span><span class="kc">true</span> <span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;invdate&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">sorttype</span><span class="o">:</span> <span class="s1">&#39;date&#39;</span><span class="p">}</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;amount&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="nx">frozen</span> <span class="o">:</span> <span class="kc">true</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;tax&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span>  <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;right&#39;</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;closed&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;checkbox&#39;</span><span class="p">}</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;ship_via&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;select&#39;</span><span class="p">,</span>
+      <span class="nx">edittype</span><span class="o">:</span> <span class="s1">&#39;select&#39;</span><span class="p">,</span> <span class="nx">editoptions</span><span class="o">:</span> <span class="p">{</span><span class="nx">value</span><span class="o">:</span> <span class="s1">&#39;FE:FedEx;TN:TNT;IN:Intim&#39;</span><span class="p">}},</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;note&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">70</span><span class="p">,</span> <span class="nx">sortable</span><span class="o">:</span> <span class="kc">false</span><span class="p">}</span>
+ <span class="p">],</span>
+ <span class="p">...</span>
+<span class="p">});</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;setFrozenColumns&#39;</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="destroy">Destroy<a class="headerlink" href="#destroy" title="Permanent link">&para;</a></h2>
+<p>It is possible to destroy the frozenColumns in the grid using the method destroyFrozenColumns. This method restores the grid configuration before calling the setFrozenColums</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;destroyFrozenColumns&#39;</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="dynamic-setup">Dynamic setup<a class="headerlink" href="#dynamic-setup" title="Permanent link">&para;</a></h2>
+<p>It is possible to set the frozen columns dynamically. In this case it is needed to call first destroyFrozenColumns method, setup new frozen properties and call again setFrozenColumns.</p>
+<p>Below example tell how to do this, making the invdate column frozen:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#mybutton&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+   <span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">)</span>
+   <span class="p">.</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;destroyFrozenColumns&#39;</span><span class="p">)</span>
+   <span class="p">.</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;setColProp&#39;</span><span class="p">,</span><span class="s1">&#39;invdate&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">frozen</span><span class="o">:</span><span class="kc">true</span><span class="p">})</span>
+   <span class="p">.</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;setFrozenColumns&#39;</span><span class="p">)</span>
+   <span class="p">.</span><span class="nx">trigger</span><span class="p">(</span><span class="s1">&#39;reloadGrid&#39;</span><span class="p">,</span> <span class="p">[{</span><span class="nx">current</span><span class="o">:</span><span class="kc">true</span><span class="p">}]);</span> <span class="c1">// optional</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<h2 id="notes-limitations">Notes, Limitations<a class="headerlink" href="#notes-limitations" title="Permanent link">&para;</a></h2>
+<p>When possible the setFrozenColumns method should be called as last method of the sequence dealing with the initial loading of the grid. By example if you first call frozenColumns and then filterToolbar method this will make a inconsistency of the locked columns and the rest of columns. This is valid for all methods dealing with the changing the grid presentation like toolbars, group headers and etc.</p>
+<p>The frozen columns need a horizontal scroll bar. In order this to happen it is needed to set the option <strong>shrinkToFit</strong> set to false and set explicit the width of the grid. Optionally the autowidth option should be set to true in order to fit to parent container.</p>
+<p>In case when the visual presentation of the grid should be changed dynamically - i.e by example the filterToolbar is set dynamically or any other similar action - it is needed first to call the method <em>destroyFrozenColumns</em>, make your changes and call again <em>setFrozenColumns</em>  in your script. Note that this is valid only if the visual change of grid is made.</p>
+<p>The service columns for the row numbers (grid options rownumbers : true ) and the multiselect column (grid option multiselect: true) are set by default to frozen:true. This way it is not needed to set these property to frozen.</p>
+<p>The following limitations are valid when deal with frozen columns - i.e the frozen columns will not set-up.</p>
+<ul>
+<li>When TreeGrid is enabled</li>
+<li>When SubGrid is enabled</li>
+<li>When cellEdit is enabled</li>
+<li>When inline edit is used - the frozen columns can not be edit.</li>
+<li>When sortable columns are enabled - grid parameter sortable is set to true or is function</li>
+<li>When scroll is set to true or 1</li>
+<li>When Data grouping is enabled</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../grouping/" title="Grouping" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Grouping
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../colmenu/" title="Column menu" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Column menu
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

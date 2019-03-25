@@ -1,0 +1,900 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>Exporting - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#exporting" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                Exporting
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Exporting
+      </label>
+    
+    <a href="./" title="Exporting" class="md-nav__link md-nav__link--active">
+      Exporting
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#common-rules" title="Common rules" class="md-nav__link">
+    Common rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-to-csv" title="Export to CSV" class="md-nav__link">
+    Export to CSV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-to-excel" title="Export to Excel" class="md-nav__link">
+    Export to Excel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-to-pdf" title="Export to Pdf" class="md-nav__link">
+    Export to Pdf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-to-html" title="Export to Html" class="md-nav__link">
+    Export to Html
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#common-rules" title="Common rules" class="md-nav__link">
+    Common rules
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-to-csv" title="Export to CSV" class="md-nav__link">
+    Export to CSV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-to-excel" title="Export to Excel" class="md-nav__link">
+    Export to Excel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-to-pdf" title="Export to Pdf" class="md-nav__link">
+    Export to Pdf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-to-html" title="Export to Html" class="md-nav__link">
+    Export to Html
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="exporting"><div style='text-align:center'>Exporting</div><a class="headerlink" href="#exporting" title="Permanent link">&para;</a></h1>
+<hr />
+<p>When using Guriddo jqGrid, it is often useful and important to export your data to MS Excel, PDF or CSV file formats in order to make it accessible offline, share it with other users, etc.</p>
+<p>The Guriddo jqGrid JS grid provides client Excel, PDF an CSV export functionality (server-agnostic) which can be directly utilized to serve the purpose to share data in the aforementioned ways. To enable it, you can trigger export by invoking the exportToExcel, exportToPdf and exportToCsv methods from the client API of the grid.</p>
+<p>Additionally, you have the option to customize the rows/columns and cells of the exported file by intercepting the export event.</p>
+<h2 id="common-rules">Common rules<a class="headerlink" href="#common-rules" title="Permanent link">&para;</a></h2>
+<p>Below are common rules which are valid for all export methods.</p>
+<ul>
+<li>The methods export data if <em>datatype</em> parameter is set to local or the loadonce parameter is set to true.</li>
+<li>The methods does not export data which is requested at server - datatype is json or xml.</li>
+<li>The methods export the current data set, which means that it exports filtered, sorted and etc data.</li>
+<li>The <em>hidden</em> columns are not included into the export</li>
+<li>The columns with property <em>exportcol</em> : false in colModel will be not exported</li>
+<li>When a custom formatter is used, options parameter is extended with a properties:  <a href="../formatters/#definition-and-parameters">isExported</a>  which in this case is set to true and <strong>exporttype</strong> which can be <em>pdf, csv or excel</em> . This allow custom formatting when export occurred for a different export type.</li>
+</ul>
+<h2 id="export-to-csv">Export to CSV<a class="headerlink" href="#export-to-csv" title="Permanent link">&para;</a></h2>
+<p>A CSV is a comma separated values file/string which allows data to be saved in a table structured format. CSVs look like a garden-variety spreadsheet but with a .csv extension (Traditionally they take the form of a text file containing information separated by commas, hence the name).</p>
+<p>CSV files can be used with any spreadsheet program, such as Microsoft Excel, Open Office Calc, or Google Spreadsheets. They differ from other spreadsheet file types in that you can only have a single sheet in a file, they can not save cell, column, or row styling, and can not save formulas</p>
+<p>This method does not require additional plugin or external programs. When called the method either propmt to save the exported data to a CSV file or it can return the exported data as CSV string depending on configuration (see below).</p>
+<p>To export to CSV file format simple call the method:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;exportToCsv&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Where options is a object with a following default properties:</p>
+<div class="codehilite"><pre><span></span><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">separator</span><span class="o">:</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span>
+  <span class="nx">separatorReplace</span> <span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">,</span>
+  <span class="nx">quote</span> <span class="o">:</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">,</span>
+  <span class="nx">escquote</span> <span class="o">:</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">,</span>
+  <span class="nx">newLine</span> <span class="o">:</span> <span class="s2">&quot;\r\n&quot;</span><span class="p">,</span>
+  <span class="nx">replaceNewLine</span> <span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">,</span>
+  <span class="nx">includeCaption</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">includeLabels</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">includeGroupHeader</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">includeFooter</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">fileName</span> <span class="o">:</span> <span class="s2">&quot;jqGridExport.csv&quot;</span><span class="p">,</span>
+  <span class="nx">mimetype</span> <span class="o">:</span> <span class="s2">&quot;text/csv;charset=utf-8&quot;</span><span class="p">,</span>
+  <span class="nx">returnAsString</span> <span class="o">:</span> <span class="kc">false</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>separator - string - defines the separator between the fields</li>
+<li>separatorReplace - string - string which replaces the separator which can be contained into the field string</li>
+<li>quote - string - the test which enclosed the field</li>
+<li>newLine - string - the characters put at end of each row for new line</li>
+<li>replaceNewLine -  string - replace the new line if it is contained into the data field</li>
+<li>includeCaption - boolean - if false the grid caption will be not exported. Default is true</li>
+<li>includeLabels - boolean - if false the grid header columns will be not exported. Default is true.</li>
+<li>includeGroupHeader boolean - if set to false the group header will be not exported if they are activated. Default is true.</li>
+<li>includeFooter - boolean - if false the footer row will be not included into the export if it is defined. Default is true.</li>
+<li>fileName - string - the file name to save when data is exported. Default jqGridExport.csv</li>
+<li>mimetype - string - a way of identifying files on the Internet according to their nature and format in our case CSV type of data. Usually this parameter should not be changed.</li>
+<li>returnAsString - boolean - if set to true the data is returned as CSV string</li>
+</ul>
+<h2 id="export-to-excel">Export to Excel<a class="headerlink" href="#export-to-excel" title="Permanent link">&para;</a></h2>
+<p>(Excel Open XML)</p>
+<p>A file with the XLSX file extension is a Microsoft Excel Open XML Format Spreadsheet file. It's an XML-based spreadsheet file created by Microsoft Excel version 2007 and later.</p>
+<p>XLSX files organize data in cells that are stored in worksheets, which are in turn stored in workbooks, which are files that contain multiple worksheets. The cells are positioned by rows and columns and can contain styles, formatting, math functions, and more.</p>
+<p>Spreadsheet files made in earlier versions of Excel are saved in the XLS format. Excel files that support macros are XLSM files</p>
+<p>jqGrid export the data to Microsoft Excel Open XML Format only.</p>
+<p>In order to use the method additional module is needed to be loaded. The name of the module is <a href="https://stuk.github.io/jszip/">JSZip</a>. The module is included into the package. More about the installation of this module can be seen <a href="https://stuk.github.io/jszip/">here</a>. The JSZip can be loaded via cdnjs.</p>
+<p>If the JSZip module is not loaded the export to Excel will fail.</p>
+<p>To export to Excel it is needed to load JSZip</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>and call the method</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;exportToExcel&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Where options is a object with the following default properties:</p>
+<div class="codehilite"><pre><span></span><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">includeLabels</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">includeGroupHeader</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">includeFooter</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">fileName</span> <span class="o">:</span> <span class="s2">&quot;jqGridExport.xlsx&quot;</span><span class="p">,</span>
+  <span class="nx">mimetype</span> <span class="o">:</span> <span class="s2">&quot;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&quot;</span><span class="p">,</span>
+  <span class="nx">maxlength</span> <span class="o">:</span> <span class="mi">40</span><span class="p">,</span>
+  <span class="nx">onBeforeExport</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">replaceStr</span> <span class="o">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>includeLabels - boolean - if false the grid header columns will be not exported. Default is true.</li>
+<li>includeGroupHeader - boolean - if set to false the group header will be not exported if they are activated. Default is true.</li>
+<li>includeFooter - boolean - if false the footer row will be not included into the export if it is defined. Default is true.</li>
+<li>fileName - string - the file name to save when data is exported. Default jqGridExport.xlsx</li>
+<li>mimetype - string - a way of identifying files on the Internet according to their nature and format in our case Excel Open XML type of data. Usually this parameter should not be changed.</li>
+<li>maxlength - integer - set the max length of the visible string data</li>
+<li>onBeforeExport - event - The event  raises before building the zip file and is used as custom function to modify the XML document before it is exported. Parameter passed to this event is the exported XML document.</li>
+<li>replaceStr - event - custom event to parse the string data before inserted into the XML document. Parameter passed to this event is a string value.</li>
+</ul>
+<p>When called the method open a save dialog with the exported data. Select Save to save the file or Open to open it with the associated application.</p>
+<p>The export to Excel method recognizes three data types when exported - numeric, string and date. Note that the data is exported as it is seen into the grid - i.e formatted with formatters if they are used.</p>
+<p>By default the string fields are parsed for "&lt;" and "&gt;" and these are replaced with their HTML equivalent <code>&amp;lt;</code> and <code>&amp;gt;</code></p>
+<h2 id="export-to-pdf">Export to Pdf<a class="headerlink" href="#export-to-pdf" title="Permanent link">&para;</a></h2>
+<p>(Portable Document Format)</p>
+<p>Portable Document Format (PDF) is a file format used to present and exchange documents reliably, independent of software, hardware, or operating system. Invented by Adobe, PDF is now an open standard maintained by the International Organization for Standardization (ISO). PDFs can contain links and buttons, form fields, audio, video, and business logic.</p>
+<p>Today PDF is the most used exchange document format.</p>
+<p>jqGrid support export of its data to PDF.</p>
+<p>In order to use the method additional module is needed to be loaded. The name of the module is <a href="http://pdfmake.org/">pdfmake</a>. The module is included into the package. More about the installation of this module can be seen <a href="http://pdfmake.org/#/gettingstarted">here</a>. The pdfmake and vfs_fonts can be loaded via cdn.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Since the pdf creation is a heavy work, please use the method in relative small data set. Using the script on data set with more than 300 rows can cause problems and memory leaks.</p>
+</div>
+<p>To export to PDF it is needed to load the following javascripts</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;//cdn.rawgit.com/bpampuch/pdfmake/0.1.26/build/pdfmake.min.js&quot;</span><span class="p">&gt;</span>   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">language</span><span class="o">=</span><span class="s">&quot;javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;//cdn.rawgit.com/bpampuch/pdfmake/0.1.26/build/vfs_fonts.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>and call the method</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;exportToPdf&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+
+<p>where the options is a object with the following properties and default values:</p>
+<div class="codehilite"><pre><span></span><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">title</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">orientation</span><span class="o">:</span> <span class="s1">&#39;portrait&#39;</span><span class="p">,</span>
+  <span class="nx">pageSize</span><span class="o">:</span> <span class="s1">&#39;A4&#39;</span><span class="p">,</span>
+  <span class="nx">description</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">onBeforeExport</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">download</span><span class="o">:</span> <span class="s1">&#39;download&#39;</span><span class="p">,</span>
+  <span class="nx">includeLabels</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">includeGroupHeader</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">includeFooter</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">fileName</span> <span class="o">:</span> <span class="s2">&quot;jqGridExport.pdf&quot;</span><span class="p">,</span>
+  <span class="nx">mimetype</span> <span class="o">:</span> <span class="s2">&quot;application/pdf&quot;</span>  
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>title - string - The title of the exported data. Printed only once at top of the first page.</li>
+<li>orientation - string - defines the orientation of the page. Can be 'portrait' or 'landscape'. Default is 'portrait'.</li>
+<li>pageSize - string - defines the size of the page. Default is 'A4'. For all possible values see <a href="http://pdfmake.org/#/gettingstarted">here</a></li>
+<li>description - string - Free text which is printed after the title at first page. Default null.</li>
+<li>download - string - defines how to handle the PDF. Available two values - 'open' - open the PDF in a new window or 'download' - download the PDF with file name set in <em>fileName</em> (see below)</li>
+<li>includeLabels - boolean - if false the grid header columns will be not exported. Default is true.</li>
+<li>includeGroupHeader - boolean - if set to false the group header will be not exported if they are activated. Default is true.</li>
+<li>includeFooter - boolean - if false the footer row will be not included into the export if it is defined. Default is true.</li>
+<li>fileName - string - the file name to save when data is exported. Default jqGridExport.pdf</li>
+<li>mimetype - string - a way of identifying files on the Internet according to their nature and format in our case PDF type of data. Usually this parameter should not be changed.</li>
+<li>onBeforeExport - event - The event  raises before building the PDF file and is used as custom function to modify the PDF document definition before it is exported. Parameter passed to this event is the document definition object. For more information refer the <a href="http://pdfmake.org/#/gettingstarted">pdfmake documentation here</a>. See below the default settings for document definition</li>
+</ul>
+<p>The default settings for the document before PDF export are follow:</p>
+<div class="codehilite"><pre><span></span><span class="kd">var</span> <span class="nx">documentDefinition</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">pageSize</span><span class="o">:</span> <span class="nx">options</span><span class="p">.</span><span class="nx">pageSize</span><span class="p">,</span>
+  <span class="nx">pageOrientation</span><span class="o">:</span> <span class="nx">ooptions</span><span class="p">.</span><span class="nx">orientation</span><span class="p">,</span>
+  <span class="nx">content</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nx">style</span> <span class="o">:</span> <span class="s1">&#39;tableExample&#39;</span><span class="p">,</span>
+      <span class="nx">widths</span> <span class="o">:</span> <span class="nx">jqgrid</span><span class="p">.</span><span class="nx">widths</span><span class="p">,</span>
+      <span class="nx">table</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">headerRows</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="c1">//or 1</span>
+        <span class="nx">body</span><span class="o">:</span> <span class="nx">jqgrid</span><span class="p">.</span><span class="nx">rows</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nx">styles</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">tableHeader</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">11</span><span class="p">,</span>
+      <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;#2e6e9e&#39;</span><span class="p">,</span>
+      <span class="nx">fillColor</span><span class="o">:</span> <span class="s1">&#39;#dfeffc&#39;</span><span class="p">,</span>
+      <span class="nx">alignment</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">tableBody</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">10</span>
+    <span class="p">},</span>
+    <span class="nx">tableFooter</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+      <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">11</span><span class="p">,</span>
+      <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;#2e6e9e&#39;</span><span class="p">,</span>
+      <span class="nx">fillColor</span><span class="o">:</span> <span class="s1">&#39;#dfeffc&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">alignment</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span><span class="p">,</span>
+      <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">15</span>
+    <span class="p">},</span>
+    <span class="nx">description</span><span class="o">:</span> <span class="p">{}</span>
+  <span class="p">},</span>
+  <span class="nx">defaultStyle</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">fontSize</span><span class="o">:</span> <span class="mi">10</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+
+
+<p>This definition is passed to the onBeforeExport event and it can be modified for custom purposes.</p>
+<p>Below example shows how to make the body font of the table body smaller using the onBeforeExport event.</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#export&quot;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jqGrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s2">&quot;exportToPdf&quot;</span><span class="p">,{</span>
+    <span class="p">...</span>
+    <span class="nx">onBeforeExport</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">doc</span> <span class="p">)</span> <span class="p">{</span>
+      <span class="nx">doc</span><span class="p">.</span><span class="nx">styles</span><span class="p">.</span><span class="nx">tableBody</span><span class="p">.</span><span class="nx">fontSize</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+    <span class="p">},</span>
+    <span class="p">...</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<h2 id="export-to-html">Export to Html<a class="headerlink" href="#export-to-html" title="Permanent link">&para;</a></h2>
+<p>HTML is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+<p>This method does not require additional plugin or external programs. When called the method either shows a new html page (with option to print) or it can return the exported data as HTML string depending on configuration (see below).</p>
+<p>To export to HTML format simple call the method:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;exportToHtml&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Where options is a object with a following default properties:</p>
+<div class="codehilite"><pre><span></span><span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+    <span class="nx">onBeforeExport</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nx">includeLabels</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">includeGroupHeader</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">includeFooter</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">tableClass</span> <span class="o">:</span> <span class="s1">&#39;jqgridprint&#39;</span><span class="p">,</span>
+    <span class="nx">autoPrint</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nx">topText</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+    <span class="nx">bottomText</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+    <span class="nx">returnAsString</span> <span class="o">:</span> <span class="kc">false</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<ul>
+<li>onBeforeExport - event - The event  raises before building the HTML file and is used as custom function to modify the HTML document before it is exported. Parameter passed to this event is the exported html document.</li>
+<li>includeLabels - boolean - if false the grid header columns will be not exported. Default is true.</li>
+<li>includeGroupHeader - boolean - if set to false the group header will be not exported if they are activated. Default is true.</li>
+<li>includeFooter - boolean - if false the footer row will be not included into the export if it is defined. Default is true.</li>
+<li>tableClass - string - class to be added in the table when exported. Can be added more classes separated with space </li>
+<li>autoPrint - boolean - if set to true after creating the html document in new browser window a print dialog appear automatically.</li>
+<li>topText - string - text included at the top of the document</li>
+<li>bottomText - string - text included at the bottom of the document</li>
+<li>returnAsString - boolean - if set to true the html document is returned as string</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../persiststate/" title="Persist state" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Persist state
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../subgrid/" title="SubGrid" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                SubGrid
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

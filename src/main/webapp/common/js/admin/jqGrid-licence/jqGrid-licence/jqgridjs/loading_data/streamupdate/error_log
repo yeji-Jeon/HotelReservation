@@ -1,0 +1,1 @@
+[23-Jul-2017 19:50:54 Europe/Sofia] PHP Warning:  array_rand(): Second argument has to be between 1 and the number of elements in the array in /home/guriddon/public_html/demo/guriddojs/loading_data/streamupdate/updatedata.php on line 5

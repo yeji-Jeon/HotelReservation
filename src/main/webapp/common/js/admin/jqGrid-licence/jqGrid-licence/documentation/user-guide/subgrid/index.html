@@ -1,0 +1,1121 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>SubGrid - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#subgrid" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                SubGrid
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SubGrid
+      </label>
+    
+    <a href="./" title="SubGrid" class="md-nav__link md-nav__link--active">
+      SubGrid
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#subgrid_1" title="subGrid" class="md-nav__link">
+    subGrid
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" title="Properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" title="Events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-subgrid" title="Disable Subgrid" class="md-nav__link">
+    Disable Subgrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-information" title="Dev information" class="md-nav__link">
+    Dev information
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subgrid-as-grid" title="subGrid as Grid" class="md-nav__link">
+    subGrid as Grid
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" title="Definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#subgrid_1" title="subGrid" class="md-nav__link">
+    subGrid
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#properties" title="Properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" title="Events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods" title="Methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-subgrid" title="Disable Subgrid" class="md-nav__link">
+    Disable Subgrid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-information" title="Dev information" class="md-nav__link">
+    Dev information
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subgrid-as-grid" title="subGrid as Grid" class="md-nav__link">
+    subGrid as Grid
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" title="Definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="subgrid"><div style='text-align:center'>SubGrid</div><a class="headerlink" href="#subgrid" title="Permanent link">&para;</a></h1>
+<hr />
+<p>There are projects where we need to be able to easily display (or edit) records that are the children of a selected record in the parent grid. We would, of course, want to show only those records that are the children of the selected record in the grid, never the children of all records.</p>
+<p>Guriddo jqGrid JS offers two ways of handling child records:</p>
+<ul>
+<li>subGrid</li>
+<li>Grid as a subGrid</li>
+</ul>
+<h2 id="subgrid_1">subGrid<a class="headerlink" href="#subgrid_1" title="Permanent link">&para;</a></h2>
+<p>When created this type of subGrid is a simple flat table. The table can not be sorted, paged or re-sized - it just display the information in table format. The data can not be formatted, edited and selected.</p>
+<p>subGrids use properties, events and methods of the parent grid - i.e. they should be set as properties in the grid options.</p>
+<h3 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th align="center">Type</th>
+<th>Description</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>subGrid</td>
+<td align="center">boolean</td>
+<td>If set to true this enables using a subGrid. If the subGrid is enabled additional column at left side is added to the basic grid. This column contains a 'plus' icon, which indicate that the user can click on it to expand the row. By default all rows are collapsed.</td>
+<td align="center">false</td>
+</tr>
+<tr>
+<td>subGridOptions</td>
+<td align="center">object</td>
+<td>A set of options for the subGrid. Below are all the options with their default values <br/> { <br/> plusicon : classes.icon_plus,<br/> minusicon : classes.icon_minus,<br/> openicon: "ui-icon-carat-1-sw", <br/> expandOnLoad:  false, <br/> selectOnExpand : false, <br/> selectOnCollapse:false, <br/> reloadOnExpand : true <br/> } <br/> <em>plusicon</em> and <em>minusicon</em> defies the icons when the grid is collapsed/expanded. The icons are defined in the styleUI object for the particular CSS - see <a href="../basic-grid/#css-definition">subGrid property</a>. <br/> <em>openicon</em> the icon bellow the minusicon when the subGrid row is expanded - see the same property from subGrid property. <br/> <em>expandOnLoad</em> when set to true make it so that all rows will be expanded automatically when a new set of data is loaded. <br/> <em>selectOnLoad</em> when set to true the row is selected when a plusicon is clicked with the mouse. <br/> <em>selectOnCollapse</em> when set to true the row is selected when a minusicon is clicked with the mouse. <br/> <em>reloadOnExpand</em> If set to false the data in the subGrid is loaded only once and all other subsequent clicks just hide or show the data and no more ajax calls  are made.</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>subGridModel</td>
+<td align="center">array</td>
+<td>This property, which describes the model of the subGrid, has an effect only if the subGrid property is set to true. It is an array in which we describe the column model for the subGrid data. The syntax is : <br/> subGridModel : [ <br/> { <br/> name: ['name_1', 'name_2', ..., 'name_n'], <br/> width: [width_1, width_2, ..., width_n], <br/> align: ['left', 'center', ..., 'right'],<br/>params: [param_1, ..., param_n], <br/> mapping: ['name_1_map', 'name_2_map', ..., 'name_n_map']<br/>} <br/> Where <br/> <em>name</em>: an array containing the labels of the columns of the subGrid.<br/> <em>width</em>: an array containing the width of the columns. This array should have the same length as in name array. <br/> <em>align:</em> an array containing the alignment of the columns. The values can be left, center or right. If omited  the alignment is left. <br/> <em>params:</em> an array in which we can add a name from main grid's colModel to pass as additional parameter to the subGridUrl when click on the plus icon. <br/> <em>mapping:</em> the parameter is used only when repeatitems in subGrid is set to false. When defined in this case we use the names from this array to map it to the subGrid names. If not set and repeatitems is false we use the name option.</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>subgridtype</td>
+<td align="center">mixed</td>
+<td>This option allow loading subGrid as a service. If not set, the datatype parameter of the parent grid is used. See the example below</td>
+<td align="center">null</td>
+</tr>
+<tr>
+<td>subGridWidth</td>
+<td align="center">integer</td>
+<td>Determines the width of the subGrid column if subGrid is enabled.</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td>subGridUrl</td>
+<td align="center">mixed</td>
+<td>This option has effect only if subGrid option is set to true. This option points to the file from which we get the data for the subGrid. jqGrid adds the id of the row to this url as parameter. If there is a need to pass additional parameters, use the params option in subGridModel. The option can be set as function. The parameter pass to this fumction is the id and the params data as defined in subGridModel.</td>
+<td align="center">empty</td>
+</tr>
+<tr>
+<td>ajaxSubgridOptions</td>
+<td align="center">object</td>
+<td>This option allow to set global ajax settings for the subGrid when we request data. Note that with this option is possible to overwrite all current ajax setting in the subGrid request including the complete event.</td>
+<td align="center">empty object</td>
+</tr>
+<tr>
+<td>serializeSubGridData</td>
+<td align="center">function</td>
+<td>If set this event can serialize the data passed to the subGrid ajax request. The function should return the serialized data. This event can be used when a custom data should be passed to the server - e.g - JSON string, XML string and etc. The event actually is used in subGrid ajax data parameter</td>
+<td align="center">null</td>
+</tr>
+</tbody>
+</table>
+<p>In order to configure the subGrid it is needed to configure the subGrid item in xmlReader or jsonReader. The default setting for these are:</p>
+<div class="codehilite"><pre><span></span><span class="nx">xmlReader</span> <span class="o">:</span> <span class="p">{</span>
+<span class="p">...</span>
+  <span class="nx">subgrid</span><span class="o">:</span> <span class="p">{</span>
+     <span class="nx">root</span><span class="o">:</span> <span class="s2">&quot;rows&quot;</span><span class="p">,</span>
+     <span class="nx">row</span><span class="o">:</span> <span class="s2">&quot;row&quot;</span><span class="p">,</span>
+     <span class="nx">repeatitems</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+     <span class="nx">cell</span><span class="o">:</span> <span class="s2">&quot;cell&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>and a jsonReader</p>
+<div class="codehilite"><pre><span></span><span class="nx">jsonReader</span> <span class="o">:</span> <span class="p">{</span>
+<span class="p">...</span>
+  <span class="nx">subgrid</span><span class="o">:</span> <span class="p">{</span>
+     <span class="nx">root</span><span class="o">:</span> <span class="s2">&quot;rows&quot;</span><span class="p">,</span>
+     <span class="nx">repeatitems</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+     <span class="nx">cell</span><span class="o">:</span> <span class="s2">&quot;cell&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>The mapping rules are the same as those in the basic grid. For more information refer to <a href="../basic-grid/#data-retrieving-mapping-configuration">Retrieving Data</a>.</p>
+<p>In order to use correct subgridtype as service, below is a simple code which shows how this can be achieved:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+  <span class="nx">subgridtype</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">prm</span> <span class="p">)</span> <span class="p">{</span>
+     <span class="nx">jQuery</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+        <span class="nx">url</span><span class="o">:</span><span class="s1">&#39;url_to_the_service&#39;</span><span class="p">,</span>
+        <span class="nx">data</span><span class="o">:</span><span class="nx">rowidprm</span><span class="p">,</span>
+        <span class="nx">dataType</span><span class="o">:</span><span class="s2">&quot;json&quot;</span><span class="p">,</span>
+        <span class="nx">complete</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">jsondata</span><span class="p">,</span><span class="nx">stat</span><span class="p">){</span>
+           <span class="k">if</span><span class="p">(</span><span class="nx">stat</span><span class="o">==</span><span class="s2">&quot;success&quot;</span><span class="p">)</span> <span class="p">{</span>
+              <span class="kd">var</span> <span class="nx">thegrid</span> <span class="o">=</span> <span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span>
+              <span class="nx">thegrid</span><span class="p">.</span><span class="nx">subGridJson</span><span class="p">(</span><span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">jsondata</span><span class="p">.</span><span class="nx">responseText</span><span class="p">),</span> <span class="nx">prm</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
+           <span class="p">}</span>
+        <span class="p">}</span>
+     <span class="p">});</span>
+  <span class="p">},</span><span class="nx">subgrid</span>
+<span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>Where <em>prm</em> is object that contains the id of the row plus other parameters as required to set subGridModel parameters and subGridJson is a method which is described below.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note the use of the variable <em>thegrid</em> in the exmple above.</p>
+</div>
+<h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
+<p>The most of the following events use the parameters defined here:</p>
+<ul>
+<li>pID is the unique id of the div element where we can put contents when subgrid is enabled,</li>
+<li>id is the id of the row</li>
+<li>sPostData - the data which is posted when a subgrid request is made</li>
+</ul>
+<p>Below is the list of "option" and triggered events. The name of every triggered event begin with <em>jqGrid</em> and is set below the "option" event.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first parameter of the trigered event is always event. It should be used before any other parameter. By example if the described parameters in options event are a,b,c - i.e event(a,b,c), in triggered event we need to use triggered_event(e, a, b, c)</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>the triggered event is bind to the grid and is not passed to to any options. See <a href="../basic-grid/#triggered-events">Triggered events</a></p>
+</div>
+<hr />
+<p><strong>subGridBeforeExpand( pID, id)</strong><br />
+<strong>jqGridSubGridBeforeExpand(event pID, id)</strong></p>
+<p>The event is raised just before expanding the grid. When set, this event should return true or false. If it returns false the subgrid row is not expanded and the subgrid is not opened.</p>
+<hr />
+<p><strong>subGridRowExpanded( pID, id)</strong><br />
+<strong>jqGridSubGridRowExpanded(event pID, id)</strong></p>
+<p>This event is raised when the subgrid is enabled and is executed when the user clicks on the plus icon of the grid. Can be used to put custom data in the subgrid omitting the build-in ajax request.</p>
+<hr />
+<p><strong>subGridRowColapsed( pID, id)</strong><br />
+<strong>jqGridSubGridRowExpanded(event pID, id)</strong></p>
+<p>This event is raised when the user clicks on the minus icon. The event should return true or false; when the returned value is false the row can not be collapsed.</p>
+<hr />
+<p><strong>serializeSubGridData( sPostData )</strong><br />
+<strong>no triggered event</strong></p>
+<p>If set this event can serialize the data passed to the ajax request. The function should return the serialized data. This event can be used when a custom data should be passed to the server - e.g - JSON string, XML string and etc.</p>
+<hr />
+<p><strong>isHasSubGrid( row_id )</strong><br />
+<strong>no triggered event</strong></p>
+<p>To the event is passed the row_id parameter. If defined it is executed on every row before the subgrid is build. If the event return false the subgrid for that row is not build-ed. The plus icon disappear.</p>
+<p>In the example below if the first symbol of the first column of the grid begin with "1" the subgrid is not build.</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="nx">url</span><span class="o">:</span><span class="s1">&#39;example.php&#39;</span><span class="p">,</span>
+  <span class="nx">colNames</span><span class="o">:</span><span class="p">[</span><span class="s1">&#39;Inv No&#39;</span><span class="p">,</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="s1">&#39;Amount&#39;</span><span class="p">,</span><span class="s1">&#39;Tax&#39;</span><span class="p">,</span><span class="s1">&#39;Total&#39;</span><span class="p">,</span><span class="s1">&#39;Notes&#39;</span><span class="p">],</span>
+  <span class="nx">colModel</span> <span class="o">:</span><span class="p">[</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;invid&#39;</span><span class="p">,</span> <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;invid&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">55</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;invdate&#39;</span><span class="p">,</span> <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;invdate&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">90</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;amount&#39;</span><span class="p">,</span> <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;amount&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s1">&#39;right&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;tax&#39;</span><span class="p">,</span> <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;tax&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s1">&#39;right&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;total&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">80</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s1">&#39;right&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;note&#39;</span><span class="p">,</span> <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;note&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">150</span><span class="p">,</span> <span class="nx">sortable</span><span class="o">:</span><span class="kc">false</span><span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nx">pager</span><span class="o">:</span> <span class="s1">&#39;#pager&#39;</span><span class="p">,</span>
+  <span class="nx">rowNum</span><span class="o">:</span><span class="mi">10</span><span class="p">,</span>
+  <span class="nx">rowList</span><span class="o">:</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">],</span>
+  <span class="nx">subGrid</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">isHasSubGrid</span> <span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">rowid</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// if invid begin with 1, do not use subgrid</span>
+    <span class="c1">// the first column is a subgrid</span>
+    <span class="kd">var</span> <span class="nx">cell</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;getCell&#39;</span><span class="p">,</span> <span class="nx">rowid</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span> <span class="nx">cell</span> <span class="o">&amp;&amp;</span> <span class="nx">cell</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="o">===</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<h3 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h3>
+<p>The following methods are available for manipulating SubGrid data.</p>
+<hr />
+<p><strong>expandSubGridRow( row_id )</strong></p>
+<p>Dynamically expand the subgrid row with the id = row_id</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string row_id the id of the row to be expended</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>collapseSubGridRow( row_id )</strong></p>
+<p>Dynamically collapse the subgrid row with the id = row_id</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string row_id the id of the row to be collapsed</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<hr />
+<p><strong>toggleSubGridRow( row_id )</strong></p>
+<p>Dynamically toggle the subgrid row with the id = row_id</p>
+<p><em><strong>parameters</strong></em></p>
+<ul>
+<li>string row_id - the id of the row</li>
+</ul>
+<p><em><strong>return</strong></em><br />
+jqGrid object</p>
+<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<p>This example demonstrates a simple using of Subgrid. After run it look like this:</p>
+<p><img alt="Screenshot" src="../../img/subgrid-simple.png" /></p>
+<p>Please look at the code which is well documented.</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">table</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;jqGrid&quot;</span><span class="o">&gt;&lt;</span><span class="err">/table&gt;</span>
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;jqGridPager&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jqGrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+            <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;data.json&#39;</span><span class="p">,</span>
+            <span class="nx">mtype</span><span class="o">:</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span>
+            <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+            <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;CustomerID&#39;</span><span class="p">,</span> <span class="nx">key</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Company Name&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;CompanyName&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Contact Name&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;ContactName&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Phone&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Phone&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;City&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;City&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span> <span class="p">}</span>
+            <span class="p">],</span>
+        <span class="nx">loadonce</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">width</span><span class="o">:</span> <span class="mi">780</span><span class="p">,</span>
+        <span class="nx">height</span><span class="o">:</span> <span class="mi">250</span><span class="p">,</span>
+        <span class="nx">rowNum</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="nx">sortname</span><span class="o">:</span> <span class="s1">&#39;CustomerID&#39;</span><span class="p">,</span>
+        <span class="nx">jsonReader</span><span class="o">:</span> <span class="p">{</span>
+          <span class="c1">// instruct subgrid to get the data as name:value pair</span>
+          <span class="nx">subgrid</span> <span class="o">:</span> <span class="p">{</span> <span class="nx">repeatitems</span><span class="o">:</span> <span class="kc">false</span><span class="p">}</span>
+        <span class="p">},</span>
+        <span class="c1">// set the subGrid property to true to show expand buttons for each row</span>
+        <span class="nx">subGrid</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="c1">// set the subgrid type to json</span>
+        <span class="nx">subgridtype</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span>
+        <span class="c1">// the url can be a function. In this case we build the urls depending on the id</span>
+        <span class="nx">subGridUrl</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span> <span class="nx">params</span> <span class="p">)</span> <span class="p">{</span>  <span class="nx">row</span>
+          <span class="k">return</span> <span class="nx">params</span><span class="p">.</span><span class="nx">id</span><span class="o">+</span><span class="s1">&#39;.json&#39;</span><span class="p">;</span>
+        <span class="p">},</span>
+        <span class="c1">// description of the subgrid model</span>
+        <span class="nx">subGridModel</span><span class="o">:</span><span class="p">[{</span>
+            <span class="nx">name</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;OrderID&quot;</span><span class="p">,</span><span class="s2">&quot;RequiredDate&quot;</span><span class="p">,</span><span class="s2">&quot;ShipName&quot;</span><span class="p">,</span><span class="s2">&quot;ShipCity&quot;</span><span class="p">,</span><span class="s2">&quot;Freight&quot;</span><span class="p">],</span>
+            <span class="nx">width</span><span class="o">:</span> <span class="p">[</span><span class="mi">60</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">70</span><span class="p">],</span>
+            <span class="nx">align</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;left&quot;</span><span class="p">,</span><span class="s2">&quot;left&quot;</span><span class="p">,</span><span class="s2">&quot;left&quot;</span><span class="p">,</span><span class="s2">&quot;left&quot;</span><span class="p">,</span><span class="s2">&quot;right&quot;</span><span class="p">],</span>
+            <span class="nx">params</span><span class="o">:</span> <span class="kc">false</span>
+        <span class="p">}],</span>
+        <span class="nx">pager</span><span class="o">:</span> <span class="s2">&quot;#jqGridPager&quot;</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>Data returned from server when a plus icon is clicked is</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;rows&quot;</span><span class="o">:</span><span class="p">[</span>
+        <span class="p">{</span><span class="s2">&quot;OrderID&quot;</span><span class="o">:</span><span class="s2">&quot;11011&quot;</span><span class="p">,</span><span class="s2">&quot;RequiredDate&quot;</span><span class="o">:</span><span class="s2">&quot;1998-05-07 00:00:00&quot;</span><span class="p">,</span><span class="s2">&quot;ShipName&quot;</span><span class="o">:</span><span class="s2">&quot;Alfreds Futterkiste&quot;</span><span class="p">,</span><span class="s2">&quot;ShipCity&quot;</span><span class="o">:</span><span class="s2">&quot;Berlin&quot;</span><span class="p">,</span><span class="s2">&quot;Freight&quot;</span><span class="o">:</span><span class="s2">&quot;1.2100&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;OrderID&quot;</span><span class="o">:</span><span class="s2">&quot;10952&quot;</span><span class="p">,</span><span class="s2">&quot;RequiredDate&quot;</span><span class="o">:</span><span class="s2">&quot;1998-04-27 00:00:00&quot;</span><span class="p">,</span><span class="s2">&quot;ShipName&quot;</span><span class="o">:</span><span class="s2">&quot;Alfreds Futterkiste&quot;</span><span class="p">,</span><span class="s2">&quot;ShipCity&quot;</span><span class="o">:</span><span class="s2">&quot;Berlin&quot;</span><span class="p">,</span><span class="s2">&quot;Freight&quot;</span><span class="o">:</span><span class="s2">&quot;40.4200&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;OrderID&quot;</span><span class="o">:</span><span class="s2">&quot;10835&quot;</span><span class="p">,</span><span class="s2">&quot;RequiredDate&quot;</span><span class="o">:</span><span class="s2">&quot;1998-02-12 00:00:00&quot;</span><span class="p">,</span><span class="s2">&quot;ShipName&quot;</span><span class="o">:</span><span class="s2">&quot;Alfreds Futterkiste&quot;</span><span class="p">,</span><span class="s2">&quot;ShipCity&quot;</span><span class="o">:</span><span class="s2">&quot;Berlin&quot;</span><span class="p">,</span><span class="s2">&quot;Freight&quot;</span><span class="o">:</span><span class="s2">&quot;69.5300&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;OrderID&quot;</span><span class="o">:</span><span class="s2">&quot;10702&quot;</span><span class="p">,</span><span class="s2">&quot;RequiredDate&quot;</span><span class="o">:</span><span class="s2">&quot;1997-11-24 00:00:00&quot;</span><span class="p">,</span><span class="s2">&quot;ShipName&quot;</span><span class="o">:</span><span class="s2">&quot;Alfreds Futterkiste&quot;</span><span class="p">,</span><span class="s2">&quot;ShipCity&quot;</span><span class="o">:</span><span class="s2">&quot;Berlin&quot;</span><span class="p">,</span><span class="s2">&quot;Freight&quot;</span><span class="o">:</span><span class="s2">&quot;23.9400&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;OrderID&quot;</span><span class="o">:</span><span class="s2">&quot;10692&quot;</span><span class="p">,</span><span class="s2">&quot;RequiredDate&quot;</span><span class="o">:</span><span class="s2">&quot;1997-10-31 00:00:00&quot;</span><span class="p">,</span><span class="s2">&quot;ShipName&quot;</span><span class="o">:</span><span class="s2">&quot;Alfreds Futterkiste&quot;</span><span class="p">,</span><span class="s2">&quot;ShipCity&quot;</span><span class="o">:</span><span class="s2">&quot;Berlin&quot;</span><span class="p">,</span><span class="s2">&quot;Freight&quot;</span><span class="o">:</span><span class="s2">&quot;61.0200&quot;</span><span class="p">},</span>
+        <span class="p">{</span><span class="s2">&quot;OrderID&quot;</span><span class="o">:</span><span class="s2">&quot;10643&quot;</span><span class="p">,</span><span class="s2">&quot;RequiredDate&quot;</span><span class="o">:</span><span class="s2">&quot;1997-09-22 00:00:00&quot;</span><span class="p">,</span><span class="s2">&quot;ShipName&quot;</span><span class="o">:</span><span class="s2">&quot;Alfreds Futterkiste&quot;</span><span class="p">,</span><span class="s2">&quot;ShipCity&quot;</span><span class="o">:</span><span class="s2">&quot;Berlin&quot;</span><span class="p">,</span><span class="s2">&quot;Freight&quot;</span><span class="o">:</span><span class="s2">&quot;29.4600&quot;</span><span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="disable-subgrid">Disable Subgrid<a class="headerlink" href="#disable-subgrid" title="Permanent link">&para;</a></h3>
+<p>A subGrid can be enabled (or disabled) dynamically (to respond to changes in the data in the main grid, for example).<br />
+To disable subGrid :</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;hideCol&#39;</span><span class="p">,</span> <span class="s1">&#39;subgrid&#39;</span><span class="p">);</span>
+</pre></div>
+
+
+<p>To enable subGrid</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;showCol&#39;</span><span class="p">,</span> <span class="s1">&#39;subgrid&#39;</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Where</p>
+<ul>
+<li>grid_id is to be replaced by the name of your grid, but</li>
+<li>subgrid is a keyword, not to be replaced</li>
+</ul>
+<p>To make this work, subGrid must be initially set to true in the jqGrid properties; only then can we enable and disable it using the code above.</p>
+<h3 id="dev-information">Dev information<a class="headerlink" href="#dev-information" title="Permanent link">&para;</a></h3>
+<p>All the code related to subGrid is in file grid.subgrid.js</p>
+<p>When the subGrid is defined (<em>subGrid: true</em> in grid options)  on additional column with name 'subgrid' is created and is placed at first place in the colModel. This column is not resizable, not sortable, can not be searched, it is fixed and can be hidden and visible using the appropriate methods and columnChooser.</p>
+<p>The subGrid can not be used when the following options are set.</p>
+<ul>
+<li>when a treeGrid is set (treeGrid: true). In this case treeGrid internally disables the subGrid.</li>
+<li>when frozen columns are activated - in this case the frozen column method <em>setFrozenColums</em>  does nothing.</li>
+</ul>
+<p>When the user click on plus icon we create a new row below. This row has a class <em>ui-subgrid</em>. When the row is expanded a class <em>ui-sg-expanded</em> is added and when is collapsed a class <em>ui-sg-collapsed</em> is added, removing the previous expanded class.</p>
+<p>The cell which contain plus/minus icon has a class <em>subgrid-cell</em> and the cell which contain the subgrid data has a class <em>subgrid-data</em>. To the subGrid data cell we add a attribute colspan equal to the number of visible columns.</p>
+<p>The row which contain subGrid information has a id = gird id plus "_"  plus row id plus "_" plus a word expandedContent. Example. If the grid has a id = jqGrid and the row has id = ALFKI, the the subGrid row id is:  <em>jqGrid_ALFKI_expandedContent</em></p>
+<h2 id="subgrid-as-grid">subGrid as Grid<a class="headerlink" href="#subgrid-as-grid" title="Permanent link">&para;</a></h2>
+<p>This is not a ready for you method, but rather a solution using some of the available methods and events. In this alternative to a subGrid, we use the subGrid functions of the main grid to create not a subGrid, but another grid, with all of the power and capacity of the main grid but appearing, as before, under the "parent" record with the same ability to reveal and hide it.</p>
+<p><img alt="Screenshot" src="../../img/subgrid-grid.png" /></p>
+<h3 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">&para;</a></h3>
+<p>We use two events described in options array: subGridRowExpanded and subGridRowColapsed [note the unconventional spelling].</p>
+<p>When these events are defined the population of the data in the subgrid is not executed. This way we can use the subGridUrl to get our custom data and put it into the expanded row. Having this it is easy to construct another grid which will act as subgrid.</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">table</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;jqGrid&quot;</span><span class="o">&gt;&lt;</span><span class="err">/table&gt;</span>
+<span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;jqGridPager&quot;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;</span>
+
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jqGrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+            <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;data.json&#39;</span><span class="p">,</span>
+            <span class="nx">mtype</span><span class="o">:</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span>
+            <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+            <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;ID&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;CustomerID&#39;</span><span class="p">,</span> <span class="nx">key</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Company Name&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;CompanyName&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Contact Name&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;ContactName&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Phone&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Phone&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;City&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;City&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">150</span> <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nx">loadonce</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">width</span><span class="o">:</span> <span class="mi">780</span><span class="p">,</span>
+            <span class="nx">height</span><span class="o">:</span> <span class="mi">250</span><span class="p">,</span>
+            <span class="nx">rowNum</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+            <span class="c1">// set the subGrid property to true to show expand buttons for each row</span>
+            <span class="nx">subGrid</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="c1">// javascript function that will take care of showing the child grid</span>
+            <span class="nx">subGridRowExpanded</span><span class="o">:</span> <span class="nx">showChildGrid</span><span class="p">,</span>
+            <span class="nx">subGridOptions</span> <span class="o">:</span> <span class="p">{</span>
+            <span class="c1">// expand all rows on load</span>
+              <span class="nx">expandOnLoad</span><span class="o">:</span> <span class="kc">true</span>
+            <span class="p">},</span>
+            <span class="nx">pager</span><span class="o">:</span> <span class="s2">&quot;#jqGridPager&quot;</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+
+    <span class="c1">// the event handler on expanding parent row receives two parameters</span>
+    <span class="c1">// the ID of the grid tow  and the primary key of the row</span>
+    <span class="kd">function</span> <span class="nx">showChildGrid</span><span class="p">(</span><span class="nx">parentRowID</span><span class="p">,</span> <span class="nx">parentRowKey</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// create unique table and pager</span>
+        <span class="kd">var</span> <span class="nx">childGridID</span> <span class="o">=</span> <span class="nx">parentRowID</span> <span class="o">+</span> <span class="s2">&quot;_table&quot;</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">childGridPagerID</span> <span class="o">=</span> <span class="nx">parentRowID</span> <span class="o">+</span> <span class="s2">&quot;_pager&quot;</span><span class="p">;</span>
+
+        <span class="c1">// send the parent row primary key to the server so that we know which grid to show</span>
+        <span class="kd">var</span> <span class="nx">childGridURL</span> <span class="o">=</span> <span class="nx">parentRowKey</span><span class="o">+</span><span class="s2">&quot;.json&quot;</span><span class="p">;</span>
+        <span class="c1">// add a table and pager HTML elements to the parent grid row - we will render the child grid here</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#&#39;</span> <span class="o">+</span> <span class="nx">parentRowID</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;table id=&#39;</span> <span class="o">+</span> <span class="nx">childGridID</span> <span class="o">+</span> <span class="s1">&#39;&gt;&lt;/table&gt;&lt;div id=&#39;</span> <span class="o">+</span> <span class="nx">childGridPagerID</span> <span class="o">+</span> <span class="s1">&#39;&gt;&lt;/div&gt;&#39;</span><span class="p">);</span>
+
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#&quot;</span> <span class="o">+</span> <span class="nx">childGridID</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+            <span class="nx">url</span><span class="o">:</span> <span class="nx">childGridURL</span><span class="p">,</span>
+            <span class="nx">mtype</span><span class="o">:</span> <span class="s2">&quot;GET&quot;</span><span class="p">,</span>
+            <span class="nx">datatype</span><span class="o">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+            <span class="nx">page</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Order ID&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;OrderID&#39;</span><span class="p">,</span> <span class="nx">key</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Required Date&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;RequiredDate&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Ship Name&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;ShipName&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Ship City&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;ShipCity&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span> <span class="p">},</span>
+                <span class="p">{</span> <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Freight&#39;</span><span class="p">,</span> <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Freight&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">75</span> <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nx">loadonce</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nx">width</span><span class="o">:</span> <span class="mi">500</span><span class="p">,</span>
+            <span class="nx">height</span><span class="o">:</span> <span class="s1">&#39;100%&#39;</span><span class="p">,</span>
+            <span class="nx">pager</span><span class="o">:</span> <span class="s2">&quot;#&quot;</span> <span class="o">+</span> <span class="nx">childGridPagerID</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>Note that subGridRowColapsed is not defined. This is true because when the row is collapsed the contents is removed.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../exporting/" title="Exporting" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Exporting
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../treegrid/" title="TreeGrid" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                TreeGrid
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

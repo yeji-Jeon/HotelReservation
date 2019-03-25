@@ -1,0 +1,1675 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>Formatters - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#formatters" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                Formatters
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Formatters
+      </label>
+    
+    <a href="./" title="Formatters" class="md-nav__link md-nav__link--active">
+      Formatters
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#predefined-formatters" title="Predefined Formatters" class="md-nav__link">
+    Predefined Formatters
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#language-options" title="Language options" class="md-nav__link">
+    Language options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-specific-options" title="Column Specific Options" class="md-nav__link">
+    Column Specific Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#predefined-format-types" title="Predefined Format Types" class="md-nav__link">
+    Predefined Format Types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integer" title="integer" class="md-nav__link">
+    integer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number" title="number" class="md-nav__link">
+    number
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currency" title="currency" class="md-nav__link">
+    currency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date" title="date" class="md-nav__link">
+    date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" title="email" class="md-nav__link">
+    email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link" title="link" class="md-nav__link">
+    link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showlink" title="showLink" class="md-nav__link">
+    showLink
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkbox" title="checkbox" class="md-nav__link">
+    checkbox
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-formatters" title="Special formatters" class="md-nav__link">
+    Special formatters
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatter-select" title="Formatter select" class="md-nav__link">
+    Formatter select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatter-actions" title="Formatter actions" class="md-nav__link">
+    Formatter actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-formatter" title="Custom Formatter" class="md-nav__link">
+    Custom Formatter
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-and-parameters" title="Definition and parameters" class="md-nav__link">
+    Definition and parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unformatting" title="Unformatting" class="md-nav__link">
+    Unformatting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-formatter" title="Example formatter" class="md-nav__link">
+    Example formatter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-common-formatter-function" title="Define common formatter function" class="md-nav__link">
+    Define common formatter function
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#predefined-formatters" title="Predefined Formatters" class="md-nav__link">
+    Predefined Formatters
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#language-options" title="Language options" class="md-nav__link">
+    Language options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-specific-options" title="Column Specific Options" class="md-nav__link">
+    Column Specific Options
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#predefined-format-types" title="Predefined Format Types" class="md-nav__link">
+    Predefined Format Types
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#integer" title="integer" class="md-nav__link">
+    integer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number" title="number" class="md-nav__link">
+    number
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currency" title="currency" class="md-nav__link">
+    currency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#date" title="date" class="md-nav__link">
+    date
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" title="email" class="md-nav__link">
+    email
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#link" title="link" class="md-nav__link">
+    link
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#showlink" title="showLink" class="md-nav__link">
+    showLink
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkbox" title="checkbox" class="md-nav__link">
+    checkbox
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#special-formatters" title="Special formatters" class="md-nav__link">
+    Special formatters
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatter-select" title="Formatter select" class="md-nav__link">
+    Formatter select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatter-actions" title="Formatter actions" class="md-nav__link">
+    Formatter actions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-formatter" title="Custom Formatter" class="md-nav__link">
+    Custom Formatter
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-and-parameters" title="Definition and parameters" class="md-nav__link">
+    Definition and parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unformatting" title="Unformatting" class="md-nav__link">
+    Unformatting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-formatter" title="Example formatter" class="md-nav__link">
+    Example formatter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-common-formatter-function" title="Define common formatter function" class="md-nav__link">
+    Define common formatter function
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="formatters"><p style='text-align:center'>Formatters</p><a class="headerlink" href="#formatters" title="Permanent link">&para;</a></h1>
+<hr />
+<p>Formatter supports advanced formatting of the contents of cells in form, in-line and cell editing.<br />
+Formatter can be used in either of two ways: Predefined and Custom.</p>
+<h2 id="predefined-formatters">Predefined Formatters<a class="headerlink" href="#predefined-formatters" title="Permanent link">&para;</a></h2>
+<p>The formatter are defined in separate module named jquery.fmatter.js. The module is included in the entire <em>jquery.jqGrid.js</em> file and can be omitted if a custom download is used.</p>
+<h3 id="language-options">Language options<a class="headerlink" href="#language-options" title="Permanent link">&para;</a></h3>
+<p>Default language formatting options are defined in the language files e.g., grid.locale-xx (where xx is the two character code for your preferred language).</p>
+<p>That means that the formatter options are loaded when the grid javascript files are loaded.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default formatter options are different for each language file.</p>
+</div>
+<p>Here are the default formatter options for the English file:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">regional</span><span class="p">[</span><span class="s2">&quot;en&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="p">...</span>
+  <span class="nx">formatter</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="nx">integer</span> <span class="o">:</span> <span class="p">{</span><span class="nx">thousandsSeparator</span><span class="o">:</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="nx">defaultValue</span><span class="o">:</span> <span class="s1">&#39;0&#39;</span><span class="p">},</span>
+        <span class="nx">number</span> <span class="o">:</span> <span class="p">{</span><span class="nx">decimalSeparator</span><span class="o">:</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="nx">thousandsSeparator</span><span class="o">:</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="nx">decimalPlaces</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">defaultValue</span><span class="o">:</span> <span class="s1">&#39;0.00&#39;</span><span class="p">},</span>
+        <span class="nx">currency</span> <span class="o">:</span> <span class="p">{</span><span class="nx">decimalSeparator</span><span class="o">:</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="nx">thousandsSeparator</span><span class="o">:</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="nx">decimalPlaces</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">prefix</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nx">suffix</span><span class="o">:</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="nx">defaultValue</span><span class="o">:</span> <span class="s1">&#39;0.00&#39;</span><span class="p">},</span>
+        <span class="nx">date</span> <span class="o">:</span> <span class="p">{</span>
+            <span class="nx">dayNames</span><span class="o">:</span>   <span class="p">[</span>
+                <span class="s2">&quot;Sun&quot;</span><span class="p">,</span> <span class="s2">&quot;Mon&quot;</span><span class="p">,</span> <span class="s2">&quot;Tue&quot;</span><span class="p">,</span> <span class="s2">&quot;Wed&quot;</span><span class="p">,</span> <span class="s2">&quot;Thr&quot;</span><span class="p">,</span> <span class="s2">&quot;Fri&quot;</span><span class="p">,</span> <span class="s2">&quot;Sat&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Sunday&quot;</span><span class="p">,</span> <span class="s2">&quot;Monday&quot;</span><span class="p">,</span> <span class="s2">&quot;Tuesday&quot;</span><span class="p">,</span> <span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span> <span class="s2">&quot;Thursday&quot;</span><span class="p">,</span> <span class="s2">&quot;Friday&quot;</span><span class="p">,</span> <span class="s2">&quot;Saturday&quot;</span>
+            <span class="p">],</span>
+            <span class="nx">monthNames</span><span class="o">:</span> <span class="p">[</span>
+                <span class="s2">&quot;Jan&quot;</span><span class="p">,</span> <span class="s2">&quot;Feb&quot;</span><span class="p">,</span> <span class="s2">&quot;Mar&quot;</span><span class="p">,</span> <span class="s2">&quot;Apr&quot;</span><span class="p">,</span> <span class="s2">&quot;May&quot;</span><span class="p">,</span> <span class="s2">&quot;Jun&quot;</span><span class="p">,</span> <span class="s2">&quot;Jul&quot;</span><span class="p">,</span> <span class="s2">&quot;Aug&quot;</span><span class="p">,</span> <span class="s2">&quot;Sep&quot;</span><span class="p">,</span> <span class="s2">&quot;Oct&quot;</span><span class="p">,</span> <span class="s2">&quot;Nov&quot;</span><span class="p">,</span> <span class="s2">&quot;Dec&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;January&quot;</span><span class="p">,</span> <span class="s2">&quot;February&quot;</span><span class="p">,</span> <span class="s2">&quot;March&quot;</span><span class="p">,</span> <span class="s2">&quot;April&quot;</span><span class="p">,</span> <span class="s2">&quot;May&quot;</span><span class="p">,</span> <span class="s2">&quot;June&quot;</span><span class="p">,</span> <span class="s2">&quot;July&quot;</span><span class="p">,</span> <span class="s2">&quot;August&quot;</span><span class="p">,</span> <span class="s2">&quot;September&quot;</span><span class="p">,</span> <span class="s2">&quot;October&quot;</span><span class="p">,</span> <span class="s2">&quot;November&quot;</span><span class="p">,</span> <span class="s2">&quot;December&quot;</span>
+            <span class="p">],</span>
+            <span class="nx">AmPm</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;am&quot;</span><span class="p">,</span><span class="s2">&quot;pm&quot;</span><span class="p">,</span><span class="s2">&quot;AM&quot;</span><span class="p">,</span><span class="s2">&quot;PM&quot;</span><span class="p">],</span>
+            <span class="nx">S</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">j</span><span class="p">)</span> <span class="p">{</span><span class="k">return</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">11</span> <span class="o">||</span> <span class="nx">j</span> <span class="o">&gt;</span> <span class="mi">13</span> <span class="o">?</span> <span class="p">[</span><span class="s1">&#39;st&#39;</span><span class="p">,</span> <span class="s1">&#39;nd&#39;</span><span class="p">,</span> <span class="s1">&#39;rd&#39;</span><span class="p">,</span> <span class="s1">&#39;th&#39;</span><span class="p">][</span><span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">((</span><span class="nx">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">)]</span> <span class="o">:</span> <span class="s1">&#39;th&#39;</span><span class="p">;},</span>
+            <span class="nx">srcformat</span><span class="o">:</span> <span class="s1">&#39;Y-m-d&#39;</span><span class="p">,</span>
+            <span class="nx">newformat</span><span class="o">:</span> <span class="s1">&#39;n/j/Y&#39;</span><span class="p">,</span>
+            <span class="nx">parseRe</span> <span class="o">:</span> <span class="sr">/[#%\\\/:_;.,\t\s-]/</span><span class="p">,</span>
+            <span class="nx">masks</span> <span class="o">:</span> <span class="p">{</span>
+                <span class="c1">// see http://php.net/manual/en/function.date.php for PHP format used in jqGrid</span>
+                <span class="c1">// and see http://docs.jquery.com/UI/Datepicker/formatDate</span>
+                <span class="c1">// and https://github.com/jquery/globalize#dates for alternative formats used frequently</span>
+                <span class="c1">// one can find on https://github.com/jquery/globalize/tree/master/lib/cultures many</span>
+                <span class="c1">// information about date, time, numbers and currency formats used in different countries</span>
+                <span class="c1">// one should just convert the information in PHP format</span>
+                <span class="nx">ISO8601Long</span><span class="o">:</span><span class="s2">&quot;Y-m-d H:i:s&quot;</span><span class="p">,</span>
+                <span class="nx">ISO8601Short</span><span class="o">:</span><span class="s2">&quot;Y-m-d&quot;</span><span class="p">,</span>
+                <span class="c1">// short date:</span>
+                <span class="c1">//    n - Numeric representation of a month, without leading zeros</span>
+                <span class="c1">//    j - Day of the month without leading zeros</span>
+                <span class="c1">//    Y - A full numeric representation of a year, 4 digits</span>
+                <span class="c1">// example: 3/1/2012 which means 1 March 2012</span>
+                <span class="nx">ShortDate</span><span class="o">:</span> <span class="s2">&quot;n/j/Y&quot;</span><span class="p">,</span> <span class="c1">// in jQuery UI Datepicker: &quot;M/d/yyyy&quot;</span>
+                <span class="c1">// long date:</span>
+                <span class="c1">//    l - A full textual representation of the day of the week</span>
+                <span class="c1">//    F - A full textual representation of a month</span>
+                <span class="c1">//    d - Day of the month, 2 digits with leading zeros</span>
+                <span class="c1">//    Y - A full numeric representation of a year, 4 digits</span>
+                <span class="nx">LongDate</span><span class="o">:</span> <span class="s2">&quot;l, F d, Y&quot;</span><span class="p">,</span> <span class="c1">// in jQuery UI Datepicker: &quot;dddd, MMMM dd, yyyy&quot;</span>
+                <span class="c1">// long date with long time:</span>
+                <span class="c1">//    l - A full textual representation of the day of the week</span>
+                <span class="c1">//    F - A full textual representation of a month</span>
+                <span class="c1">//    d - Day of the month, 2 digits with leading zeros</span>
+                <span class="c1">//    Y - A full numeric representation of a year, 4 digits</span>
+                <span class="c1">//    g - 12-hour format of an hour without leading zeros</span>
+                <span class="c1">//    i - Minutes with leading zeros</span>
+                <span class="c1">//    s - Seconds, with leading zeros</span>
+                <span class="c1">//    A - Uppercase Ante meridiem and Post meridiem (AM or PM)</span>
+                <span class="nx">FullDateTime</span><span class="o">:</span> <span class="s2">&quot;l, F d, Y g:i:s A&quot;</span><span class="p">,</span> <span class="c1">// in jQuery UI Datepicker: &quot;dddd, MMMM dd, yyyy h:mm:ss tt&quot;</span>
+                <span class="c1">// month day:</span>
+                <span class="c1">//    F - A full textual representation of a month</span>
+                <span class="c1">//    d - Day of the month, 2 digits with leading zeros</span>
+                <span class="nx">MonthDay</span><span class="o">:</span> <span class="s2">&quot;F d&quot;</span><span class="p">,</span> <span class="c1">// in jQuery UI Datepicker: &quot;MMMM dd&quot;</span>
+                <span class="c1">// short time (without seconds)</span>
+                <span class="c1">//    g - 12-hour format of an hour without leading zeros</span>
+                <span class="c1">//    i - Minutes with leading zeros</span>
+                <span class="c1">//    A - Uppercase Ante meridiem and Post meridiem (AM or PM)</span>
+                <span class="nx">ShortTime</span><span class="o">:</span> <span class="s2">&quot;g:i A&quot;</span><span class="p">,</span> <span class="c1">// in jQuery UI Datepicker: &quot;h:mm tt&quot;</span>
+                <span class="c1">// long time (with seconds)</span>
+                <span class="c1">//    g - 12-hour format of an hour without leading zeros</span>
+                <span class="c1">//    i - Minutes with leading zeros</span>
+                <span class="c1">//    s - Seconds, with leading zeros</span>
+                <span class="c1">//    A - Uppercase Ante meridiem and Post meridiem (AM or PM)</span>
+                <span class="nx">LongTime</span><span class="o">:</span> <span class="s2">&quot;g:i:s A&quot;</span><span class="p">,</span> <span class="c1">// in jQuery UI Datepicker: &quot;h:mm:ss tt&quot;</span>
+                <span class="nx">SortableDateTime</span><span class="o">:</span> <span class="s2">&quot;Y-m-d\\TH:i:s&quot;</span><span class="p">,</span>
+                <span class="nx">UniversalSortableDateTime</span><span class="o">:</span> <span class="s2">&quot;Y-m-d H:i:sO&quot;</span><span class="p">,</span>
+                <span class="c1">// month with year</span>
+                <span class="c1">//    Y - A full numeric representation of a year, 4 digits</span>
+                <span class="c1">//    F - A full textual representation of a month</span>
+                <span class="nx">YearMonth</span><span class="o">:</span> <span class="s2">&quot;F, Y&quot;</span> <span class="c1">// in jQuery UI Datepicker: &quot;MMMM, yyyy&quot;</span>
+            <span class="p">},</span>
+            <span class="nx">reformatAfterEdit</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+            <span class="nx">userLocalTime</span> <span class="o">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="nx">baseLinkUrl</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+        <span class="nx">showAction</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+        <span class="nx">target</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+        <span class="nx">checkbox</span> <span class="o">:</span> <span class="p">{</span><span class="nx">disabled</span><span class="o">:</span><span class="kc">true</span><span class="p">},</span>
+        <span class="nx">idName</span> <span class="o">:</span> <span class="s1">&#39;id&#39;</span>
+    <span class="p">},</span>
+<span class="p">...</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Here you will find all the settings that you may want to review or change before using the predefined formats. These settings can also be overridden for specific columns using the formatoptions parameter in the colModel.</p>
+<p>The second step is to set the desired formatting in colModel. This is done using the option formatter. For example.</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+  <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+  <span class="p">...</span>
+     <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...</span> <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="p">...},</span>
+  <span class="p">...</span>
+  <span class="p">],</span>
+<span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>The example above will format the contents of the 'myname' column according to the rules set for 'number' in the active language file. For example, if the source value is "1234.1", then the value that actually will be put in the grid will be "1 234.10" using the options above.</p>
+<h3 id="column-specific-options">Column Specific Options<a class="headerlink" href="#column-specific-options" title="Permanent link">&para;</a></h3>
+<p>Formatter options can be defined for particular columns, overwriting the defaults from the language file. This is accomplished by using the formatoptions options in colModel. For example:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+   <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+   <span class="p">...</span>
+      <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...</span> <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;currency&#39;</span><span class="p">,</span> <span class="nx">formatoptions</span><span class="o">:</span><span class="p">{</span><span class="nx">decimalSeparator</span><span class="o">:</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="nx">thousandsSeparator</span><span class="o">:</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="nx">decimalPlaces</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">prefix</span><span class="o">:</span> <span class="s2">&quot;$ &quot;</span><span class="p">}</span> <span class="p">}</span> <span class="p">,</span>
+   <span class="p">...</span>
+   <span class="p">],</span>
+<span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>This definition will overwrite the default one from the language file. In formatoptions should be placed values appropriate for the particular format type.</p>
+<h3 id="predefined-format-types">Predefined Format Types<a class="headerlink" href="#predefined-format-types" title="Permanent link">&para;</a></h3>
+<p>Below is a list of the predefined format types</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All predefined types are compatible with the editing modules. This means that the numbers, links, e-mails, etc., are converted so that they can be edited correctly.</p>
+</div>
+<h4 id="integer">integer<a class="headerlink" href="#integer" title="Permanent link">&para;</a></h4>
+<p>Format a integer number according to the following formatoptions properties:<br />
+(The default values of these are set in the language file used)</p>
+<ul>
+<li><em>thousandsSeparator</em> - determines the separator for the thousands.</li>
+<li><em>defaultValue</em> set the default value if the source data is empty.</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+   <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+   <span class="p">...</span>
+      <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...</span> <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;integer&#39;</span><span class="p">,</span> <span class="nx">formatoptions</span><span class="o">:</span><span class="p">{</span><span class="nx">thousandsSeparator</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="nx">deaultValue</span><span class="o">:</span> <span class="s2">&quot;0&quot;</span><span class="p">}</span> <span class="p">}</span> <span class="p">,</span>
+   <span class="p">...</span>
+   <span class="p">],</span>
+<span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>The following code will format the number to:</p>
+<div class="codehilite"><pre><span></span>&quot;1234&quot; =&gt; &quot;1 234&quot;
+&quot; &quot;    =&gt; &quot;0&quot;
+&quot;123&quot;  =&gt; &quot;123&quot;
+</pre></div>
+
+
+<p>In case the expected number is not a integer, but number with decimal places -  <em>decimalPlaces</em> property should be set to 0 in case to convert to integer, like the following code:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...</span> <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;integer&#39;</span><span class="p">,</span> <span class="nx">formatoptions</span><span class="o">:</span><span class="p">{</span><span class="nx">thousandsSeparator</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="nx">deaultValue</span><span class="o">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span> <span class="nx">decimalPlaces</span> <span class="o">:</span> <span class="mi">0</span><span class="p">}</span> <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;1234.12&quot; =&gt; &quot;1 234&quot;
+&quot; &quot;       =&gt; &quot;0&quot;
+&quot;123.65&quot;  =&gt; &quot;124&quot;
+</pre></div>
+
+
+<h4 id="number">number<a class="headerlink" href="#number" title="Permanent link">&para;</a></h4>
+<p>Format a number according to the following formatoptions properties:<br />
+(The default values of these are set in the language file used)</p>
+<ul>
+<li><em>thousandsSeparator</em> - determines the separator for the thousands.</li>
+<li><em>decimalSeparator</em> determines the separator for the decimals.</li>
+<li><em>decimalPlaces</em> determine how many decimal places we should have for the number</li>
+<li><em>defaultValue</em> set the default value if the source data is empty.</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span>
+    <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;number&#39;</span><span class="p">,</span>
+    <span class="nx">formatoptions</span><span class="o">:</span><span class="p">{</span>
+      <span class="nx">thousandsSeparator</span><span class="o">:</span> <span class="s2">&quot; &quot;</span><span class="p">,</span>
+      <span class="nx">decimalSeparator</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">,</span>
+      <span class="nx">decimalPlaces</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nx">deaultValue</span><span class="o">:</span> <span class="s2">&quot;0.0&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>1234.12&quot;  =&gt; &quot;1 234.1&quot;
+&quot; &quot;       =&gt; &quot;0.0&quot;
+&quot;123.65&quot;  =&gt; &quot;124.7&quot;
+</pre></div>
+
+
+<h4 id="currency">currency<a class="headerlink" href="#currency" title="Permanent link">&para;</a></h4>
+<p>Format a number to currency according to the following formatoptions properties:<br />
+(The default values of these are set in the language file used)</p>
+<ul>
+<li><em>thousandsSeparator</em> - determines the separator for the thousands.</li>
+<li><em>decimalSeparator</em> determines the separator for the decimals.</li>
+<li><em>decimalPlaces</em> determine how many decimal places we should have for the number</li>
+<li><em>prefix</em> - string to be inserted before the number</li>
+<li><em>suffix</em> - string inserted at end of the number</li>
+<li><em>defaultValue</em> set the default value if the source data is empty.</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span>
+    <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;currency&#39;</span><span class="p">,</span>
+    <span class="nx">formatoptions</span><span class="o">:</span><span class="p">{</span>
+      <span class="nx">thousandsSeparator</span><span class="o">:</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span>
+      <span class="nx">decimalSeparator</span><span class="o">:</span> <span class="s2">&quot;.&quot;</span><span class="p">,</span>
+      <span class="nx">decimalPlaces</span> <span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="nx">prefix</span> <span class="o">:</span> <span class="s2">&quot;$ &quot;</span><span class="p">,</span>
+      <span class="nx">suffix</span> <span class="o">:</span> <span class="s2">&quot;&quot;</span>
+      <span class="nx">deaultValue</span><span class="o">:</span> <span class="s2">&quot;$ 0.00&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;1234.12&quot; =&gt; &quot;$ 1,234.12&quot;
+&quot; &quot;       =&gt; &quot;$ 0.00&quot;
+&quot;123.65&quot;  =&gt; &quot;$ 124.65&quot;
+</pre></div>
+
+
+<h4 id="date">date<a class="headerlink" href="#date" title="Permanent link">&para;</a></h4>
+<p>Format date with source format <em>srcformat</em> to a new format defined with <em>newformat</em> according to the following formatoptions properties:<br />
+(The default values of these are set in the language file used)</p>
+<ul>
+<li><em>srcformat</em> is the source format - i.e. the format of the date that should be converted</li>
+<li><em>newformat</em> is the new output format.</li>
+<li><em>parseRe</em> is a expression for parsing date strings.</li>
+<li><em>reformatAfterEdit</em> (default false) determine if the date should be reformatted after edited - i.e after the user changes the date and save it to the grid. The reason for this is that the date has no unformat when used in editiong modules.</li>
+<li><em>userLocalTime</em> (default false) forces the local time offset to be calculated to the date when inserted into the grid. See more information below.</li>
+</ul>
+<p>The local time offset in the date appear in jqGrid in the following situations.</p>
+<ol>
+<li>A Microsoft <a href="https://msdn.microsoft.com/en-us/library/bb412170.aspx">data serialization is used</a> and the response contain a date string with offset like:<br />
+"/Date(700000+0500)/"</li>
+<li>The srcformat is set to 'ISO8601Long' and the date value contain Z at end to indicate the UTC time zone</li>
+<li>The option <em>userLocalTime</em> is set to true and the time offset (in previous calculations) is = 0.</li>
+</ol>
+<p>The definition of the date format uses the <a href="http://php.net/manual/en/function.date.php">PHP date formatting</a><br />
+It is possible to use a set of predefined date format - see the mask options in the default date formatting set. In this case it is not needed to set a mask as option - it is needed to input the correct string defined in this property. See examples below</p>
+<p>Examples:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span>
+    <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;date&#39;</span><span class="p">,</span>
+    <span class="nx">formatoptions</span><span class="o">:</span><span class="p">{</span>
+      <span class="nx">srcformat</span><span class="o">:</span> <span class="s2">&quot;Y-m-d&quot;</span><span class="p">,</span>
+      <span class="nx">newformat</span><span class="o">:</span> <span class="s2">&quot;ShortDate&quot;</span> <span class="c1">// we use here option mask which is = n/j/Y</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>The result from this is :</p>
+<div class="codehilite"><pre><span></span>&quot;2017-03-01&quot; = &gt; 3/1/2012
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span>
+    <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;date&#39;</span><span class="p">,</span>
+    <span class="nx">formatoptions</span><span class="o">:</span><span class="p">{</span>
+      <span class="nx">srcformat</span><span class="o">:</span> <span class="s2">&quot;ISO8601Long&quot;</span><span class="p">,</span>
+      <span class="nx">newformat</span><span class="o">:</span> <span class="s2">&quot;m/d/Y H:i&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>If the current time is + 2 GMT, the result from this is :</p>
+<div class="codehilite"><pre><span></span>&quot;2017-03-01 11:19:22Z&quot; = &gt; 03/01/2012 13:19
+</pre></div>
+
+
+<p>The below example is equivalent to:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span>
+    <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;date&#39;</span><span class="p">,</span>
+    <span class="nx">formatoptions</span><span class="o">:</span><span class="p">{</span>
+      <span class="nx">srcformat</span><span class="o">:</span> <span class="s2">&quot;Y-m-d H:i:s&quot;</span><span class="p">,</span>
+      <span class="nx">newformat</span><span class="o">:</span> <span class="s2">&quot;m/d/Y H:i&quot;</span><span class="p">,</span>
+      <span class="nx">userLocalTime</span> <span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>&quot;2017-03-01 11:19:22&quot; = &gt; 03/01/2012 13:19
+</pre></div>
+
+
+<h4 id="email">email<a class="headerlink" href="#email" title="Permanent link">&para;</a></h4>
+<p>When used directly is added a href with  mailto: before the  e-mail</p>
+<p>The formatter does not have formatoptions properties:</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;email&#39;</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>john.smith@yahoo.com =&gt; <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;mailto:john.smith@yahoo.com&quot;</span><span class="nt">&gt;</span>john.smith@yahoo.com<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+
+<h4 id="link">link<a class="headerlink" href="#link" title="Permanent link">&para;</a></h4>
+<p>Convert a url to a href tag with the following formatoptions:</p>
+<ul>
+<li><em>target</em> - The target attribute specifies where to open the linked document. The default value of the target options is empty. When this options is set, we construct a link with the target property set and the cell value put in the href tag.</li>
+</ul>
+<p>The possible values of the target attribute can be:</p>
+<ul>
+<li>_blank   Opens the linked document in a new window or tab</li>
+<li>_self    Opens the linked document in the same frame as it was clicked (this is default)</li>
+<li>_parent  Opens the linked document in the parent frame</li>
+<li>_top     Opens the linked document in the full body of the window</li>
+<li>framename     Opens the linked document in a named frame</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span>
+   <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;link&#39;</span><span class="p">,</span>
+   <span class="nx">formatoptions</span> <span class="o">:</span> <span class="p">{</span>
+     <span class="nx">target</span> <span class="o">:</span> <span class="s2">&quot;_blank&quot;</span>
+   <span class="p">}</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>http://www.guriddo.net =&gt; <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://www.guriddo.net&quot;</span> <span class="na">target=</span><span class="s">&quot;_blank&quot;</span><span class="nt">&gt;</span>http://www.guriddo.net<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+
+<h4 id="showlink">showLink<a class="headerlink" href="#showlink" title="Permanent link">&para;</a></h4>
+<p>This formatter is the same as the link one, with possibility to add additinal parameters to the link. The following formatoptions properties can be used:</p>
+<ul>
+<li>baseLinkUrl is the link used</li>
+<li>showAction is an additional value which is added after the baseLinkUrl.</li>
+<li>addParam is an additional parameter that can be added after the idName property.</li>
+<li>target - specifies where to open the linked document</li>
+<li>idName is the first parameter that is added after the showAction. By default, this is id</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span>
+   <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;showLink&#39;</span><span class="p">,</span>
+   <span class="nx">formatoptions</span> <span class="o">:</span> <span class="p">{</span>
+     <span class="nx">baseLinkUrl</span> <span class="o">:</span> <span class="s1">&#39;http://myserver.com/&#39;</span>
+     <span class="nx">showaction</span><span class="o">:</span> <span class="s1">&#39;editrecord.php&#39;</span>
+     <span class="nx">addParam</span> <span class="o">:</span> <span class="s1">&#39;&amp;action=edit&#39;</span><span class="p">,</span>
+     <span class="nx">idName</span> <span class="o">:</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="c1">// this is default</span>
+     <span class="nx">target</span> <span class="o">:</span> <span class="s1">&#39;_blank&#39;</span>
+   <span class="p">}</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<p>if the cell content is Edit Record and the row id = 10, then</p>
+<div class="codehilite"><pre><span></span>Edit Record =&gt; <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;http://myserver.com/editrecord.php?id=10&amp;action=edit&quot;</span> <span class="na">target=</span><span class="s">&quot;_blank&quot;</span><span class="nt">&gt;</span>Edit Record<span class="nt">&lt;/a&gt;</span>
+</pre></div>
+
+
+<h4 id="checkbox">checkbox<a class="headerlink" href="#checkbox" title="Permanent link">&para;</a></h4>
+<p>Creates a checkbox element. The checkbox is not checked if the source cell value is one of the following: false, f, 0, no, n, off, undefined.<br />
+Only one format option is available:</p>
+<ul>
+<li>disabled - The default value for the disabled is true. This option determines if the checkbox can be changed. If set to false, the values in checkbox can be changed.</li>
+</ul>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">...</span>
+   <span class="p">{</span> <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="p">...,</span>
+   <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;checkbox&#39;</span><span class="p">,</span>
+   <span class="nx">formatoptions</span> <span class="o">:</span> <span class="p">{</span>
+     <span class="nx">disabled</span> <span class="o">:</span> <span class="kc">false</span>
+   <span class="p">}</span>
+  <span class="p">}</span> <span class="p">,</span>
+<span class="p">...</span>
+<span class="p">],</span>
+<span class="p">...</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span>true =&gt; &lt;input checked=&quot;checked&quot; value=&quot;true&quot; offval=&quot;no&quot; type=&quot;checkbox&quot;&gt;
+</pre></div>
+
+
+<h3 id="special-formatters">Special formatters<a class="headerlink" href="#special-formatters" title="Permanent link">&para;</a></h3>
+<p>We have two special formatters type which perform useful transformations. The first one is:</p>
+<h4 id="formatter-select">Formatter select<a class="headerlink" href="#formatter-select" title="Permanent link">&para;</a></h4>
+<p>The select type is not real select. This is used when we use some editing module and have edittype:'select'. The formatter is useful if the data contain key (or code), but we want to display in the grid, the value related to this code or key.</p>
+<p>The <em><strong>formatoptions</strong></em> used in this formatter are:</p>
+<ul>
+<li><em><strong>value</strong></em> the option defines the mapping of key to the value name displayed into the grid. The parameter can be a string or object (see below)</li>
+<li><em><strong>delimiter</strong></em> used when the <em><strong>value</strong></em> options is a string and delimit the different key:value pair in the string. The default option is ";"</li>
+<li><em><strong>separator</strong></em> used when the <em><strong>value</strong></em> options is a string and separate the key and value of the key:value pair. Default value is ":"</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the <em><strong>formatoptions</strong></em> are not set we try to get the same values from <em><strong>editoptions</strong></em>  object.</p>
+</div>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+   <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;select&#39;</span><span class="p">,</span> <span class="nx">formatoptions</span> <span class="o">:</span> <span class="p">{</span><span class="nx">value</span><span class="o">:</span><span class="s2">&quot;1:One;2:Two&quot;</span><span class="p">}}</span> <span class="p">...</span> <span class="p">]</span>
+<span class="p">...</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>The source data can contain the keys ("1" or "2"), but the value ("One", or "Two") will be displayed in the grid.</p>
+<p>In case of object the definition is as follow:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+  <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span>
+      <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;select&#39;</span><span class="p">,</span>
+      <span class="nx">formatoptions</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="nx">value</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;1&quot;</span><span class="o">:</span><span class="s2">&quot;One&quot;</span><span class="p">,</span><span class="s2">&quot;2&quot;</span><span class="o">:</span><span class="s2">&quot;Two&quot;</span> <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="p">...</span> <span class="p">]</span>
+<span class="p">...</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>The formatter support multiple option in editoptions which means that if this options is set a multiple values are displayed separated by comma.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+  <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;myname&#39;</span><span class="p">,</span>
+      <span class="nx">edittype</span> <span class="o">:</span> <span class="s1">&#39;select&#39;</span><span class="p">,</span>
+      <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;select&#39;</span><span class="p">,</span>
+      <span class="nx">editoptions</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="nx">value</span><span class="o">:</span> <span class="p">{</span> <span class="s2">&quot;1&quot;</span><span class="o">:</span><span class="s2">&quot;One&quot;</span><span class="p">,</span><span class="s2">&quot;2&quot;</span><span class="o">:</span><span class="s2">&quot;Two&quot;</span><span class="p">},</span>
+        <span class="nx">multiple</span> <span class="o">:</span> <span class="kc">true</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="p">...</span> <span class="p">]</span>
+<span class="p">...</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>If the source data contain the keys ("1, 2"), then  ("One, Two") will be displayed in the grid cell.</p>
+<p>The second special formatter is:</p>
+<h4 id="formatter-actions">Formatter actions<a class="headerlink" href="#formatter-actions" title="Permanent link">&para;</a></h4>
+<p>Formatter actions is a special feature where we prepare e function which add editable butons on every row. To do this it is needed to define additional column (usually as first or last columns ) in colModel and set it  formatter <em>actions</em>.</p>
+<p>The following definition:</p>
+<div class="codehilite"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#jqGrid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+  <span class="p">...</span>
+  <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nx">label</span><span class="o">:</span> <span class="s2">&quot;Edit Actions&quot;</span><span class="p">,</span>
+      <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;actions&quot;</span><span class="p">,</span>
+      <span class="nx">width</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+      <span class="nx">formatter</span><span class="o">:</span> <span class="s2">&quot;actions&quot;</span><span class="p">,</span>
+      <span class="nx">formatoptions</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">keys</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">editOptions</span><span class="o">:</span> <span class="p">{},</span>
+        <span class="nx">delOptions</span><span class="o">:</span> <span class="p">{}</span>
+      <span class="p">}</span>       
+    <span class="p">},</span>
+    <span class="p">...</span>
+  <span class="p">]</span>
+  <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>will cause this appearing</p>
+<p><img alt="Screenshot" src="../../img/inlinerow.png" /></p>
+<p>The formatter uses the <strong>nav</strong> property from <a href="../basic-grid/#language-file-structure">language file</a> to get some text when hover the buttons and <a href="../basic-grid/#css-definition">common</a> styleUI property to get the needed icons</p>
+<p>The following default parameters are used:</p>
+<div class="codehilite"><pre><span></span><span class="nx">formatoptions</span><span class="o">:</span> <span class="p">{</span>
+  <span class="nx">keys</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">editbutton</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+  <span class="nx">delbutton</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span>
+  <span class="nx">editformbutton</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">onEdit</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">onSuccess</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">url</span> <span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nx">extraparam</span> <span class="o">:</span> <span class="p">{},</span>
+  <span class="nx">afterSave</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">onError</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">afterRestore</span> <span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">restoreAfterError</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span>
+  <span class="nx">mtype</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+  <span class="nx">editOptions</span><span class="o">:</span> <span class="p">{},</span>
+  <span class="nx">delOptions</span><span class="o">:</span> <span class="p">{}</span>
+<span class="p">}</span>       
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a edit button is activated after the fields are in edit mode we automatically add two additinal buttons - save row and cancel editing. These buttons can not be disabled.</p>
+</div>
+<p>Bellow is a short description of the parameters:</p>
+<ul>
+<li>keys - boolean variable if set to true, then when the user press ESC key the editing is restored without to be saved; when the user press Enter the editing is saved; if the current field (focused) is textarea and Enter key is pressed save is not occurred.</li>
+<li>editbutton - boolean enables or disables the edit button</li>
+<li>delbutton - boolean enables/disables the delete button - see delOptions below</li>
+<li>editformbutton - boolean enables/disable the form edit form to appear instead of inline one - see editOptions below</li>
+<li>onEdit - fires after successfully accessing the row for editing, prior to allowing user access to the input fields. The row's id is passed as a parameter to this function.</li>
+<li>onSuccess - this function is called immediately after the request which save the data to the server is successful. This function is passed the data returned from the server. Depending on the data from server; this function should return true or false. Useful to notify the user if the operation is successfully or not.</li>
+<li>url - url where the data should be saved, clientArray can be used for local save.</li>
+<li>extraparam - additional user parameters that can be added to be send to the server</li>
+<li>afterSave - this function is called after the data is saved to the server. Parameters passed to this function are the rowid and the response from the server request. The event is called too when the url is set to 'clientArray'.</li>
+<li>onError - function is called after the data is saved to the server. Parameters passed to this function are the rowid and the response from the server request and status. The event is called too when the url is set to 'clientArray'. The event is called either on ajax error or the onSuccess event return false.</li>
+<li>afterRestore - this function is called in after restoring the row (esc key or cancel button). To this function we pass the rowid</li>
+<li>mtype - the method type of posting the data(GET or POST).</li>
+<li>editOptions - object with valid editGridRow options in case editformbutton is set to true. See  <a href="../editing/#edit-grid-row">form editing</a></li>
+<li>delOptions - object with valid delGridRow options. See  <a href="../editing/#del-grid-row">form editing</a></li>
+</ul>
+<h2 id="custom-formatter">Custom Formatter<a class="headerlink" href="#custom-formatter" title="Permanent link">&para;</a></h2>
+<p>It is possible define your own formatter for a particular column. Usually this is a function. When set in the formatter option this should not be enclosed in quotes and not entered with () - show just the name of the function.For example,</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+   <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">...</span>
+      <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">formatter</span><span class="o">:</span><span class="nx">currencyFmatter</span>
+      <span class="p">},</span>
+      <span class="p">...</span>
+   <span class="p">]</span>
+<span class="p">...</span>
+<span class="p">});</span>
+
+<span class="kd">function</span> <span class="nx">currencyFmatter</span> <span class="p">(</span><span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">rowObject</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="c1">// do something here</span>
+   <span class="k">return</span> <span class="nx">new_format_value</span>
+<span class="p">}</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>Another possible definition is to set the function and parameters direct in formatter like this:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+   <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">...</span>
+      <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">formatter</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">rowObject</span><span class="p">)</span> <span class="p">{</span>
+          <span class="c1">// do something here</span>
+          <span class="k">return</span> <span class="nx">new_format_value</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="p">...</span>
+   <span class="p">]</span>
+<span class="p">...</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<h3 id="definition-and-parameters">Definition and parameters<a class="headerlink" href="#definition-and-parameters" title="Permanent link">&para;</a></h3>
+<p>To the custom formatter are passed the following parameters</p>
+<div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">myformatter</span> <span class="p">(</span> <span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">rowObject</span> <span class="p">)</span>
+<span class="p">{</span>
+  <span class="c1">// format the cellvalue to new format</span>
+  <span class="k">return</span> <span class="nx">new_formated_cellvalue</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Note the return in the function. This function should always return a string value in order to work correctly.</p>
+</div>
+<ul>
+<li>cellvalue - is the value to be formatted</li>
+<li>options - is an object containing the following element <br/> options : { rowId: rid, colModel: cm, gid : gridId, pos : column_position, styleUI : guiStyle , isExported : boolval, exporttype : type_when_export},  where <br/> <strong>rowId</strong> - is the id of the row, <br/> <strong>colModel</strong> is the object of the properties for this column get from colModel array of jqGrid, <br/> <strong>gid</strong> is the id of the grid,<br/> <strong>pos</strong> is the position of the column in colModel,<br/> <strong>styleUI</strong> is the <a href="../basic-grid/#css-definition">style object</a>, <br> <strong>isExported</strong> is a parameter passed only when export occur allowing to make custom formatting when export is in action. The parameter in this case is true and is valid only when export to <a href="../exporting/#common-rules">CSV, Excel or PDF</a>, <br/> <strong>exporttype</strong> is a string which is available only when the isExported property is true. This indicates the type of the export - can be <strong>csv, pdf or excel</strong> depending on the export method called.</li>
+<li>rowObject - is a row data represented in the format determined from datatype option. If we have datatype: xml/xmlstring - the rowObject is xml node, provided according to the rules from xmlReader. If we have datatype: json/jsonstring - the rowObject is object, provided according to the rules from jsonReader</li>
+</ul>
+<h3 id="unformatting">Unformatting<a class="headerlink" href="#unformatting" title="Permanent link">&para;</a></h3>
+<p>As mentioned in <a href="#predefined-formatters">Predefined Formatter</a> chapter all predefined types are compatible with the editing modules. This means that the numbers, links, e-mails, etc., are converted so that they can be edited correctly. The methods (like getRowData and getCell) that get data, used this unformat in order to get the original value. The question is: What to do if we use a custom formatter function and want to have the original value back if we use editing or methods getRowData and getCell?</p>
+<p>The answer is: You can use your own custom unformat function to do that. This function can be used in colModel</p>
+<p>Example : show image and edit image's path:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+   <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">...</span>
+      <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>  
+        <span class="nx">editable</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">formatter</span><span class="o">:</span><span class="nx">imageFormat</span><span class="p">,</span>
+        <span class="nx">unformat</span><span class="o">:</span><span class="nx">imageUnFormat</span>
+      <span class="p">},</span>
+      <span class="p">...</span>
+   <span class="p">]</span>
+<span class="p">...</span>
+<span class="p">});</span>
+
+<span class="kd">function</span> <span class="nx">imageFormat</span><span class="p">(</span> <span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">rowObject</span> <span class="p">){</span>
+    <span class="k">return</span> <span class="s1">&#39;&lt;img src=&quot;&#39;</span><span class="o">+</span><span class="nx">cellvalue</span><span class="o">+</span><span class="s1">&#39;&quot; /&gt;&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">imageUnFormat</span><span class="p">(</span> <span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">cell</span><span class="p">){</span>
+    <span class="k">return</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;img&#39;</span><span class="p">,</span> <span class="nx">cell</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>To the custom unformat function are passed the following parameters:</p>
+<ul>
+<li>cellvalue - is the value to be unformated (pure text).</li>
+<li>options - is an object containing the following element <br/> options : { rowId: rid, colModel: cm} where rowId - is the id of the row colModel is the object of the properties for this column getted from colModel array of jqGrid</li>
+<li>cellobject - is a jQuery cell object. This object can be used to obtain different things from the cell element - by example jQuery(cellobject).html() can be used to get the html content instead of the text.</li>
+</ul>
+<h3 id="example-formatter">Example formatter<a class="headerlink" href="#example-formatter" title="Permanent link">&para;</a></h3>
+<p>Below we will simulate partial currency formatter using a custom format and unformat functions</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+   <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">...</span>
+      <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">editable</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">formatter</span><span class="o">:</span><span class="nx">currencyFmatter</span><span class="p">,</span>
+        <span class="nx">unformat</span><span class="o">:</span><span class="nx">unformatCurrency</span>
+      <span class="p">},</span>
+      <span class="p">...</span>
+   <span class="p">]</span>
+<span class="p">...</span>
+<span class="p">});</span>
+
+<span class="kd">function</span> <span class="nx">currencyFmatter</span> <span class="p">(</span><span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">rowObject</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="k">return</span> <span class="s2">&quot;$&quot;</span><span class="o">+</span><span class="nx">cellvalue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">function</span>  <span class="nx">unformatCurrency</span> <span class="p">(</span><span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="k">return</span> <span class="nx">cellvalue</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>If the value that is inserted or updated in the grid is 123.00, the in the grid it will be displayed as: $123.00; When we use getRowData or getCell methods or any editing module the value for this column will be 123.00</p>
+<h3 id="define-common-formatter-function">Define common formatter function<a class="headerlink" href="#define-common-formatter-function" title="Permanent link">&para;</a></h3>
+<p>In case certain custom formatter/unformatter is used many times in the code it is possible to define the formatter functions one time and use it into the code. The formatter module is created so that it can be easy extended from the developer and doing it so make the development process easy. Below is discussion how to make your own formatter functions to be visible all into the code.</p>
+<p>After loading the jqGrid Java Script files you can define in script tag the following (or simple create your own file and include it into the head section)</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">fmatter</span> <span class="p">,</span> <span class="p">{</span>
+    <span class="nx">currencyFmatter</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">,</span> <span class="nx">rowdata</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;$&quot;</span><span class="o">+</span><span class="nx">cellvalue</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">});</span>
+<span class="nx">jQuery</span><span class="p">.</span><span class="nx">extend</span><span class="p">(</span><span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">fmatter</span><span class="p">.</span><span class="nx">currencyFmatter</span> <span class="p">,</span> <span class="p">{</span>
+    <span class="nx">unformat</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cellvalue</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">cellvalue</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s2">&quot;$&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>The code to define the formatter is like this:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid_id&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+<span class="p">...</span>
+   <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+      <span class="p">...</span>
+      <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">index</span><span class="o">:</span><span class="s1">&#39;price&#39;</span><span class="p">,</span>
+        <span class="nx">editable</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;currencyFmatter&#39;</span>
+      <span class="p">},</span>
+      <span class="p">...</span>
+   <span class="p">]</span>
+<span class="p">...</span>
+<span class="p">});</span>
+<span class="p">...</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>Note that in this case it is not needed to specify the unformat function.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../navigating/" title="Navigation" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Navigation
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../searching/" title="Searching" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Searching
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

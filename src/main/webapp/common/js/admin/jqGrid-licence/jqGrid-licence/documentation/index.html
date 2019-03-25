@@ -1,0 +1,1545 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="./assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="./assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="./assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#guriddo-jqgrid" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                Home
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Home
+      </label>
+    
+    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+      Home
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" title="Background" class="md-nav__link">
+    Background
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-grid" title="Basic grid" class="md-nav__link">
+    Basic grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatting" title="Formatting" class="md-nav__link">
+    Formatting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-editing" title="Inline editing" class="md-nav__link">
+    Inline editing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cell-editing" title="Cell Editing" class="md-nav__link">
+    Cell Editing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#form-editing" title="Form Editing" class="md-nav__link">
+    Form Editing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-and-filtering" title="Searching and Filtering" class="md-nav__link">
+    Searching and Filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping" title="Grouping" class="md-nav__link">
+    Grouping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tree-grid" title="Tree Grid" class="md-nav__link">
+    Tree Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pivot-grid" title="Pivot Grid" class="md-nav__link">
+    Pivot Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export" title="Export" class="md-nav__link">
+    Export
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-requirements" title="System requirements" class="md-nav__link">
+    System requirements
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-you-begin" title="Before you begin" class="md-nav__link">
+    Before you begin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimum-requirements" title="Minimum Requirements" class="md-nav__link">
+    Minimum Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-requirements" title="Server Requirements" class="md-nav__link">
+    Server Requirements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downloading" title="Downloading" class="md-nav__link">
+    Downloading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-installation" title="Basic installation" class="md-nav__link">
+    Basic installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-jquery-ui-css-framework" title="Using jQuery UI CSS Framework." class="md-nav__link">
+    Using jQuery UI CSS Framework.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-bootstrap-v3-css-framework" title="Using Bootstrap v3 CSS Framework." class="md-nav__link">
+    Using Bootstrap v3 CSS Framework.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-bootstrap-v4-css-framework" title="Using Bootstrap v4 CSS Framework." class="md-nav__link">
+    Using Bootstrap v4 CSS Framework.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-installation" title="Development Installation" class="md-nav__link">
+    Development Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" title="How it Works?" class="md-nav__link">
+    How it Works?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" title="Quick Start" class="md-nav__link">
+    Quick Start
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/pivotgrid/" title="PivotGrid" class="md-nav__link">
+      PivotGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="user-guide/integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" title="Overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#background" title="Background" class="md-nav__link">
+    Background
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" title="Features" class="md-nav__link">
+    Features
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-grid" title="Basic grid" class="md-nav__link">
+    Basic grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formatting" title="Formatting" class="md-nav__link">
+    Formatting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inline-editing" title="Inline editing" class="md-nav__link">
+    Inline editing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cell-editing" title="Cell Editing" class="md-nav__link">
+    Cell Editing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#form-editing" title="Form Editing" class="md-nav__link">
+    Form Editing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-and-filtering" title="Searching and Filtering" class="md-nav__link">
+    Searching and Filtering
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grouping" title="Grouping" class="md-nav__link">
+    Grouping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tree-grid" title="Tree Grid" class="md-nav__link">
+    Tree Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pivot-grid" title="Pivot Grid" class="md-nav__link">
+    Pivot Grid
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export" title="Export" class="md-nav__link">
+    Export
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-requirements" title="System requirements" class="md-nav__link">
+    System requirements
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-you-begin" title="Before you begin" class="md-nav__link">
+    Before you begin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimum-requirements" title="Minimum Requirements" class="md-nav__link">
+    Minimum Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-requirements" title="Server Requirements" class="md-nav__link">
+    Server Requirements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#downloading" title="Downloading" class="md-nav__link">
+    Downloading
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-installation" title="Basic installation" class="md-nav__link">
+    Basic installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-jquery-ui-css-framework" title="Using jQuery UI CSS Framework." class="md-nav__link">
+    Using jQuery UI CSS Framework.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-bootstrap-v3-css-framework" title="Using Bootstrap v3 CSS Framework." class="md-nav__link">
+    Using Bootstrap v3 CSS Framework.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-bootstrap-v4-css-framework" title="Using Bootstrap v4 CSS Framework." class="md-nav__link">
+    Using Bootstrap v4 CSS Framework.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-installation" title="Development Installation" class="md-nav__link">
+    Development Installation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" title="How it Works?" class="md-nav__link">
+    How it Works?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" title="Quick Start" class="md-nav__link">
+    Quick Start
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="guriddo-jqgrid"><p style='text-align:center'>Guriddo jqGrid </p><a class="headerlink" href="#guriddo-jqgrid" title="Permanent link">&para;</a></h1>
+<p><p style='text-align:center'>Project Documentation</p></p>
+<hr />
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Guriddo jqGrid is an Ajax-enabled JavaScript control that provides solutions for representing and manipulating tabular data on the web. Since the grid is a client-side solution loading data dynamically through Ajax callbacks, it can be integrated with any server-side technology, including PHP, ASP, Java Servlets, JSP, ColdFusion, and Perl.</p>
+<p>Guriddo jqGrid uses a jQuery Java Script Library and is written as plug-in for that package. For more information on jQuery, please refer to the <a href="http://jquery.com">jQuery web site</a> .</p>
+<p>For styling, Guriddo jqGrid can be used with <a href="http://getbootstrap.com/css/">Bootstrap</a> CSS or <a href="http://jqueryui.com/">jQuery UI</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The grid doesn't depend on these Java Script libraries and it is not necessary to load them.</p>
+</div>
+<p>Guriddo jqGrid's Home page can be <a href="http://www.guriddo.net/">found here</a>.</p>
+<p>Working examples of Guriddo jqGrid, with explanations, can be <a href="http://www.guriddo.net/demo/guriddojs/">found here</a>.</p>
+<p>The last development version can be obtained from <a href="https://github.com/tonytomov/jqGrid">GitHub</a></p>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
+<p>Guriddo jqGrid was developed by Tony Tomov at Trirand Inc., a software development firm based in Sofia, Bulgaria. Trirand specializes in the development of web components, and embraces free and open standards like jQuery,  jQuery UI ThemeRoller, Bootstrap.</p>
+<p>The first version of jqGrid was released August, 2007</p>
+<p>Tony got the idea for jqGrid when he needed an easy way to represent database information in a project. The first requirement was speed and the second, independence from server-side technology and the database back end.</p>
+<p>Tony developed jqGrid and made it available for free until December 2014. As of that date the product is commercial and have change its name to Guriddo jqGrid.</p>
+<p>In addition to the Guriddo jqGrid, Trirand also develops server-side grid components for PHP (Guriddo jqGrid PHP and Guriddo Suito PHP). These components are not required for jqGrid to work, but they speed up the process of making complete grid solutions, and they save developers the effort of writing server-side code. For more information refer to the Guriddo jqGrid website</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<h3 id="basic-grid">Basic grid<a class="headerlink" href="#basic-grid" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Guriddo jqGrid has consistently been developed with ease of use in mind. The user should feel at ease from installation to administration.</p>
+<ul>
+<li>CSS based themes. jqGrid is compatible with Bootstrap and jQuery  UI Theming. Developers can change the grid skin by defining their own using the UI CSS Framework.</li>
+<li>Speed. The new rendering engine improves the loading speed in some cases up to 5-10 time faster than previous releases.</li>
+<li>Paging. This feature enables developer to display data page by page. Data will not be retrieved from the server until the end user comes to that page. Developers can control how many rows are displayed at a time.</li>
+<li>Re sizable Columns. Column width can be changed by the end user.</li>
+<li>Sorting &amp; various data types. The end user can sort records by clicking on the header of a column. Developers can specify sorting for various types including string, number, boolean, link, select and percent.</li>
+<li>Event handlers &amp; user API. Event handlers and various methods give you more flexibility without coding too much.</li>
+<li>Auto loading data when scrolling. This feature allows you to load data without paging and using only the vertical scrollbar.</li>
+<li>Working with local data. jqGrid can work with local data defined as an array.</li>
+<li>Seamless integration with any server side solution such as ASP.NET, ASP.NET MVC, PHP, Perl and more.</li>
+<li>Cross browser. Supports for most popular IE, FireFox, Safari, Opera  and Google Chrome.</li>
+<li>Multi language support (i18n). Currently jqGrid supports more than 30 languages.</li>
+<li>Support for XML, JSON, JSONP and arrays as data sources. Another great feature is the possibility to define your own custom data type.</li>
+<li>SubGrids. Using a SubGrid is the easiest method for displaying data from child records.</li>
+<li>SubGrid as Grid. In this alternative to a subGrid, we use the subGrid functions of the main grid to create not a subGrid, but another grid, with all of the power and capacity of the main grid but appearing, as before, under the “parent” record with the same ability to reveal and hide it.</li>
+<li>Frozen columns. Dynamic creation.</li>
+<li>Save and load grid state</li>
+<li>AMD support</li>
+</ul>
+<p>Bellow are some of the main features of Guriddo jqGrid</p>
+<h3 id="formatting"><a href="./user-guide/formatters/">Formatting</a><a class="headerlink" href="#formatting" title="Permanent link">&para;</a></h3>
+<hr />
+<ul>
+<li>Formatter</li>
+<li>Formatter supports advanced formatting of the contents of cells</li>
+<li>Formatter has predefined types like : integer, number, date, currency, links, check boxes and etc.</li>
+<li>The developer can define you own custom formatter</li>
+<li>multi-language configuration</li>
+</ul>
+<p><img alt="Screenshot" src="./img/formatter.png" /></p>
+<h3 id="inline-editing"><a href="./user-guide/editing/">Inline editing</a><a class="headerlink" href="#inline-editing" title="Permanent link">&para;</a></h3>
+<hr />
+<p>In-line editing In place editing allow you in easy way to update the cell content in particular row.</p>
+<ul>
+<li>supporting of text, text area, check box, select, image, button types</li>
+<li>client side validation of the entered data</li>
+<li>client side insert/update/delete</li>
+<li>flexible events</li>
+<li>multirow posting</li>
+<li>optional include and support for datepickers, autocomplete, multiselect</li>
+</ul>
+<p><img alt="Screenshot" src="./img/inlineedit.png" /></p>
+<h3 id="cell-editing"><a href="./user-guide/editing/">Cell Editing</a><a class="headerlink" href="#cell-editing" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Cell editing supports editing individual cells.</p>
+<ul>
+<li>supporting of text, text area, check box, select, image, button types</li>
+<li>client side validation of the entered data</li>
+<li>keyboard navigation with tab, shift tab, left, right, up and down keys</li>
+<li>flexible events</li>
+<li>optional include and support for datepickers, autocomplete, multiselect</li>
+</ul>
+<p><img alt="Screenshot" src="./img/celledit.png" /></p>
+<h3 id="form-editing"><a href="./user-guide/editing/">Form Editing</a><a class="headerlink" href="#form-editing" title="Permanent link">&para;</a></h3>
+<hr />
+<p>jqGrid supports creating a form, on the fly, to enter or edit grid data</p>
+<ul>
+<li>supporting of text, text area, check box, select, image, button types</li>
+<li>client side validation of the entered data</li>
+<li>keyboard navigation up and down keys</li>
+<li>flexible events</li>
+<li>full control of the form from creation to closing</li>
+<li>file uploading</li>
+<li>optional include and support for datepickers, autocomplete, multiselect</li>
+</ul>
+<p><img alt="Screenshot" src="./img/editrow.png" /></p>
+<h3 id="searching-and-filtering"><a href="./user-guide/searching/">Searching and Filtering</a><a class="headerlink" href="#searching-and-filtering" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Searching The columns in the grid can be used as the basis for a search form to appear above, below, or in place of, the grid.</p>
+<ul>
+<li>single field searching</li>
+<li>toolbar searching (placing the search fields below the headers) with many search operators</li>
+<li>complex form searching</li>
+<li>advanced searching with criteria defined from user</li>
+<li>local search on all fields</li>
+</ul>
+<p><img alt="Screenshot" src="./img/searching.png" /></p>
+<h3 id="grouping"><a href="./user-guide/grouping/">Grouping</a><a class="headerlink" href="#grouping" title="Permanent link">&para;</a></h3>
+<hr />
+<p>jqGrid support grouping by data and header grouping</p>
+<ul>
+<li>multiple level data grouping</li>
+<li>support of common operations like summery, count, avg</li>
+<li>custom summaries support</li>
+<li>easy configuration multiple group header</li>
+<li>dynamic data and header grouping</li>
+<li>custom criteria</li>
+</ul>
+<p><img alt="Screenshot" src="./img/grouping.png" /></p>
+<h3 id="tree-grid"><a href="./user-guide/treegrid/">Tree Grid</a><a class="headerlink" href="#tree-grid" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Tree Grid supports both the Nested Set model and the Adjacency model</p>
+<ul>
+<li>Easy configuration</li>
+<li>Auto loading tree nodes.</li>
+<li>Rich client API for easy manipulation</li>
+<li>nested and adjacency model support</li>
+<li>sorting</li>
+<li>searching</li>
+</ul>
+<p><img alt="Screenshot" src="./img/treegrid.png" /></p>
+<h3 id="pivot-grid"><a href="./user-guide/pivotgrid/">Pivot Grid</a><a class="headerlink" href="#pivot-grid" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Pivot grid allows you to reorganize and summarize selected columns and rows of data in a spreadsheet or database table.</p>
+<ul>
+<li>easy configuration</li>
+<li>different aggregate types - sum, count avg</li>
+<li>custom aggregation</li>
+<li>unlimited level of grouping</li>
+</ul>
+<p><img alt="Screenshot" src="./img/pivot.png" /></p>
+<h3 id="export"><a href="./user-guide/exporting/">Export</a><a class="headerlink" href="#export" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Guriddo jqGrid support native export to:</p>
+<ul>
+<li>Excel 2007</li>
+<li>CSV</li>
+<li>PDF</li>
+</ul>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h3 id="system-requirements">System requirements<a class="headerlink" href="#system-requirements" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="before-you-begin">Before you begin<a class="headerlink" href="#before-you-begin" title="Permanent link">&para;</a></h4>
+<p>Before you begin with Guriddo jqGrid plug-in you need to have a basic knowledge of JavaScript.</p>
+<p>You will need to have a basic knowledge of jQuery. For more information about jQuery and basic lessons visit <a href="http://www.jquery.com">jQuery site</a></p>
+<p>Having this knowledge you are ready to begin to play with Guriddo jqGrid.</p>
+<h4 id="minimum-requirements">Minimum Requirements<a class="headerlink" href="#minimum-requirements" title="Permanent link">&para;</a></h4>
+<p>In order to use Guriddo jqGrid You'll need the following:</p>
+<ul>
+<li>Any modern web browser: Mozilla Firefox, Safari, Google Chrome, Opera, Microsoft Internet Explorer</li>
+<li><a href="http://www.jquery.com">jQuery library</a> version 1.7 or later:</li>
+<li>Your choice of a CSS freamework  <a href="http://getbootstrap.com/">Bootstrap</a>  or <a href="http://jqueryui.com/themeroller/#themeGallery">jQuery UI theme</a></li>
+<li>The Guriddo <a href="http://guriddo.net/?page_id=103292">jqGrid plugin</a></li>
+</ul>
+<p>If you want to draw grids based on local (static) data, you'll need to assemble an array, or an xml data file, or a JSON file with data.</p>
+<h4 id="server-requirements">Server Requirements<a class="headerlink" href="#server-requirements" title="Permanent link">&para;</a></h4>
+<p>(optional)</p>
+<p>The primary purpose of Guriddo jqGrid is to manipulate and represent dynamic data over the web. For this you will also need:</p>
+<ul>
+<li>A web server (e.g., IIS, Apache, Tomcat),</li>
+<li>A database backend (e.g., MySQL, PostgreSQL, Oracle, MSSQL), and</li>
+<li>A server-side scripting language (e.g., PHP, ASP, etc.)</li>
+</ul>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<hr />
+<h4 id="downloading">Downloading<a class="headerlink" href="#downloading" title="Permanent link">&para;</a></h4>
+<p>Once you have a basic understanding of what Java Script and jQuery are and what they do, you're ready to try Guriddo jqGrid!</p>
+<ol>
+<li>Download the Guriddo jqGrid package from <a href="http://guriddo.net/?page_id=103292">Guriddo Site</a></li>
+<li>Optional download the latest jQuery library form <a href="http://www.jquery.com/">jQuery site</a></li>
+<li>Optional download the latest <a href="http://getbootstrap.com/">Bootstrap</a> package in case you want to use the Bootstrap CSS framework.</li>
+<li>Optional download <a href="http://jqueryui.com/download/">jQuery UI theme</a> in case you want to use jQuery UI CSS framework and build your own custom theme.</li>
+</ol>
+<p>The Guriddo jqGrid package contain all the needed packages and libraries. The optional downloading from 2. to 4. are just in case that there are new versions of the mentioned libraries.</p>
+<p>You can install Guriddo jqGrid sources using:</p>
+<p><strong>npm</strong></p>
+<p>npm install jqGrid --save</p>
+<p><strong>bower</strong></p>
+<p>bower install jqGrid --save</p>
+<p>This will install the jqGrid files in the current directory.</p>
+<p>Installation of Guriddo jqGrid is just a matter of copying the files and folders to your web server or development directory. Once you've downloaded the needed packages, you can continue with the installation.</p>
+<p>If you're a normal user of Guriddo jqGrid, you should complete the <a href="#basic-installation">Basic Installation below</a>, which installs all the files needed to use Guriddo jqGrid.</p>
+<p>If you want access to the jqGrid source code to find bugs and make improvements, complete the <a href="#basic-installation">Basic Installation</a> first, and then perform the additional steps in the <a href="#development-installation">Development Installation</a> section below.</p>
+<h4 id="basic-installation">Basic installation<a class="headerlink" href="#basic-installation" title="Permanent link">&para;</a></h4>
+<p>Step 1: Unpack the Guriddo jqGrid zip files to a temporary folder or use open the jqGrid folder when installed from <strong>npm</strong> or <strong>bower</strong><br />
+Step 2: Create a directory on your web server to hold the jqGrid files and folders. For example:</p>
+<p>http://myserver/myproject/</p>
+<p>where <strong><em>myproject</em></strong> is the name that you have created and <strong><em>myserver</em></strong> is the name of your web server.</p>
+<p>Step 3: Open the temporary directory locate the js and css folders mark them and copy the entire folders from temporary directory to myproject directory.</p>
+<p>After these steps, you should have the following file &amp; folder structure:</p>
+<div class="codehilite"><pre><span></span>/myproject/css
+  /images/
+       ...
+  /trirand/
+  /addons
+    ui-multiselect.css
+   ui-jqgrid.css
+   ui-jqgrid-bootstrap.css
+   ui-jqgrid-bootstrap-ui.css
+   jquery-ui.css
+   jquery-ui-timepicker-addon.css
+/myproject/js/
+  /trirand
+    /i18n
+      grid.locale-bg.js
+      grid.locale-en.js
+                     ….
+    /src
+      jquery.jqGrid.js
+   jquery.jqGrid.min.js
+   jquery.min.js
+   jquery-ui.min.js
+</pre></div>
+
+
+<p>Note that the folders contain more files, than the specified. We mark here the needed files for working with jqGrid.</p>
+<h4 id="using-jquery-ui-css-framework">Using jQuery UI CSS Framework.<a class="headerlink" href="#using-jquery-ui-css-framework" title="Permanent link">&para;</a></h4>
+<p>Using your favorite editor, create a file named myfirstgrid.html and place the following code:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Grid<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/jquery-ui.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/trirand/ui.jqgrid.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/jquery.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/i18n/grid.locale-en.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/jquery.jqGrid.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>Save this file in <strong><em>myproject</em></strong> directory.</p>
+<p>Code Explanation: In the code above, the first stylesheet loads the CSS code for the jQuery UI theme selected. The second stylesheet loads the CSS settings for jqGrid itself.</p>
+<p>Below the stylesheets are three javascript files: the first one is JQuery, the second is the jqGrid language localization file, (English, -en in this example), and finally the actual minimized jqGrid file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is one additional recommended adjustment: Since the jQuery UI Themes have different font sizes it is a good idea to reduce the font size to make everything uniform. This can be done by adding a style tag just below the stylesheet file references, as shown below.</p>
+</div>
+<p>Your final code will look like this:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;text/html; charset=utf-8&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;IE=edge&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Grid<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/jquery-ui.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/trirand/ui.jqgrid.css&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+   <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+   <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+   <span class="k">font-size</span><span class="p">:</span> <span class="mi">75</span><span class="kt">%</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/jquery.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/i18n/grid.locale-en.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/jquery.jqGrid.min.js&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<h4 id="using-bootstrap-v3-css-framework">Using Bootstrap v3 CSS Framework.<a class="headerlink" href="#using-bootstrap-v3-css-framework" title="Permanent link">&para;</a></h4>
+<p>As of version 5.0 we support native Bootstrap v3 styling. To use this styling it is needed to include the appropriate files. Using your favorite editor, create a file named <em>jqgridbootstrap.html</em> and place the following code:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+   <span class="c">&lt;!-- A link to a Bootstrap css --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css&quot;</span><span class="p">&gt;</span>
+   <span class="c">&lt;!-- The link to the CSS that the grid needs --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../../../css/trirand/ui.jqgrid-bootstrap.css&quot;</span> <span class="p">/&gt;</span>
+   <span class="c">&lt;!-- The jQuery library is a prerequisite for all Guriddo products --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/ecmascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/jquery.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+   <span class="c">&lt;!-- We support more than 40 localizations --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/ecmascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/i18n/grid.locale-en.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+   <span class="c">&lt;!-- This is the Javascript file of jqGrid --&gt;</span>  
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/ecmascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/jquery.jqGrid.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+       <span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">defaults</span><span class="p">.</span><span class="nx">styleUI</span> <span class="o">=</span> <span class="s1">&#39;Bootstrap&#39;</span><span class="p">;</span>
+   <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>jqGrid with Bootstrap<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>Save this file in <strong>myproject</strong> directory.</p>
+<p>Code Explanation: In the code above, the first stylesheet loads the CSS code for Bootstrap - note that we load it from CDN. The second stylesheet loads the CSS settings for jqGrid itself for use with Bootstrap.</p>
+<p>Below the stylesheets are three javascript files: the first one is JQuery, the second is the jqGrid language localization file, (English, -en in this example), and finally the actual minimized jqGrid file.</p>
+<p>To use jqGrid with Bootstrap styling (the jQuery UI is default) it is necessary to change <em><strong>styleUI</strong></em> parameter. Basically this can be done two diffrent ways.</p>
+<ol>
+<li>Using the <em><strong>$.jgrid.defaults</strong></em> object with following code:  </li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">defaults</span><span class="p">.</span><span class="nx">styleUI</span> <span class="o">=</span> <span class="s1">&#39;Bootstrap&#39;</span><span class="p">;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>This way all the jqGrid grids in the page will use Bootstrap theme.</p>
+<ol>
+<li>Individually using the Guriddo jqGrid option <em><strong>styleUI</strong></em> :</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+   <span class="p">...</span>
+   <span class="nx">styleUI</span> <span class="o">:</span> <span class="s1">&#39;Bootstrap&#39;</span>
+  <span class="p">...</span>
+  <span class="p">});</span>
+</pre></div>
+
+
+<p>That's all! You are ready to use jqGrid with Bootstrap.</p>
+<h4 id="using-bootstrap-v4-css-framework">Using Bootstrap v4 CSS Framework.<a class="headerlink" href="#using-bootstrap-v4-css-framework" title="Permanent link">&para;</a></h4>
+<p>As of version 5.3 we support native Bootstrap v4 styling. To use this styling it is needed to include the appropriate files from the jqGrid package and to download additionally the iconic set. Currently we support the following icon sets: <a href="https://octicons.github.com/">GitHub Octicons</a>, <a href="https://useiconic.com/icons/">Iconic</a>  and <a href="https://fontawesome.com/icons?d=gallery&amp;m=free">free Font Awesome</a>.</p>
+<p>To setup Bootstrap 4 it is needed to load jqgrid css bootstrap 4 file, the appropriate iconic CSS file downloaded from the links above and the the bootstrap css file. Below is a example using the Octicon icon set. Using your favorite editor, create a file named <em>jqgridbootstrap4.html</em> and place the following code:</p>
+<div class="codehilite"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+   <span class="c">&lt;!-- A link to a Bootstrap css --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css&quot;</span><span class="p">&gt;</span>     
+   <span class="c">&lt;!-- A link to a Octicons css --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css&quot;</span><span class="p">&gt;</span>
+   <span class="c">&lt;!-- A link to a jqGrid Bootstrap 4 css --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="na">media</span><span class="o">=</span><span class="s">&quot;screen&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../../../css/trirand/ui.jqgrid-bootstrap4.css&quot;</span> <span class="p">/&gt;</span>
+
+   <span class="c">&lt;!-- The jQuery library is a prerequisite for all jqSuite products --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/ecmascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../../../js/jquery.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+   <span class="c">&lt;!-- This is the localization file of the grid controlling messages, labels, etc.</span>
+<span class="c">   &lt;!-- We support more than 40 localizations --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/ecmascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../../../js/trirand/i18n/grid.locale-en.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+   <span class="c">&lt;!-- This is the Javascript file of jqGrid --&gt;</span>   
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/ecmascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;../../../js/trirand/jquery.jqGrid.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+   <span class="c">&lt;!-- Optional Bootstrap JavaScript files --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">defaults</span><span class="p">.</span><span class="nx">styleUI</span> <span class="o">=</span> <span class="s1">&#39;Bootstrap4&#39;</span><span class="p">;</span>
+<span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">defaults</span><span class="p">.</span><span class="nx">iconSet</span> <span class="o">=</span> <span class="s1">&#39;Octicons&#39;</span><span class="p">;</span>
+
+<span class="c1">//$.jgrid.defaults.iconSet = &quot;Iconic&quot;;      </span>
+<span class="c1">//$.jgrid.defaults.iconSet = &quot;fontAwesome&quot;;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+...
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>Save this file in <strong>myproject</strong> directory.</p>
+<p>Code Explanation: In the code above, the first stylesheet loads the CSS code for Bootstrap v4 - note that we load it from CDN.<br />
+The second stylesheet load the iconic icon sets.<br />
+The third stylesheet loads the CSS settings for jqGrid itself for use with Bootstrap v4.</p>
+<p>Below the stylesheets are three javascript files: the first one is JQuery, the second is the jqGrid language localization file, (English, -en in this example), and finally the actual minimized jqGrid file.</p>
+<p>To use jqGrid with Bootstrap 4 styling (the jQuery UI is default) it is necessary to change <em><strong>styleUI</strong></em> parameter and the <em><strong>iconSet</strong></em> parameter . Basically this can be done two different ways.</p>
+<ol>
+<li>Using the <em><strong>$.jgrid.defaults</strong></em> object with following code:  </li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">defaults</span><span class="p">.</span><span class="nx">styleUI</span> <span class="o">=</span> <span class="s1">&#39;Bootstrap4&#39;</span><span class="p">;</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">jgrid</span><span class="p">.</span><span class="nx">defaults</span><span class="p">.</span><span class="nx">iconSet</span> <span class="o">=</span> <span class="s1">&#39;Octicons&#39;</span><span class="p">;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>This way all the jqGrid grids in the page will use Bootstrap theme.</p>
+<ol>
+<li>Individually using the Guriddo jqGrid option <em><strong>styleUI</strong></em> :</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+   <span class="p">...</span>
+   <span class="nx">styleUI</span> <span class="o">:</span> <span class="s1">&#39;Bootstrap4&#39;</span><span class="p">,</span>
+   <span class="nx">iconSet</span> <span class="o">:</span> <span class="s1">&#39;Octicons&#39;</span><span class="p">;</span>
+  <span class="p">...</span>
+  <span class="p">});</span>
+</pre></div>
+
+
+<p>That's all! You are ready to use jqGrid with Bootstrap.</p>
+<p>Now you are ready to learn <a href="#how-it-works">how it works</a>.</p>
+<h4 id="development-installation">Development Installation<a class="headerlink" href="#development-installation" title="Permanent link">&para;</a></h4>
+<p>If you choose the development installation, your version of Guriddo jqGrid will be using uncompressed source code rather than minimized production code, for easier reading.</p>
+<p>This type of installation is easy. It require only to change the file name from jquery.jqGrid.min.js to jquery.jqGrid.js. Actually the jquery.jqGrid.js is one file which contain all the files in one not compressed file. The location of the file is in the <strong>js/trirand/src</strong> folder. In this case you will need to replace</p>
+<div class="codehilite"><pre><span></span>...
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/ecmascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/jquery.jqGrid.min.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+...
+</pre></div>
+
+
+<p>with</p>
+<div class="codehilite"><pre><span></span>...
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/ecmascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;js/trirand/src/jquery.jqGrid.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+...
+</pre></div>
+
+
+<p>in the head section</p>
+<h3 id="how-it-works">How it Works?<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h3>
+<hr />
+<p>Understanding how jqGrid works, will help you get up to speed with the full capabilities of the plugin. The first thing to understand is that there are two aspects to working with tabular data:</p>
+<ul>
+<li>Client-side representation, and</li>
+<li>Server-side manipulation</li>
+</ul>
+<p>Guriddo jqGrid is a component that presents tabular data for easy manipulation in a web browser grid. It uses <a href="https://www.w3schools.com/xml/ajax_intro.asp">Ajax</a> calls to retrieve information and construct the representation (tabular data) using the jqGrid Column Model <a href="./user-guide/basic-grid/#colmodel-options">(colModel)</a>.</p>
+<p>Furthermore, jqGrid helps you send any data changes or additions to the database on the server-side, a process known as server-side manipulation, or SSM.</p>
+<p>SSM means the server handles the actual changes to the database, and not the user's browser. SSM isn’t something that is visible within a web page. Server side data changes are done using Python, PHP, ASP.NET or any other common programming language.</p>
+<p>A jqGrid is comprised of the following four parts:</p>
+<ul>
+<li>Caption layer</li>
+<li>Header layer</li>
+<li>Body layer</li>
+<li>Navigation layer</li>
+</ul>
+<p><img alt="Screenshot" src="./img/NewItem.png" /></p>
+<p><strong><em>Caption layer</em></strong> contains common information for the represented data.</p>
+<p><strong><em>Header layer</em></strong> contains information about the columns: labels, width, etc.</p>
+<p><strong><em>Body layer</em></strong> is the data requested from the server and displayed according to the settings in the column model.</p>
+<p><strong><em>Navigation layer</em></strong> contains additional information from the requested data and actions for requesting little pieces of information – in the literature called paging. Note that the navigation layer can be placed not only at bottom of the grid, but anywhere on the page. The Navigation layer is also the place for adding buttons or links for editing, deleting, adding to and searching your grid data.</p>
+<p>The minimum for the representing the data are Header layer and Body layer.</p>
+<p>To allow freedom and flexibility, and often a better impression, jqGrid relies on CSS (Cascading Style Sheets) to govern its appearance.</p>
+<p>In more sophisticated case the grid can have more elements as shown below:</p>
+<p><img alt="Screenshot" src="./img/NewItem1.png" /></p>
+<p>The grid can not only have additional layers, but also allow more than the rows to contain the main data. jqGrid support treegrid, subgrid and grouping of data.</p>
+<p>If you choose, the grid can look like a table having some advance features like sorting, resizing of columns, reordering of columns with respect of drag&amp;drop and so on</p>
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<p>As you may have seen, there is a little bit of tweaking necessary in-order to customize jqGrid and get it set-up the way you like. The good news is, you can use that folder as a template and every time you want to make a new project with jqGrid you can just make a copy of that folder.</p>
+<p>Let’s begin by creating the simplest grid possible; open up the myfirstgrid.html file from the newly created <a href="#basic-installation">basic installation</a>, and modify the body section to look like this:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+       <span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;grid&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+       <span class="kd">var</span> <span class="nx">dataArray</span> <span class="o">=</span> <span class="p">[</span>
+         <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;232-532-6268&#39;</span><span class="p">},</span>
+         <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Jeff&#39;</span><span class="p">,</span> <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;365-267-8325&#39;</span><span class="p">}</span>
+       <span class="p">];</span>
+
+       <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+         <span class="nx">datatype</span><span class="o">:</span> <span class="s1">&#39;local&#39;</span><span class="p">,</span>
+         <span class="nx">data</span><span class="o">:</span> <span class="nx">dataArray</span><span class="p">,</span>
+         <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Name&#39;</span><span class="p">},</span>
+            <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;phone&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Phone Number&#39;</span><span class="p">}</span>
+          <span class="p">]</span>
+      <span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>The first element in the body tags is a standard table element; this is what will be converted into our grid, and it's literally all the HTML needed to make one.</p>
+<p>The first 4 (four) lines are just defining some data, I didn't want to get into AJAX or opening other files, so we decided to just create a simple JavaScript array with two entries. The next line is where the magic happens, this single command is being used to create and populate a grid using the provided information.</p>
+<p>We select the table element with jQuery and call the jqGrid function passing it all the properties needed to make a grid. The first two options set the data along with its type, in our case the data is the array we made and the type is local which is in contrast to some of the other data types which use AJAX to retrieve remote data.</p>
+<p>The last property is the column models, which basically provide the interface between the data and the grid.</p>
+<p>The way this works is, we start by specifying the column labels, so jqGrid knows we want two columns, one named Name and the other named Phone Number, but it still has know idea how to populate the rows using the info from data.</p>
+<p>Now there are tons of options for colModel, which we will get to later, numerous settings for customizing and manipulating the data for the cell grids. But for this simple example we are just specifying the name and  label properties , which tells jqGrid that this column's values (name, phone) are held in the data array under the given key.</p>
+<p>Now open myfirstgrid.html up in your browser and you should see something like this:</p>
+<p><img alt="Screenshot" src="./img/NewItem3.png" /></p>
+<p>Not particularly pretty, but you can see that with just a few short lines, we have created a grid, and populated it with sortable data.</p>
+<p>But we can do better, first off we are only using two of the four standard layers we talked about, we are using the header layer and the body layer. Let's add a caption layer to provide little context, and let’s adjust the size of the grid to fit our data.</p>
+<p>So modify the call to jqGrid with the following:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+       <span class="kd">var</span> <span class="nx">dataArray</span> <span class="o">=</span> <span class="p">[</span>
+         <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;232-532-6268&#39;</span><span class="p">},</span>
+         <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Jeff&#39;</span><span class="p">,</span> <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;365-267-8325&#39;</span><span class="p">}</span>
+       <span class="p">];</span>
+
+       <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+         <span class="nx">datatype</span><span class="o">:</span> <span class="s1">&#39;local&#39;</span><span class="p">,</span>
+         <span class="nx">data</span><span class="o">:</span> <span class="nx">dataArray</span><span class="p">,</span>
+         <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Name&#39;</span><span class="p">},</span>
+            <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;phone&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Phone Number&#39;</span><span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nx">caption</span> <span class="o">:</span> <span class="s1">&#39;Users Grid&#39;</span><span class="p">,</span>
+          <span class="nx">height</span><span class="o">:</span> <span class="s1">&#39;auto&#39;</span>
+      <span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>And refresh your browser; your grid should now look like the following:</p>
+<p><img alt="Screenshot" src="./img/NewItem4.png" /></p>
+<p>That's looking much better. Now, you may be wondering; we only set the height property to auto, so how come the width seems to have snapped to the content? And this is due to the fact that the right margin we saw earlier is actually a column for the scrollbar. By default jqGrid sets your grid's height to 150 pixels, this means, regardless of whether you have only one row, or a thousand rows, the height will remain the same, so that there is gap to hold the scrollbar in an event when you have more rows than that would fit in the given space. When we set the height to auto, it will stretch the grid vertically to contain all the items, making the scrollbar irrelevant and therefore it knows not to place it.</p>
+<p>Now this is a pretty good quick-start example, but to finish things off, let's take a look at the a navigation layer, just so we can say we did.</p>
+<p>For this next part though we are going to need more data, we can't really show pagination with just two entries, luckily there is a site called <a href="http://www.json-generator.com/">http://www.json-generator.com/</a> created by Vazha Omanashvili, for doing exactly this.</p>
+<p>The way it works is, you specify the format and number of rows you want and it generates it with random data. We are going to keep the format we have been using, of name and phone number, so in the box on the left enter the following code:</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span>
+ <span class="s1">&#39;{{repeat(50)}}&#39;</span><span class="p">,</span>
+ <span class="p">{</span>
+   <span class="nx">name</span> <span class="o">:</span> <span class="s1">&#39;{{firstName()}} {{surname()}}&#39;</span><span class="p">,</span>
+   <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;{{phone()}}&#39;</span>
+ <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<p>As you can see, the actual rows are under a property named result so we will need to change the data key in the call to jqGrid from just ‘dataArray’ to ‘dataArray.result’. Refreshing the page now you will see the first 20 rows being displayed (that is the default limit). But how can we get to the rest? Well jqGrid provides a special navigation layer named a pager, which contains a pagination control. To display it we will need to create an HTML element for it. So, right underneath the table element add a div like:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;grid&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;pager&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>and then we just need to add a key to the jqGrid method for the pager and row limit:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+       <span class="kd">var</span> <span class="nx">dataArray</span> <span class="o">=</span> <span class="p">[</span>
+         <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;232-532-6268&#39;</span><span class="p">},</span>
+         <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Jeff&#39;</span><span class="p">,</span> <span class="nx">phone</span><span class="o">:</span> <span class="s1">&#39;365-267-8325&#39;</span><span class="p">}</span>
+       <span class="p">];</span>
+
+       <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">({</span>
+         <span class="nx">datatype</span><span class="o">:</span> <span class="s1">&#39;local&#39;</span><span class="p">,</span>
+         <span class="nx">data</span><span class="o">:</span> <span class="nx">dataArray</span><span class="p">,</span>
+         <span class="nx">colModel</span><span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Name&#39;</span><span class="p">},</span>
+            <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;phone&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Phone Number&#39;</span><span class="p">}</span>
+          <span class="p">],</span>
+          <span class="nx">caption</span> <span class="o">:</span> <span class="s1">&#39;Users Grid&#39;</span><span class="p">,</span>
+          <span class="nx">height</span><span class="o">:</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span>
+          <span class="nx">rowNum</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span>
+          <span class="nx">pager</span><span class="o">:</span> <span class="s1">&#39;#pager&#39;</span>
+      <span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+</pre></div>
+
+
+<p>And that's all there is to it, you can adjust the rowNum property to display more or less entries at once and the pages will automatically be calculated for you.</p>
+<p><img alt="Screenshot" src="./img/NewItem5.png" /></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="user-guide/basic-grid/" title="Basic Grid" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Basic Grid
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="./assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

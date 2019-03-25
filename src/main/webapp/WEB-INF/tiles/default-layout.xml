@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<!-- 메뉴 탭 타일즈 -->
+	<definition name="layouts-tiles" template="/WEB-INF/jsp/egovframework/example/cmmn/default-layouts.jsp">
+		<put-attribute name="header"    	value="/" />
+	  	<put-attribute name="instagram"    	value="/WEB-INF/jsp/egovframework/example/cmmn/default-instagram.jsp" />
+	  	<put-attribute name="nav"			value="/WEB-INF/jsp/egovframework/example/cmmn/default-nav.jsp" />
+	  	<put-attribute name="content"  		value="/" />
+	  	<put-attribute name="bg"  			value="/WEB-INF/jsp/egovframework/example/cmmn/default-bg.jsp" />
+	  	<put-attribute name="footer"    	value="/WEB-INF/jsp/egovframework/example/cmmn/default-footer.jsp" />
+	</definition>
+	
+	<!-- only content -->
+	<definition name="*/*.tiles" extends="layouts-tiles">
+		<put-attribute name="content"   	value="/WEB-INF/jsp/egovframework/example/{1}/{2}.jsp" />
+		<put-attribute name="header"    	value="/WEB-INF/jsp/egovframework/example/cmmn/default-header.jsp" />
+	</definition>
+	
+	<!-- only sign up -->
+	<definition name="*/*.join" extends="layouts-tiles">
+		<put-attribute name="content"   	value="/WEB-INF/jsp/egovframework/example/{1}/{2}.jsp" />
+		<put-attribute name="header"    	value="/WEB-INF/jsp/egovframework/example/cmmn/joinHead.jsp" />
+	</definition>
+	
+	<definition name="layouts-main" template="/WEB-INF/jsp/egovframework/example/cmmn/default-layoutsMain.jsp">
+		<put-attribute name="header"    	value="/WEB-INF/jsp/egovframework/example/cmmn/default-header.jsp" />
+	  	<put-attribute name="instagram"    	value="/WEB-INF/jsp/egovframework/example/cmmn/default-instagram.jsp" />
+	  	<put-attribute name="nav"			value="/WEB-INF/jsp/egovframework/example/cmmn/default-nav.jsp" />
+	  	<put-attribute name="footer"    	value="/WEB-INF/jsp/egovframework/example/cmmn/default-footer.jsp" />
+	</definition>
+	
+	<!-- only main -->
+	<definition name="*/*.main" extends="layouts-main">
+	  	<put-attribute name="content"   	value="/WEB-INF/jsp/egovframework/example/{1}/{2}.jsp" />
+	</definition>
+	
+	
+	<!-- login 타일즈 -->
+	<definition name="login" template="/WEB-INF/jsp/egovframework/example/cmmn/login-layouts.jsp">
+	  	<put-attribute name="head"    		value="/WEB-INF/jsp/egovframework/example/cmmn/login-head.jsp" />
+	  	<put-attribute name="content"   	value="" />
+	</definition>
+	<definition name="*/*.login" extends="login">
+	  	<put-attribute name="content"   	value="/WEB-INF/jsp/egovframework/example/{1}/{2}.jsp" />
+	</definition>
+
+	
+</tiles-definitions>

@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The jQuery library is a prerequisite for all jqSuite products -->
+    <script type="text/ecmascript" src="../../../js/jquery.min.js"></script> 
+    <!-- This is the Javascript file of jqGrid -->   
+    <script type="text/ecmascript" src="../../../js/trirand/src/jquery.jqGrid.js"></script>
+    <!-- This is the localization file of the grid controlling messages, labels, etc.
+    <!-- We support more than 40 localizations -->
+    <script type="text/ecmascript" src="../../../js/trirand/i18n/grid.locale-en.js"></script>
+     <!-- The Context Menu 3rd party plugin that we are using  -->
+    <script type="text/ecmascript" src="../../../js/context-menu.js"></script>
+	<script type="text/javascript" language="javascript" src="//cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+
+    <!-- A link to a jQuery UI ThemeRoller theme, more than 22 built-in and many more custom -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../css/jquery-ui.css" />
+    <!-- The link to the CSS that the grid needs -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../css/trirand/ui.jqgrid.css" />
+    <meta charset="utf-8" />
+    <title>jqGrid Loading Data - Context Menu for Rows</title>
+</head>
+<body>
+
+    <table id="jqGrid"></table>
+    <div id="jqGridPager"></div>
+<button id="export">Export to Excel</button>
+    <div class="contextMenu" id="contextMenu" style="display:none; width:400px;">
+        <ul style="width: 400px; font-size: 65%;">
+            <li id="add">
+                <span class="ui-icon ui-icon-plus" style="float:left"></span>
+                <span style="font-size:130%; font-family:Verdana">Add Row</span>
+            </li>
+            <li id="edit">
+                <span class="ui-icon ui-icon-pencil" style="float:left"></span>
+                <span style="font-size:130%; font-family:Verdana">Edit Row</span>
+            </li>                
+            <li id="del">
+                <span class="ui-icon ui-icon-trash" style="float:left"></span>
+                <span style="font-size:130%; font-family:Verdana">Delete Row</span>
+            </li>                
+        </ul>
+    </div>
+
+    <script type="text/javascript"> 
+		var loaded = false;
+        $(document).ready(function () {
+			
+            $("#jqGrid").jqGrid({
+				// url to load initially 10 records
+                url: 'grid.php',
+                datatype: "json",
+				postData : { oper : "grid"},
+                colModel: [
+                    {
+						label: 'Customer ID',
+                        name: 'CustomerID',
+                        width: 75,
+						key: true
+                    },
+                    {
+						label: 'Company Name',
+                        name: 'CompanyName',
+                        width: 140
+                    },
+                    {
+						label : 'Phone',
+                        name: 'Phone',
+                        width: 100
+                    },
+                    {
+						label: 'Postal Code',
+                        name: 'PostalCode',
+                        width: 80
+                    },
+                    {
+						label: 'City',
+                        name: 'City',
+                        width: 140
+                    }
+                ],
+				sortname: 'CustomerID',
+				sortorder : 'asc',
+                width: 780,
+                height: 200,
+                rowNum: 10,
+				viewrecords : true,
+                pager: "#jqGridPager",
+				gridComplete : function() {
+					// if the all the data is not loaded 
+					if(!loaded)  {
+						// set the datatype to local
+						this.p.datatype='local';
+						var ts = this;
+						$.ajax({
+							"url": "grid.php",
+							"dataType" : "json",
+							// instruct the server to get all the data with the same sortining
+							"data" : { oper: 'grid', page:1, totalrows : -1, sidx : 'CustomerID', sord : 'asc' },
+							success :function( resp ) {
+								// when loaded  simple attach the response data to data array
+								ts.p.data = resp.rows;
+								// refresh the indexes
+								ts.refreshIndex();
+								// mark that the data is loaded in order no to do it again
+								loaded = true;
+							}
+						});
+					}
+
+				}
+            });
+			var _grid = $("#jqGrid")[0];
+			$("#export").on("click", function(){
+				$(_grid).jqGrid("exportToExcel", {
+					includeLabels: true,
+					includeGroupHeader: true,
+					includeFooter: true,
+					fileName: "test.xlsx",
+					maxlength: 40 // maxlength for visible string data
+				});
+			});
+        });
+
+    </script>
+
+    <!-- This code is related to code tabs -->
+    <br />
+    <span style="font-size: 12px; font-family: Tahoma">Click on the Tabs below the see the relevant code for the example:</span>
+    <br /><br />
+    <div id="codetabs" style="width:700px; height: 400px; font-size:65%;"></div>
+    <script type="text/ecmascript" src="../../../js/jquery-ui.min.js"></script>
+    <script type="text/ecmascript" src="../../../js/prettify/prettify.js"></script>
+    <link rel="stylesheet" href="../../../css/prettify.css" />
+        <script type="text/ecmascript" src="../../../js/codetabs.js"></script><script type="text/ecmascript" src="../../../js/themeswitchertool.js"></script>
+    
+    <script type="text/javascript">
+
+        var tabData =
+            [
+                { name: "HTML", url: "index.html", lang: "lang-html" },
+                { name: "Data", url: "data.json", lang: "lang-json" },
+				{ name: "Description", url: "description.html", lang: "lang-html" }
+            ];
+
+        codeTabs(tabData);
+
+    </script>
+    <!-- End of code related to code tabs -->
+</body>
+</html>

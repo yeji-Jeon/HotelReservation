@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/user-guide/basic-grid/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/common-functions/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/navigating/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/formatters/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/searching/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/editing/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/grouping/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/frozencols/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/colmenu/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/persiststate/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/exporting/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/subgrid/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/treegrid/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/pivotgrid/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/multiselect/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/user-guide/integrations/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/about/release-notes/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/about/license/</loc>
+     <lastmod>2018-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

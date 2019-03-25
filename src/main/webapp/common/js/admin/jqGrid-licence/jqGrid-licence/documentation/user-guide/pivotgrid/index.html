@@ -1,0 +1,1290 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.5.5">
+    
+    
+      
+        <title>PivotGrid - Guriddo jqGrid JS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.aa3de92b.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#pivotgrid" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Guriddo jqGrid JS" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Guriddo jqGrid JS
+              </span>
+              <span class="md-header-nav__topic">
+                PivotGrid
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Guriddo jqGrid JS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      User Guide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../basic-grid/" title="Basic Grid" class="md-nav__link">
+      Basic Grid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../common-functions/" title="Common Functions" class="md-nav__link">
+      Common Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigating/" title="Navigation" class="md-nav__link">
+      Navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../formatters/" title="Formatters" class="md-nav__link">
+      Formatters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../searching/" title="Searching" class="md-nav__link">
+      Searching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../editing/" title="Editing" class="md-nav__link">
+      Editing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grouping/" title="Grouping" class="md-nav__link">
+      Grouping
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../frozencols/" title="Frozen Columns" class="md-nav__link">
+      Frozen Columns
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../colmenu/" title="Column menu" class="md-nav__link">
+      Column menu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../persiststate/" title="Persist state" class="md-nav__link">
+      Persist state
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../exporting/" title="Exporting" class="md-nav__link">
+      Exporting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../subgrid/" title="SubGrid" class="md-nav__link">
+      SubGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../treegrid/" title="TreeGrid" class="md-nav__link">
+      TreeGrid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        PivotGrid
+      </label>
+    
+    <a href="./" title="PivotGrid" class="md-nav__link md-nav__link--active">
+      PivotGrid
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-jqpivotgrid" title="What is jqPivotGrid" class="md-nav__link">
+    What is jqPivotGrid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-jqpivotgrid" title="Using jqPivotGrid" class="md-nav__link">
+    Using jqPivotGrid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" title="Configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data" title="data" class="md-nav__link">
+    data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pivotoptions" title="pivotoptions" class="md-nav__link">
+    pivotoptions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregates" title="aggregates" class="md-nav__link">
+    aggregates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xdimension" title="xDimension" class="md-nav__link">
+    xDimension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ydimension" title="yDimension" class="md-nav__link">
+    yDimension
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridoptions" title="gridoptions" class="md-nav__link">
+    gridoptions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajaxoptions" title="ajaxoptions" class="md-nav__link">
+    ajaxoptions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-data" title="Source data" class="md-nav__link">
+    Source data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-settings" title="Options settings" class="md-nav__link">
+    Options settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../multiselect/" title="Multiselection" class="md-nav__link">
+      Multiselection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../integrations/" title="Integrations" class="md-nav__link">
+      Integrations
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../about/license/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-jqpivotgrid" title="What is jqPivotGrid" class="md-nav__link">
+    What is jqPivotGrid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-jqpivotgrid" title="Using jqPivotGrid" class="md-nav__link">
+    Using jqPivotGrid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" title="Configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data" title="data" class="md-nav__link">
+    data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pivotoptions" title="pivotoptions" class="md-nav__link">
+    pivotoptions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregates" title="aggregates" class="md-nav__link">
+    aggregates
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xdimension" title="xDimension" class="md-nav__link">
+    xDimension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ydimension" title="yDimension" class="md-nav__link">
+    yDimension
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridoptions" title="gridoptions" class="md-nav__link">
+    gridoptions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ajaxoptions" title="ajaxoptions" class="md-nav__link">
+    ajaxoptions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source-data" title="Source data" class="md-nav__link">
+    Source data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-settings" title="Options settings" class="md-nav__link">
+    Options settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="pivotgrid"><div style='text-align:center'>PivotGrid</div><a class="headerlink" href="#pivotgrid" title="Permanent link">&para;</a></h1>
+<hr />
+<p>Simple we can say that pivot table is a program tool that allows you to reorganize and summarize<br />
+selected columns and rows of data in a spreadsheet or database table to obtain a desired report.<br />
+A pivot table doesn't actually change the spreadsheet or database itself. In database lingo, to<br />
+pivot is to turn the data to view it from different perspectives.</p>
+<p>More deeper information can be found in <a href="http://en.wikipedia.org/wiki/Pivot_table">Wikipedia</a></p>
+<h2 id="what-is-jqpivotgrid">What is jqPivotGrid<a class="headerlink" href="#what-is-jqpivotgrid" title="Permanent link">&para;</a></h2>
+<p>jqPivotGrid is a component that you can use with jqGrid to create a pivot grid. Let’s say that we have the following table with some sales data and following fields:</p>
+<p><em>product name, category name, country, price and quantity</em></p>
+<p>If you want to edit, search delete this data, you could easily use jqGrid features.</p>
+<p><img alt="Screenshot" src="../../img/pivotsource.png" /></p>
+<p>What would you do if you had to answer the following questions?</p>
+<ol>
+<li>What are the order amounts of each category?</li>
+<li>What are the order amounts of each in a specific country?</li>
+<li>What are the order amounts and quantity of each category and product in specific country and their totals?</li>
+</ol>
+<p>Using jqPivotGrid these requirements can be easy solved and this is how they would be done:</p>
+<p><img alt="Screenshot" src="../../img/amtbycategory.png" /></p>
+<p><img alt="Screenshot" src="../../img/amtbycountry.png" /></p>
+<p><img alt="Screenshot" src="../../img/amtbycatprod.png" /></p>
+<h2 id="using-jqpivotgrid">Using jqPivotGrid<a class="headerlink" href="#using-jqpivotgrid" title="Permanent link">&para;</a></h2>
+<p>jqPivotGrid inherits the jqGrid, so you can use most of the features you are already familiar with: column re-sizing, formatter, cell renders, row/cell events etc. The jqPivotGrid can be used when you want to get summation and pivot features that aren’t provided in the jqGrid.</p>
+<p>To break down the data-set into categories and country, you have to configure the x and y Dimensions:</p>
+<div class="codehilite"><pre><span></span><span class="nx">xDimension</span> <span class="o">:</span> <span class="p">[{</span>
+    <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;CategoryName&#39;</span>
+<span class="p">}],</span>
+<span class="nx">yDimension</span> <span class="o">:</span> <span class="p">[</span> <span class="p">{</span>
+    <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;Country&#39;</span>
+<span class="p">}]</span>
+</pre></div>
+
+
+<p>Multiple levels are supported, so you can specify them in the y and x Dimensions. Grouping the rows and/or columns is done automatically when two or more levels are set in xDimension and/or yDimension.</p>
+<p>Now that you broke down the data-set on the y and x Dimension, it’s time to aggregate the cell values. Several kinds of aggregations are available including: sum, min, max, count etc. Future release will provide your own aggregation function.</p>
+<div class="codehilite"><pre><span></span><span class="nx">aggregates</span> <span class="o">:</span> <span class="p">[{</span>
+    <span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;Price&#39;</span><span class="p">,</span>
+    <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span>
+    <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span>
+    <span class="nx">label</span><span class="o">:</span><span class="s1">&#39;Sum&#39;</span>
+<span class="p">},{</span>
+    <span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;Quantity&#39;</span><span class="p">,</span>
+    <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;count&#39;</span><span class="p">,</span>
+    <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span>
+    <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Count&#39;</span>
+<span class="p">}]</span>
+</pre></div>
+
+
+<p>As you have probably noticed in the above example, you could aggregate multiple data fields, say "Price" and "Quantity". You can easily achieve this by configuring all required aggregations.</p>
+<p><img alt="Screenshot" src="../../img/amtbycatprod.png" /></p>
+<p>Showing the grand totals for rows and/or columns is pretty easy to configure ("rowTotals: true" or "colTotals: true"). The group totals are also available via rowTotals or colTotals configs.</p>
+<p>Currently the pivot grid uses JSON data only as data source.</p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p>jqPivotGrid has the following calling convention</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;jqPivot&#39;</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">pivotoptions</span><span class="p">,</span> <span class="nx">gridoptions</span><span class="p">,</span> <span class="nx">ajaxoptions</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Where</p>
+<ul>
+<li>#grid is the id of the table element as used in the jqGrid.</li>
+</ul>
+<p>It is not needed to call first jqGrid to build the table. It is needed to call jqPivot method. This method internally reconstruct the data depending on xDimension, yDimension and aggregates and create automatically jqGrid with predefined colModel and grouping options.</p>
+<p>When created the jqPivot method automatically set the datatype to local and all future calculations are done at client side.</p>
+<p>This method can be combined with <a href="../exporting/#exporting">Exporting</a>.</p>
+<p>Bellow is description of all pivot parameters</p>
+<h3 id="data">data<a class="headerlink" href="#data" title="Permanent link">&para;</a></h3>
+<p>Commonly the pivot grid uses currently only JSON data as data source. The data parameter can be:</p>
+<ul>
+<li>array  </li>
+<li>string</li>
+</ul>
+<hr />
+<p>When the data is array jqPivot expect the data in a name:value pair like in the following example structure :</p>
+<div class="codehilite"><pre><span></span><span class="p">[</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Steeleye Stout&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;1008.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;65&quot;</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Laughing Lumberjack Lager&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;140.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;10&quot;</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Lakkalik&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;2160.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;120&quot;</span><span class="p">},</span>
+<span class="p">...</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<hr />
+<p>In case the parameter is a string a ajax request is made. The data that is returned from the server should have a name value pair like this:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span><span class="s2">&quot;rows&quot;</span><span class="o">:</span><span class="p">[</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Steeleye Stout&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;1008.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;65&quot;</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Laughing Lumberjack Lager&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;140.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;10&quot;</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Lakkalik&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;2160.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;120&quot;</span><span class="p">},</span>
+<span class="p">...</span>
+<span class="p">]}</span>
+</pre></div>
+
+
+<p>The <em><strong>rows</strong></em> property name can be configured from the <em>ajaxoptions</em> - see below.</p>
+<p>The method expect all the needed data to be passed to the pivot. This means that no other special handling on server should be done. All other next transformations are done at client side and the jqPivotGrid build its new data to be displayed.</p>
+<h3 id="pivotoptions">pivotoptions<a class="headerlink" href="#pivotoptions" title="Permanent link">&para;</a></h3>
+<p>This is a object with following properties and default values.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The pivot can be build only if the xDimension and aggregates are not empty arrays.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th align="center">Type</th>
+<th>Description</th>
+<th align="center">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#aggregates">aggregates</a></td>
+<td align="center">array</td>
+<td>Defines the aggregates records and builds the pivot. The array should have at minimum one set of object and should always be defined. If no aggregates is set, the pivot will not be build. All properties of <a href="../basic-grid/#colmodel-options">colModel</a> can be set. For all available properties <a href="#aggregates">see below</a></td>
+<td align="center">empty</td>
+</tr>
+<tr>
+<td>colTotals</td>
+<td align="center">boolean</td>
+<td>If set to true additional footer row is build. All pivot fields are summarized. Note that only summary function is aplied.</td>
+<td align="center">false</td>
+</tr>
+<tr>
+<td>frozenStaticCols</td>
+<td align="center">boolean</td>
+<td>If set to true all fields defined in xDimension (see below) are set as frozen so that when scroll horizontally theses fields are always visible.</td>
+<td align="center">false</td>
+</tr>
+<tr>
+<td>groupSummary</td>
+<td align="center">boolean</td>
+<td>With this option we summarizes the groups and subgroups if they are available. If set to false no summations are available.</td>
+<td align="center">true</td>
+</tr>
+<tr>
+<td>groupSummaryPos</td>
+<td align="center">string</td>
+<td>Defines where the summary row should appear - at top of the group or at bottom. Available options are 'header' (top row) or 'footer' (bottom row)</td>
+<td align="center">header</td>
+</tr>
+<tr>
+<td>rowTotals</td>
+<td align="center">boolean</td>
+<td>If set to true additional column is build ed which summarizes all column values of the row.</td>
+<td align="center">false</td>
+</tr>
+<tr>
+<td>rowTotalsText</td>
+<td align="center">string</td>
+<td>Set the column label of the column if rowTotals is set to true</td>
+<td align="center">Total</td>
+</tr>
+<tr>
+<td><a href="#xDimension">xDimension</a></td>
+<td align="center">array</td>
+<td>Defines the xDimension used by the grid. These values are the cells from source data that appear as rows in the grid. When more that one object element is set a grouping appear automatically. The hierarchy begin from the first object element. The last element is the last element in grouping. All properties of <a href="../basic-grid/#colmodel-options">colModel</a> can be set. <a href="#xDimension">See below</a> for the remaining options.</td>
+<td align="center">empty</td>
+</tr>
+<tr>
+<td><a href="#yDimension">yDimension</a></td>
+<td align="center">array</td>
+<td>Defines the yDimension used by the grid. The values are build ed dynamically depend on the data. Every element in array is a object. When more than one object element is set a header grouping appear automatically. The hierarchy begin from the first object element. The last element is the last element in header grouping. <a href="#yDimension">See below</a> for the remaining options.</td>
+<td align="center">empty</td>
+</tr>
+<tr>
+<td>ignoreCase</td>
+<td align="center">boolean</td>
+<td>By defalt grouping of data is case-sensitive. If you want the grouping to be non case-sensitive (i.e jqGrid and jqgrid will be grouping in one group when pivot is build-ed) set this option to true</td>
+<td align="center">false</td>
+</tr>
+</tbody>
+</table>
+<h4 id="aggregates">aggregates<a class="headerlink" href="#aggregates" title="Permanent link">&para;</a></h4>
+<p>This array contain object elements. The element(s) build aggregates records and is a collection of items that are gathered together to form a total quantity.Typical it can look like this:</p>
+<div class="codehilite"><pre><span></span><span class="nx">aggregates</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;PrTotal&#39;</span><span class="p">,</span>
+      <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span>
+      <span class="nx">label</span><span class="o">:</span><span class="s1">&#39;Sum&#39;</span><span class="p">,</span>
+      <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span>
+      <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span>
+      <span class="nx">summaryType</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span>
+      <span class="nx">align</span><span class="o">:</span><span class="s1">&#39;right&#39;</span>
+    <span class="p">},{</span>
+      <span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;PrTotal&#39;</span><span class="p">,</span>
+      <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;count&#39;</span><span class="p">,</span>
+      <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span>
+      <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Count&#39;</span><span class="p">,</span>
+      <span class="nx">summaryType</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span>
+      <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;integer&#39;</span><span class="p">,</span>
+      <span class="nx">align</span><span class="o">:</span><span class="s1">&#39;right&#39;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<p>A dimension <em><strong>member</strong></em> is a discrete name or identifier used to identify a data item's position and description within a dimension. The value (name property from name:value pair - see above) should be present in source data.</p>
+<p>The <em><strong>aggregator</strong></em> defines the action which should be applied. Currently we have</p>
+<ul>
+<li>sum - make summarization</li>
+<li>count - count the number of items in the group</li>
+<li>min - find the minimal value</li>
+<li>max - find the maximal value</li>
+<li>avg - make average</li>
+<li>function - custom function to define a custom calculations. To this function we pass the following parameters. The function should return value.<ul>
+<li>value - the current value. Initially it is undefined</li>
+<li>fieldName - the name of the field used for calculations</li>
+<li>record - the current record as defined in the source data</li>
+</ul>
+</li>
+</ul>
+<p>The <em><strong>label</strong></em> property appear only if the length of the aggregates is greater than one. In this case we create additional group header which summarizes the aggregates. The label is taken from the data.</p>
+<p>All properties of <a href="../basic-grid/#colmodel-options">colModel</a> can be set here.</p>
+<p>The below code will use custom function to simulate a summarization.</p>
+<div class="codehilite"><pre><span></span><span class="c1">// function to perform calculation</span>
+<span class="kd">function</span> <span class="nx">mySum</span><span class="p">(</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">fieldName</span><span class="p">,</span> <span class="nx">record</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="nx">value</span> <span class="o">||</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="nb">parseFloat</span><span class="p">((</span><span class="nx">record</span><span class="p">[</span><span class="nx">fieldName</span><span class="p">]</span> <span class="o">||</span> <span class="mi">0</span><span class="p">));</span>
+<span class="p">}</span>
+<span class="p">...</span>
+<span class="c1">// aggregates array</span>
+<span class="nx">myAggregates</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;PrTotal&#39;</span><span class="p">,</span>
+      <span class="nx">aggregator</span> <span class="o">:</span> <span class="nx">mySum</span><span class="p">,</span>
+      <span class="nx">label</span><span class="o">:</span><span class="s1">&#39;Sum&#39;</span><span class="p">,</span>
+      <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span>
+      <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span>
+      <span class="nx">summaryType</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span>
+      <span class="nx">align</span><span class="o">:</span><span class="s1">&#39;right&#39;</span>
+    <span class="p">},{</span>
+      <span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;PrTotal&#39;</span><span class="p">,</span>
+      <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;count&#39;</span><span class="p">,</span>
+      <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span>
+      <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Count&#39;</span><span class="p">,</span>
+      <span class="nx">summaryType</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span>
+      <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;integer&#39;</span><span class="p">,</span>
+      <span class="nx">align</span><span class="o">:</span><span class="s1">&#39;right&#39;</span>
+    <span class="p">}</span>
+<span class="p">];</span>
+<span class="p">...</span>
+<span class="c1">// calling th epivot</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;jqPivot&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;mydataurl.php&#39;</span><span class="p">,</span>
+  <span class="p">{</span>
+      <span class="nx">aggregates</span> <span class="o">:</span> <span class="nx">myAggregates</span><span class="p">,</span>
+      <span class="p">...</span>
+  <span class="p">},...);</span>
+</pre></div>
+
+
+<h4 id="xdimension">xDimension<a class="headerlink" href="#xdimension" title="Permanent link">&para;</a></h4>
+<p>As described <a href="https://en.wikipedia.org/wiki/Dimension_%28data_warehouse%29">here</a> <em>The dimension is a data set composed of individual, non-overlapping data elements. The primary functions of dimensions are threefold: to provide filtering, grouping and labeling.</em></p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="nx">xDimension</span> <span class="o">:</span> <span class="p">[</span>
+ <span class="p">{</span>
+   <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;CategoryName&#39;</span><span class="p">,</span>
+   <span class="nx">isGroupField</span> <span class="o">:</span> <span class="kc">true</span>
+   <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Category&#39;</span><span class="p">,</span>
+   <span class="nx">width</span><span class="o">:</span> <span class="mi">70</span>
+ <span class="p">}</span> <span class="p">,</span> <span class="p">{</span>
+   <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;ProductName&#39;</span><span class="p">,</span>
+   <span class="nx">isGroupField</span> <span class="o">:</span> <span class="kc">false</span>
+   <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Product&#39;</span><span class="p">,</span>
+   <span class="nx">frozen</span><span class="o">:</span> <span class="kc">false</span>
+ <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<p><em><strong>dataName</strong></em> is a cell from data that appear as cell in the row. The value of this should correspond to a name in the data source.</p>
+<p><em><strong>isGroupField</strong></em>  - by default this option is true and determine if the field should be grouped when set. If this property is used to display certain or important information without to perform any grouping or calculation  set it to false.</p>
+<p>All properties of <a href="../basic-grid/#colmodel-options">colModel</a> can be set here.</p>
+<p>If the pivot options <em><strong>frozenStaticCols</strong></em> is set to true the frozen property is set automatically. You can overwrite this by set a <em>frozen:false</em> in the object, but be a carefully with the order.</p>
+<h4 id="ydimension">yDimension<a class="headerlink" href="#ydimension" title="Permanent link">&para;</a></h4>
+<p>The element object values build dynamically columns depend on the data source.</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="nx">yDimension</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;Country&#39;</span><span class="p">,</span>
+        <span class="nx">converter</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">Value</span><span class="p">,</span> <span class="nx">xValues</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="s1">&#39;Total Countryies&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">},{</span>
+        <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;Country&#39;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<p>Possible options are:</p>
+<p><em><strong>dataName</strong></em> is a cell from data which build the column. The value of this should correspond to a name in the data source</p>
+<p><em><strong>converter</strong></em> is function which can convert the source cell data  corresponded to a dataName and return new value. The parameters passed to this functions are:<br />
+- Value - the value from data<br />
+- xValues - array - the "static" data from the row defined in xDimention. Actually this is array of the dataName in xDimension</p>
+<h3 id="gridoptions">gridoptions<a class="headerlink" href="#gridoptions" title="Permanent link">&para;</a></h3>
+<p>These options are <a href="../basic-grid/#options">options of the grid</a>. You can set any of them.</p>
+<h3 id="ajaxoptions">ajaxoptions<a class="headerlink" href="#ajaxoptions" title="Permanent link">&para;</a></h3>
+<p>When the data is obtained via ajax we can set additional ajax options. Note that currently we support only JSON data, so some ajax options like dataType is not recommended to be changed. Again with this we have a <em><strong>reader</strong></em> option which defines the root data. By example if the data that is returned from the server has the following structure:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span><span class="s2">&quot;root&quot;</span><span class="o">:</span><span class="p">[</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Steeleye Stout&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;1008.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;65&quot;</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Laughing Lumberjack Lager&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;140.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;10&quot;</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Lakkalik&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;2160.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;120&quot;</span><span class="p">},</span>
+<span class="p">...</span>
+<span class="p">]}</span>
+</pre></div>
+
+
+<p>In order to read correct this data in pivot we need to define the reader property like this:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;jqPivot&#39;</span><span class="p">,</span>
+   <span class="s2">&quot;jsondataurl.json&quot;</span><span class="p">,</span>
+   <span class="p">{</span><span class="nx">pivotoptions</span><span class="p">},</span>
+   <span class="p">{</span><span class="nx">gridoptions</span><span class="p">},</span>
+   <span class="p">{</span>
+     <span class="nx">reader</span><span class="o">:</span><span class="s2">&quot;root&quot;</span>
+   <span class="p">}</span>
+<span class="p">);</span>
+</pre></div>
+
+
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>With this example we will try to explain and build pivot grid from source data to final pivot. Now - lets go first with the data.</p>
+<h3 id="source-data">Source data<a class="headerlink" href="#source-data" title="Permanent link">&para;</a></h3>
+<p>Let’s say that we have a table with sales data with the following fields:</p>
+<ul>
+<li>category name</li>
+<li>product name</li>
+<li>country</li>
+<li>totalprice</li>
+<li>quantity</li>
+</ul>
+<p>This can be seen on the picture below:</p>
+<p><img alt="Screenshot" src="../../img/pivotsource.png" /></p>
+<p>This grid view is achieved with jqGrid with the following code:</p>
+<div class="codehilite"><pre><span></span><span class="nx">jQuery</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+<span class="p">...</span>
+ <span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span>
+ <span class="p">{</span>
+   <span class="nx">url</span> <span class="o">:</span> <span class="s2">&quot;data.json&quot;</span><span class="p">,</span>
+   <span class="nx">loadonce</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+   <span class="nx">colModel</span> <span class="o">:</span> <span class="p">[</span>
+     <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;CategoryName&quot;</span><span class="p">},</span>
+     <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;ProductName&quot;</span> <span class="p">},</span>
+     <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Country&quot;</span><span class="p">},</span>
+     <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Price&quot;</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span> <span class="s2">&quot;right&quot;</span><span class="p">},</span>
+     <span class="p">{</span> <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;Quantity&quot;</span><span class="p">,</span> <span class="nx">formatter</span><span class="o">:</span><span class="s1">&#39;integer&#39;</span><span class="p">,</span> <span class="nx">align</span><span class="o">:</span><span class="s2">&quot;right&quot;</span><span class="p">}</span>
+   <span class="p">],</span>
+   <span class="nx">datatype</span><span class="o">:</span><span class="s2">&quot;json&quot;</span><span class="p">,</span>
+   <span class="nx">width</span><span class="o">:</span> <span class="mi">700</span><span class="p">,</span>
+   <span class="nx">rowNum</span> <span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+   <span class="nx">pager</span><span class="o">:</span> <span class="s2">&quot;#pager&quot;</span><span class="p">,</span>
+   <span class="nx">caption</span><span class="o">:</span> <span class="s2">&quot;Grid&quot;</span>
+ <span class="p">});</span>
+ <span class="p">...</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p>The data is obtained from Northwind database with the following SQL:</p>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span>
+   <span class="k">c</span><span class="p">.</span><span class="n">CategoryName</span><span class="p">,</span>
+   <span class="n">b</span><span class="p">.</span><span class="n">ProductName</span><span class="p">,</span>
+   <span class="n">e</span><span class="p">.</span><span class="n">Country</span><span class="p">,</span>
+   <span class="k">SUM</span><span class="p">(</span> <span class="n">a</span><span class="p">.</span><span class="n">Quantity</span> <span class="o">*</span> <span class="n">a</span><span class="p">.</span><span class="n">UnitPrice</span> <span class="p">)</span> <span class="k">AS</span> <span class="n">Price</span><span class="p">,</span>
+   <span class="k">SUM</span><span class="p">(</span><span class="n">a</span><span class="p">.</span><span class="n">Quantity</span><span class="p">)</span> <span class="k">AS</span> <span class="n">Quantity</span>
+<span class="k">FROM</span>
+   <span class="n">order_details</span> <span class="n">a</span><span class="p">,</span>
+   <span class="n">products</span> <span class="n">b</span><span class="p">,</span>
+   <span class="n">categories</span> <span class="k">c</span><span class="p">,</span>
+   <span class="n">orders</span> <span class="n">d</span><span class="p">,</span>
+   <span class="n">customers</span> <span class="n">e</span>
+<span class="k">WHERE</span>
+   <span class="n">a</span><span class="p">.</span><span class="n">ProductID</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">ProductID</span>
+   <span class="k">AND</span> <span class="n">b</span><span class="p">.</span><span class="n">CategoryID</span> <span class="o">=</span> <span class="k">c</span><span class="p">.</span><span class="n">CategoryID</span>
+   <span class="k">AND</span> <span class="n">a</span><span class="p">.</span><span class="n">OrderID</span> <span class="o">=</span> <span class="n">d</span><span class="p">.</span><span class="n">OrderID</span>
+   <span class="k">AND</span> <span class="n">d</span><span class="p">.</span><span class="n">CustomerID</span> <span class="o">=</span> <span class="n">e</span><span class="p">.</span><span class="n">CustomerID</span>
+   <span class="k">AND</span> <span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">Country</span> <span class="o">=</span> <span class="s1">&#39;UK&#39;</span> <span class="k">OR</span> <span class="n">e</span><span class="p">.</span><span class="n">Country</span> <span class="o">=</span> <span class="s1">&#39;USA&#39;</span><span class="p">)</span>
+<span class="k">GROUP</span> <span class="k">BY</span>
+   <span class="n">a</span><span class="p">.</span><span class="n">ProductID</span><span class="p">,</span>
+   <span class="n">e</span><span class="p">.</span><span class="n">Country</span>
+</pre></div>
+
+
+<p>The JSON response from the server obtained via ajax ( the option url:"data.json") has the following structuure:</p>
+<div class="codehilite"><pre><span></span><span class="p">{</span><span class="s2">&quot;rows&quot;</span><span class="o">:</span><span class="p">[</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Steeleye Stout&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;UK&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;1008.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;65&quot;</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Laughing Lumberjack Lager&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;140.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;10&quot;</span><span class="p">},</span>
+<span class="p">{</span><span class="s2">&quot;CategoryName&quot;</span><span class="o">:</span><span class="s2">&quot;Beverages&quot;</span><span class="p">,</span> <span class="s2">&quot;ProductName&quot;</span><span class="o">:</span><span class="s2">&quot;Lakkalik&quot;</span><span class="p">,</span> <span class="s2">&quot;Country&quot;</span><span class="o">:</span><span class="s2">&quot;USA&quot;</span><span class="p">,</span> <span class="s2">&quot;Price&quot;</span><span class="o">:</span><span class="s2">&quot;2160.0000&quot;</span><span class="p">,</span> <span class="s2">&quot;Quantity&quot;</span><span class="o">:</span><span class="s2">&quot;120&quot;</span><span class="p">},</span>
+<span class="p">...</span>
+<span class="p">]}</span>
+</pre></div>
+
+
+<p>Let say that your boss want to know the sales for the categories and products for the given countries. Of course this can be achieved with another SQL query, but your provider does not allow you to add new query or to change the existing one. What to do?</p>
+<p>You can use the jqPivotGrid to solve this requirement, without to make changes to the server side responses. Let see how to do this, setting the pivot options</p>
+<h3 id="options-settings">Options settings<a class="headerlink" href="#options-settings" title="Permanent link">&para;</a></h3>
+<p>Looking into the task we can see that the categories and products are fields which will be used in our grid. This data is "static" and we should describe this in jqPivot Grid. This is achieved with xDimension option:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">xDimension</span> <span class="o">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+      <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;CategoryName&#39;</span><span class="p">,</span>
+      <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Category&#39;</span><span class="p">,</span>
+      <span class="nx">width</span> <span class="o">:</span> <span class="mi">90</span>
+  <span class="p">},</span> <span class="p">{</span>
+      <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;ProductName&#39;</span><span class="p">,</span>
+      <span class="nx">label</span><span class="o">:</span> <span class="s1">&#39;Product&#39;</span><span class="p">,</span>
+      <span class="nx">width</span><span class="o">:</span> <span class="mi">90</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<p>With this setting we instruct jqPivot Grid that the data will be grouped first by Category and then by Product. These fields should be taken from the JSON response which names are CategoryName and ProductName (see the JSON response above).</p>
+<p>Next we should determine which field is the country field. With this setting we will generate dynamic columns (yDimension). Seen into the source data this is the Country field. Now the settings is:</p>
+<div class="codehilite"><pre><span></span><span class="p">...</span>
+<span class="nx">yDimension</span> <span class="o">:</span> <span class="p">[</span>
+  <span class="p">{</span>
+     <span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;Country&#39;</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+
+
+<p>The missed part is: which fields we should actually summarize? This is achieved with the aggregates option using the fields Price and Quantity.</p>
+<div class="codehilite"><pre><span></span><span class="nx">aggregates</span> <span class="o">:</span> <span class="p">[</span>
+<span class="p">{</span>
+  <span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;Price&#39;</span><span class="p">,</span>
+  <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span>
+  <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span>
+  <span class="nx">label</span><span class="o">:</span><span class="s1">&#39;Sum&#39;</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;Quantity&#39;</span><span class="p">,</span>
+  <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span>
+  <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span>
+  <span class="nx">label</span><span class="o">:</span><span class="s1">&#39;Qty&#39;</span>
+<span class="p">}]</span>
+</pre></div>
+
+
+<p>To summarize the columns and rows we need to set  - rowTotal : true and colTotal: true in pivot options.</p>
+<p>The final code with jqGrid setting is:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;</span><span class="nx">head</span><span class="o">&gt;</span>
+<span class="p">...</span>
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span><span class="o">&gt;</span>
+<span class="nx">jQuery</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+
+ <span class="nx">jQuery</span><span class="p">(</span><span class="s2">&quot;#grid&quot;</span><span class="p">).</span><span class="nx">jqGrid</span><span class="p">(</span><span class="s1">&#39;jqPivot&#39;</span><span class="p">,</span>
+ <span class="s2">&quot;data1.json&quot;</span><span class="p">,</span>
+ <span class="c1">// pivot options</span>
+ <span class="p">{</span>
+   <span class="nx">xDimension</span> <span class="o">:</span> <span class="p">[</span>
+                  <span class="p">{</span><span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;CategoryName&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Category&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span> <span class="mi">90</span><span class="p">},</span>
+                  <span class="p">{</span><span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;ProductName&#39;</span><span class="p">,</span> <span class="nx">label</span> <span class="o">:</span> <span class="s1">&#39;Product&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">90</span><span class="p">}</span>
+               <span class="p">],</span>
+   <span class="nx">yDimension</span> <span class="o">:</span> <span class="p">[</span>
+                  <span class="p">{</span><span class="nx">dataName</span><span class="o">:</span> <span class="s1">&#39;Country&#39;</span><span class="p">}</span>
+               <span class="p">],</span>
+   <span class="nx">aggregates</span> <span class="o">:</span> <span class="p">[</span>
+     <span class="p">{</span><span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;Price&#39;</span><span class="p">,</span> <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span> <span class="nx">label</span><span class="o">:</span><span class="s1">&#39;Sum&#39;</span><span class="p">},</span>
+     <span class="p">{</span><span class="nx">member</span> <span class="o">:</span> <span class="s1">&#39;Quantity&#39;</span><span class="p">,</span> <span class="nx">aggregator</span> <span class="o">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="nx">width</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span> <span class="nx">label</span><span class="o">:</span><span class="s1">&#39;Qty&#39;</span><span class="p">}</span>
+   <span class="p">],</span>
+   <span class="nx">rowTotals</span><span class="o">:</span> <span class="kc">true</span>
+   <span class="nx">colTotals</span> <span class="o">:</span> <span class="kc">true</span>
+
+ <span class="p">},</span>
+ <span class="c1">// grid options</span>
+ <span class="p">{</span>
+   <span class="nx">width</span><span class="o">:</span> <span class="mi">700</span><span class="p">,</span>
+   <span class="nx">rowNum</span> <span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+   <span class="nx">pager</span><span class="o">:</span> <span class="s2">&quot;#pager&quot;</span><span class="p">,</span>
+   <span class="nx">caption</span><span class="o">:</span> <span class="s2">&quot;Amounts and quantity by category and product&quot;</span>
+ <span class="p">});</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="err">/script&gt;</span>
+ <span class="o">&lt;</span><span class="err">/head&gt;</span>
+ <span class="o">&lt;</span><span class="nx">body</span><span class="o">&gt;</span>
+<span class="p">...</span>
+    <span class="o">&lt;</span><span class="nx">table</span> <span class="nx">id</span><span class="o">=</span><span class="s1">&#39;grid&#39;</span><span class="o">&gt;&lt;</span><span class="err">/table&gt;</span>
+    <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="s1">&#39;pager&#39;</span><span class="o">&gt;&lt;</span><span class="err">/div&gt;</span>
+<span class="p">...</span>
+  <span class="o">&lt;</span><span class="err">/body&gt;</span>
+<span class="o">&lt;</span><span class="err">/html&gt;</span>
+</pre></div>
+
+
+<p>The final result look like this:</p>
+<p><img alt="Screenshot" src="../../img/amtbycatprod.png" /></p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../treegrid/" title="TreeGrid" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                TreeGrid
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../multiselect/" title="Multiselection" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Multiselection
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright © TriRand Ltd, 2017  by Tony Tomov. All Rights Reserved.
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.f041762f.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

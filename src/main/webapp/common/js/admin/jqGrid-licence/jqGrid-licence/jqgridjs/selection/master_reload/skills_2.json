@@ -1,0 +1,8 @@
+{
+	"rows":[
+		{"id":"1","employee_id":"1","skill":"A","level":"4"},
+		{"id":"2","employee_id":"1","skill":"B","level":"3"},
+		{"id":"3","employee_id":"1","skill":"C","level":"2"},
+		{"id":"4","employee_id":"1","skill":"D","level":"1"}
+	]
+}
